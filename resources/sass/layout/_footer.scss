@@ -1,0 +1,77 @@
+.footer {
+	display: flex;
+	color: var(--secondary-color-dark);
+	background-color: var(--primary-color);
+
+	h1{
+		color: var(--secondary-color-dark);
+	}
+
+	&__discription {
+		display: block;
+		width: 80% !important;
+	}
+	
+	&__logo {
+		height: 6rem;
+	}
+
+	& .list {
+		list-style: none;
+		font-size: 1.8rem;
+		font-weight: 300;
+		&__item {
+			&:not(:last-child) {
+				margin-bottom: 1rem;
+			}
+		}
+
+		&__link {
+			&:hover {
+				color: var(--secondary-color-dark);
+			}
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+
+	&__payment{
+
+		display: flex;
+		list-style: none;
+		& li{
+			&:not(:last-child){
+				margin-right: 2.5rem;
+			}
+		}
+
+		& img{
+			height: 3.5rem;
+		}
+	}
+
+
+	&__social{
+		display: flex;
+		list-style: none;
+		& a{
+			&:not(:last-child){
+				margin-right: 2.5rem;
+			}
+		}
+		& svg{
+			height: 3.5rem;
+			width: 3.5rem;
+			fill: var(--secondary-color-dark);
+
+			&:hover{
+				fill: var(--secondary-color-dark);
+			}
+		}
+	}
+
+	&__copyright{
+		color: var(--secondary-color-dark);
+		font-size: 1.4rem;
+	}
+}

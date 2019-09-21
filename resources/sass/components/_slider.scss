@@ -1,0 +1,17 @@
+.slider {
+	display: flex;
+	height: 70vh;
+	// width: 100vw;
+	background: var(--primary-color);
+	overflow: hidden;
+
+	&__item {
+		height: 100%;
+		width: auto;
+	}
+
+	&__banner {
+		height: 100%;
+		width: auto;
+	}
+}

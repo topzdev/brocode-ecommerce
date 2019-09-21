@@ -1,0 +1,36 @@
+.scroll-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    height: 7rem;
+    width: 7rem;
+    z-index: 100;
+    background-color: var(--primary-color);
+    fill: var(--secondary-color);
+    border-radius: 100%;
+    border: 2px solid var(--secondary-color);
+
+    & svg{
+        height: 3.5rem;
+        width: 3.5rem;
+        @include transition();
+    }
+
+    &:hover{
+        background-color: var(--secondary-color);
+        fill: var(--primary-color);
+        border: 2px solid  var(--primary-color);
+
+        svg{
+            margin-top: -1.4rem;
+        }
+    }
+}
+
+// .w-100{
+//     display: block;
+//     width: 100% !important;
+// }

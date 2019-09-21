@@ -1,0 +1,60 @@
+.nav {
+	&__navbar {
+		position: relative;
+		display: flex;
+		height: 7rem;
+		align-items: center;
+	}
+
+	&__button {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-right: auto;
+		width: 5rem;
+		height: 5rem;
+		span {
+			display: block;
+			position: relative;
+			width: 70%;
+			height: 2px;
+			background: var(--primary-color);
+			&:after,
+			&:before {
+				display: block;
+				content: '';
+				position: absolute;
+				background: inherit;
+				height: 100%;
+				width: 100%;
+			}
+			&:after {
+				top: -1rem;
+			}
+
+			&::before {
+				bottom: -1rem;
+			}
+		}
+	}
+
+	&__brand {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		height: 70%;
+		& .logo {
+			height: 100%;
+		}
+	}
+
+	&__option {
+		display: flex;
+		margin-left: auto;
+
+		& > *:not(:last-child) {
+			margin-right: 1rem;
+		}
+	}
+}

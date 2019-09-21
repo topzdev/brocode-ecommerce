@@ -1,0 +1,39 @@
+.inp{
+    border: none;
+    outline: none;
+    background: none;
+    
+    &--count{
+        display: flex;
+        height: 100% + 2;
+        margin-top: -1px;
+        margin-right: -1px;
+        margin-left: auto;
+        & div{
+            display: flex;
+            flex-direction: column;
+
+            button{
+                height: 50%;
+                padding: .5rem;
+                font-weight: 600;
+                border: 1px solid var(--primary-color);
+                font-size: 1.6rem;
+            }
+        }
+        & input{
+            height: 100%;
+            width: 7rem;
+            padding: 1rem;
+            text-align: center;
+            border: none;
+            border: 1px solid var(--primary-color);
+            font-size: 4rem;
+            user-select: none;
+            &:disabled{
+                background-color: var(--secondary-color);
+                color: var(--primary-color);
+            }
+        }
+    }
+}
