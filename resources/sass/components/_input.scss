@@ -1,39 +1,69 @@
-.inp{
-    border: none;
-    outline: none;
-    background: none;
-    
-    &--count{
-        display: flex;
-        height: 100% + 2;
-        margin-top: -1px;
-        margin-right: -1px;
-        margin-left: auto;
-        & div{
-            display: flex;
-            flex-direction: column;
+.form-group {
+	display: flex;
+	flex-direction: column;
+	label {
+		font-size: 1.4rem;
+	}
+	height: 100%;
+}
 
-            button{
-                height: 50%;
-                padding: .5rem;
-                font-weight: 600;
-                border: 1px solid var(--primary-color);
-                font-size: 1.6rem;
-            }
-        }
-        & input{
-            height: 100%;
-            width: 7rem;
-            padding: 1rem;
-            text-align: center;
-            border: none;
-            border: 1px solid var(--primary-color);
-            font-size: 4rem;
-            user-select: none;
-            &:disabled{
-                background-color: var(--secondary-color);
-                color: var(--primary-color);
-            }
-        }
-    }
+.inp {
+	border: none;
+	outline: none;
+	background: none;
+
+	&--primary {
+		font-size: 1.8rem;
+		padding: 1rem;
+		border: 1px solid var(--primary-color);
+	}
+
+	&--count {
+		display: flex;
+		height: 100%;
+		margin-left: auto;
+		& div {
+			display: flex;
+			flex-direction: column;
+
+			button {
+				height: 50%;
+				padding: 0.5rem;
+				font-weight: 600;
+				border: 1px solid var(--primary-color);
+				border-left: none;
+				font-size: 1.6rem;
+				@include transition;
+
+				&:hover {
+					background: var(--primary-color);
+					color: var(--secondary-color);
+				}
+
+				&:not(:last-child) {
+					border-bottom: none;
+				}
+			}
+		}
+		& input {
+			height: 100%;
+			width: 7rem;
+			padding: 1rem;
+			text-align: center;
+			border: none;
+			border: 1px solid var(--primary-color);
+			font-size: 4rem;
+			user-select: none;
+			&:disabled {
+				background-color: var(--secondary-color);
+				color: var(--primary-color);
+			}
+		}
+	}
+
+	&--select {
+		font-size: 2rem;
+		border: 1px solid var(--primary-color);
+		height: 100%;
+	}
 }

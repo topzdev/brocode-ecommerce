@@ -1,0 +1,115 @@
+.overview {
+	display: flex;
+	height: auto;
+	&__images {
+		display: flex;
+		align-items: flex-start;
+		width: 60%;
+		height: auto;
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		width: 12%;
+	}
+
+	&__items {
+		display: block;
+		height: auto;
+		width: 100%;
+		cursor: pointer;
+		& img {
+			width: 100%;
+		}
+
+		&:hover {
+		}
+	}
+
+	&__frame {
+		width: 88%;
+	}
+
+	&__description {
+		display: flex;
+		flex-direction: column;
+		padding: 2rem;
+		width: 40%;
+	}
+
+	&__price {
+		font-size: 3rem;
+	}
+
+	&__color {
+		display: flex;
+		height: 4rem;
+		list-style: none;
+	}
+
+	&__color-item {
+		height: 100%;
+		width: 4rem;
+		border: 2px solid transparent;
+		&:hover {
+			border: 2px solid var(--primary-color);
+			cursor: pointer;
+		}
+	}
+
+	&__quantity {
+		display: flex;
+		justify-content: flex-start;
+		width: 100%;
+		height: 8.5rem;
+
+		&:last-child {
+			width: 100%;
+		}
+
+		& select {
+			width: 100%;
+		}
+
+		& input {
+			font-size: 2.5rem !important;
+		}
+	}
+
+	&__add-cart {
+		display: flex;
+		height: 6.5rem;
+		& button {
+			height: 100%;
+			width: 100%;
+		}
+	}
+}
+
+.accordion {
+	font-weight: 400;
+	font-size: 1.4rem;
+	& .card {
+		padding-bottom: 1px !important;
+	}
+	& .card-header {
+		background: none;
+		border: 1px solid var(--primary-color);
+	}
+
+	& .card-body {
+		line-height: 1.6;
+	}
+	// & .collapse {
+	// 	border: 1px solid transparent;
+	// }
+	& .show {
+	}
+}
+
+.img-active {
+	border: 3px solid var(--primary-color);
+}
