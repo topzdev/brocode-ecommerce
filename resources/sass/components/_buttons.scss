@@ -53,12 +53,14 @@
 	}
 
 	&--secondary {
+		background-color: var(--secondary-color);
 		border: 1px solid var(--primary-color);
 		padding: 1rem;
 
 		@include transition;
 
 		&:hover {
+			border: 1px solid var(--secondary-color);
 			background-color: var(--primary-color);
 			color: var(--secondary-color);
 		}
