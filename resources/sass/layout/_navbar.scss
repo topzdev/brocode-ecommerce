@@ -1,60 +1,188 @@
 .nav {
-	&__navbar {
-		position: relative;
-		display: flex;
-		height: 7rem;
-		align-items: center;
-	}
+  background: var(--secondary-color);
+  @include transition;
+  &__navbar {
+    position: relative;
+    display: flex;
+    height: 7rem;
+    align-items: center;
+    opacity: 1;
+    visibility: visible;
+    @include transition;
+  }
 
-	&__button {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		margin-right: auto;
-		width: 5rem;
-		height: 5rem;
-		span {
-			display: block;
-			position: relative;
-			width: 70%;
-			height: 2px;
-			background: var(--primary-color);
-			&:after,
-			&:before {
-				display: block;
-				content: '';
-				position: absolute;
-				background: inherit;
-				height: 100%;
-				width: 100%;
-			}
-			&:after {
-				top: -1rem;
-			}
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    width: 5rem;
+    height: 5rem;
+    span {
+      display: block;
+      position: relative;
+      width: 70%;
+      height: 2px;
+      background: var(--primary-color);
+      &:after,
+      &:before {
+        display: block;
+        content: "";
+        position: absolute;
+        background: inherit;
+        height: 100%;
+        width: 100%;
+      }
+      &:after {
+        top: -1rem;
+      }
 
-			&::before {
-				bottom: -1rem;
-			}
-		}
-	}
+      &::before {
+        bottom: -1rem;
+      }
+    }
+  }
 
-	&__brand {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		height: 70%;
-		& .logo {
-			height: 100%;
-		}
-	}
+  &__brand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 70%;
+    & .logo {
+      height: 100%;
+    }
+  }
 
-	&__option {
-		display: flex;
-		margin-left: auto;
+  &__option {
+    display: flex;
+    margin-left: auto;
 
-		& > *:not(:last-child) {
-			margin-right: 1rem;
-		}
-	}
+    & > *:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+
+  &__category {
+    width: 100%;
+    background-color: rgba($color: #fcfcfc, $alpha: 1);
+
+    &-logo {
+      height: 80%;
+      opacity: 0;
+      margin-left: -5rem;
+      @include transition;
+      img {
+        height: 100%;
+        width: auto;
+      }
+    }
+
+    &-list {
+      display: flex;
+      position: relative;
+      list-style: none;
+      text-decoration: none;
+      margin-left: auto;
+      margin-bottom: none;
+      width: auto;
+      height: 5rem !important;
+    }
+
+    &-item {
+      height: 100%;
+      text-decoration: none;
+
+      &:not(:last-child) {
+        margin-right: 3rem;
+      }
+
+      &:hover {
+        .dropdown {
+          // display: block;
+
+          opacity: 1;
+          margin-left: 0;
+          visibility: visible;
+        }
+
+        & .dropdown__group {
+          opacity: 1;
+          bottom: 0;
+        }
+      }
+
+      & .dropdown {
+        // opacity: 1;
+        // margin-left: 0;
+        // visibility: visible;
+        opacity: 0;
+        left: 0;
+        visibility: hidden;
+      }
+    }
+  }
+
+  &__category-link {
+    display: block;
+    position: relative;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    color: var(--primary-color);
+    font-weight: 500;
+    height: 100%;
+    padding: 0 2rem;
+    padding-top: 1rem;
+
+    &:hover {
+      color: inherit;
+      text-decoration: none;
+
+      &::after {
+        height: 3px;
+      }
+    }
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 0;
+      @include transition;
+      background-color: var(--primary-color);
+    }
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  box-shadow: 0 20px 10px rgba(#000, 0.05);
+
+  .nav__navbar {
+    opacity: 0;
+    height: 0 !important;
+    visibility: hidden;
+  }
+
+  .nav__category {
+    padding-top: 2rem;
+  }
+
+  .nav__category-logo {
+    opacity: 1;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .dropdown {
+    left: auto;
+    right: 0 !important;
+  }
 }

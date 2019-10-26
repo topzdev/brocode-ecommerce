@@ -8,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700&display=swap"
 		rel="stylesheet" />
 	<link rel="stylesheet" href="resources/css/bootstrap-grid.min.css" />
-	<link rel="stylesheet" href="resources/css/bootstrap-reboot.min.css" />
+	<!-- <link rel="stylesheet" href="resources/css/bootstrap-reboot.min.css" /> -->
 	<link rel="stylesheet" href="resources/css/bootstrap.min.css" />
 
 	<link rel="stylesheet" href="resources/css/owl.carousel.min.css" />
@@ -20,7 +20,7 @@
 
 <body>
 	<header>
-		<nav class="nav">
+		<nav class="nav" id="navbar">
 			<div class="container mx-auto">
 				<div class="nav__navbar">
 					<button class="nav__button" id="nav-btn">
@@ -56,6 +56,124 @@
 					</div>
 				</div>
 			</div>
+			<div class="nav__category">
+				<div class="container mx-auto">
+					<ul class="nav__category-list">
+						<a href="" class="nav__category-logo"><img src="/resources/images/brocode-logo-fix.png"
+								alt=""></a>
+						<li class="nav__category-item">
+							<a href="#" class="nav__category-link">
+								Men
+							</a>
+							<div class="dropdown">
+								<div class="dropdown__info">
+									<h1 class="dropdown__title">Men</h1>
+									<img src="./resources/images/cat-men.jpg" alt="" class="image">
+								</div>
+
+								<div class="dropdown__content">
+									<div class="dropdown__group">
+										<h3>Apparel</h3>
+										<ul>
+											<li><a href="">New Arrivals</a></li>
+											<li><a href="">T-Shirts</a></li>
+											<li><a href="">Shirts</a></li>
+											<li><a href="">Shorts</a></li>
+											<li><a href="">Polo</a></li>
+											<li><a href="">Denim</a></li>
+											<li><a href="">Pants</a></li>
+										</ul>
+									</div>
+
+									<div class="dropdown__group">
+										<h3>Accessories</h3>
+										<ul>
+											<li><a href="">New Arrivals</a></li>
+											<li><a href="">Caps</a></li>
+											<li><a href="">Glasses</a></li>
+											<li><a href="">Bags</a></li>
+											<li><a href="">Belts</a></li>
+											<li><a href="">Small Accessories</a></li>
+											<li><a href="">Wallet and Cases</a></li>
+											<li><a href="">Handkechief</a></li>
+											<li><a href="">Socks</a></li>
+											<li><a href="">Footwear</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav__category-item">
+							<a href="#" class="nav__category-link">
+								Underwear
+							</a>
+							<div class="dropdown">
+								<div class="dropdown__info">
+									<h1 class="dropdown__title">Underwear</h1>
+									<img src="./resources/images/cat-men.jpg" alt="" class="image">
+								</div>
+
+								<div class="dropdown__content">
+									<div class="dropdown__group">
+										<h3>Apparel</h3>
+										<ul>
+											<li><a href="">New Arrivals</a></li>
+											<li><a href="">T-Shirts</a></li>
+											<li><a href="">Shirts</a></li>
+											<li><a href="">Shorts</a></li>
+											<li><a href="">Polo</a></li>
+											<li><a href="">Denim</a></li>
+											<li><a href="">Pants</a></li>
+										</ul>
+									</div>
+
+									<div class="dropdown__group">
+										<h3>Accessories</h3>
+										<ul>
+											<li><a href="">New Arrivals</a></li>
+											<li><a href="">Caps</a></li>
+											<li><a href="">Glasses</a></li>
+											<li><a href="">Bags</a></li>
+											<li><a href="">Belts</a></li>
+											<li><a href="">Small Accessories</a></li>
+											<li><a href="">Wallet and Cases</a></li>
+											<li><a href="">Handkechief</a></li>
+											<li><a href="">Socks</a></li>
+											<li><a href="">Footwear</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="nav__category-link">
+								Body & bath
+							</a>
+							<!-- <div class="dropdown">
+								Body & bath
+							</div> -->
+						</li>
+						<li>
+							<a href="#" class="nav__category-link">
+								Sale
+							</a>
+							<!-- <div class="dropdown">
+								Sale
+							</div> -->
+						</li>
+						<li>
+							<a href="#" class="nav__category-link">
+								Exclusive Offers
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav__category-link">
+								Perfumes
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</nav>
 
 		<div class="slider">
@@ -70,10 +188,10 @@
 			<div class="container pt-3">
 				<h1 class="heading--primary mb-2">Popular</h1>
 				<div class="row no-gutter">
-					<div class="col-3 mb-2">
+					<div class="col-3 mb-4">
 						<div class="card card--primary">
 							<div class="card__tray">
-								<button class="btn--icon">
+								<button class="btn--icon" onclick="purchase_modal()">
 									<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 										<path
 											d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
@@ -107,10 +225,10 @@
 						</div>
 					</div>
 
-					<div class="col-3 mb-2">
+					<div class="col-3 mb-4">
 						<div class="card card--primary">
 							<div class="card__tray">
-								<button class="btn--icon">
+								<button class="btn--icon" onclick="purchase_modal()">
 									<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 										<path
 											d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
@@ -144,10 +262,10 @@
 						</div>
 					</div>
 
-					<div class="col-3 mb-2">
+					<div class="col-3 mb-4">
 						<div class="card card--primary">
 							<div class="card__tray">
-								<button class="btn--icon">
+								<button class="btn--icon" onclick="purchase_modal()">
 									<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 										<path
 											d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
@@ -180,11 +298,10 @@
 							<a href="overview.html" class="card__link"></a>
 						</div>
 					</div>
-
-					<div class="col-3 mb-2">
+					<div class="col-3 mb-4">
 						<div class="card card--primary">
 							<div class="card__tray">
-								<button class="btn--icon">
+								<button class="btn--icon" onclick="purchase_modal()">
 									<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 										<path
 											d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
@@ -217,11 +334,10 @@
 							<a href="overview.html" class="card__link"></a>
 						</div>
 					</div>
-
-					<div class="col-3 mb-2">
+					<div class="col-3 mb-4">
 						<div class="card card--primary">
 							<div class="card__tray">
-								<button class="btn--icon">
+								<button class="btn--icon" onclick="purchase_modal()">
 									<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 										<path
 											d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
@@ -254,11 +370,10 @@
 							<a href="overview.html" class="card__link"></a>
 						</div>
 					</div>
-
-					<div class="col-3 mb-2">
+					<div class="col-3 mb-4">
 						<div class="card card--primary">
 							<div class="card__tray">
-								<button class="btn--icon">
+								<button class="btn--icon" onclick="purchase_modal()">
 									<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 										<path
 											d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
@@ -291,11 +406,226 @@
 							<a href="overview.html" class="card__link"></a>
 						</div>
 					</div>
-
-					<div class="col-3 mb-2">
+					<div class="col-3 mb-4">
 						<div class="card card--primary">
 							<div class="card__tray">
+								<button class="btn--icon" onclick="purchase_modal()">
+									<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+										<path
+											d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
+									</svg>
+								</button>
 								<button class="btn--icon">
+									<svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+										<path class="inner" fill="#fff"
+											d="M14.7 1.7l3 1.6L19 5.9l-.2 2.5-3.3 5.3-3.5 2.7-2 1.3-3.2-1.8-3.5-4-1.8-3.1L1 6.9l.3-2.2.7-1.5 2.8-1.5 2.7.4 1.1.6L10.2 4l1.4-1.4 2.6-.9z" />
+										<path
+											d="M10 18.2l-.2-.1c-.1-.1-2.3-1.3-4.6-3.3A18 18 0 0 1 2 11.1 8.4 8.4 0 0 1 .5 6.5c0-2.9 2.4-5.3 5.3-5.3 1 0 2 .4 2.9 1 .5.4 1 .9 1.3 1.4.3-.5.8-1 1.3-1.4.9-.7 2-1 2.9-1 2.9 0 5.3 2.4 5.3 5.3a9 9 0 0 1-1.5 4.7c-.8 1.2-1.8 2.5-3.2 3.7-2.3 2-4.5 3.3-4.6 3.3H10zm-4.2-16a4.3 4.3 0 0 0-4.3 4.3c0 3 2.3 5.8 4.3 7.6 1.8 1.6 3.5 2.7 4.2 3.1.6-.4 2.4-1.5 4.2-3.1 2-1.8 4.3-4.5 4.3-7.6 0-2.3-1.9-4.3-4.3-4.3a4.3 4.3 0 0 0-3.8 2.7c-.1.2-.3.3-.5.3a.8.8 0 0 1-.4-.2c.1 0 0 0 0-.1-.4-1.3-2-2.7-3.7-2.7z" />
+									</svg>
+								</button>
+							</div>
+							<div class="card--primary__main-img">
+								<img src="resources/images/sample-1.jpg" alt="">
+							</div>
+
+							<div class="card--primary__prev-img">
+								<img src="resources/images/sample-2.jpg" alt="">
+							</div>
+
+							<div class="card--primary__body">
+								<h3 class="title">Trust no selfies tees</h3>
+								<p class="price">
+									₱ 350.00
+								</p>
+							</div>
+
+							<a href="overview.html" class="card__link"></a>
+						</div>
+					</div>
+					<div class="col-3 mb-4">
+						<div class="card card--primary">
+							<div class="card__tray">
+								<button class="btn--icon" onclick="purchase_modal()">
+									<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+										<path
+											d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
+									</svg>
+								</button>
+								<button class="btn--icon">
+									<svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+										<path class="inner" fill="#fff"
+											d="M14.7 1.7l3 1.6L19 5.9l-.2 2.5-3.3 5.3-3.5 2.7-2 1.3-3.2-1.8-3.5-4-1.8-3.1L1 6.9l.3-2.2.7-1.5 2.8-1.5 2.7.4 1.1.6L10.2 4l1.4-1.4 2.6-.9z" />
+										<path
+											d="M10 18.2l-.2-.1c-.1-.1-2.3-1.3-4.6-3.3A18 18 0 0 1 2 11.1 8.4 8.4 0 0 1 .5 6.5c0-2.9 2.4-5.3 5.3-5.3 1 0 2 .4 2.9 1 .5.4 1 .9 1.3 1.4.3-.5.8-1 1.3-1.4.9-.7 2-1 2.9-1 2.9 0 5.3 2.4 5.3 5.3a9 9 0 0 1-1.5 4.7c-.8 1.2-1.8 2.5-3.2 3.7-2.3 2-4.5 3.3-4.6 3.3H10zm-4.2-16a4.3 4.3 0 0 0-4.3 4.3c0 3 2.3 5.8 4.3 7.6 1.8 1.6 3.5 2.7 4.2 3.1.6-.4 2.4-1.5 4.2-3.1 2-1.8 4.3-4.5 4.3-7.6 0-2.3-1.9-4.3-4.3-4.3a4.3 4.3 0 0 0-3.8 2.7c-.1.2-.3.3-.5.3a.8.8 0 0 1-.4-.2c.1 0 0 0 0-.1-.4-1.3-2-2.7-3.7-2.7z" />
+									</svg>
+								</button>
+							</div>
+							<div class="card--primary__main-img">
+								<img src="resources/images/sample-1.jpg" alt="">
+							</div>
+
+							<div class="card--primary__prev-img">
+								<img src="resources/images/sample-2.jpg" alt="">
+							</div>
+
+							<div class="card--primary__body">
+								<h3 class="title">Trust no selfies tees</h3>
+								<p class="price">
+									₱ 350.00
+								</p>
+							</div>
+
+							<a href="overview.html" class="card__link"></a>
+						</div>
+					</div>
+					<div class="col-3 mb-4">
+						<div class="card card--primary">
+							<div class="card__tray">
+								<button class="btn--icon" onclick="purchase_modal()">
+									<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+										<path
+											d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
+									</svg>
+								</button>
+								<button class="btn--icon">
+									<svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+										<path class="inner" fill="#fff"
+											d="M14.7 1.7l3 1.6L19 5.9l-.2 2.5-3.3 5.3-3.5 2.7-2 1.3-3.2-1.8-3.5-4-1.8-3.1L1 6.9l.3-2.2.7-1.5 2.8-1.5 2.7.4 1.1.6L10.2 4l1.4-1.4 2.6-.9z" />
+										<path
+											d="M10 18.2l-.2-.1c-.1-.1-2.3-1.3-4.6-3.3A18 18 0 0 1 2 11.1 8.4 8.4 0 0 1 .5 6.5c0-2.9 2.4-5.3 5.3-5.3 1 0 2 .4 2.9 1 .5.4 1 .9 1.3 1.4.3-.5.8-1 1.3-1.4.9-.7 2-1 2.9-1 2.9 0 5.3 2.4 5.3 5.3a9 9 0 0 1-1.5 4.7c-.8 1.2-1.8 2.5-3.2 3.7-2.3 2-4.5 3.3-4.6 3.3H10zm-4.2-16a4.3 4.3 0 0 0-4.3 4.3c0 3 2.3 5.8 4.3 7.6 1.8 1.6 3.5 2.7 4.2 3.1.6-.4 2.4-1.5 4.2-3.1 2-1.8 4.3-4.5 4.3-7.6 0-2.3-1.9-4.3-4.3-4.3a4.3 4.3 0 0 0-3.8 2.7c-.1.2-.3.3-.5.3a.8.8 0 0 1-.4-.2c.1 0 0 0 0-.1-.4-1.3-2-2.7-3.7-2.7z" />
+									</svg>
+								</button>
+							</div>
+							<div class="card--primary__main-img">
+								<img src="resources/images/sample-1.jpg" alt="">
+							</div>
+
+							<div class="card--primary__prev-img">
+								<img src="resources/images/sample-2.jpg" alt="">
+							</div>
+
+							<div class="card--primary__body">
+								<h3 class="title">Trust no selfies tees</h3>
+								<p class="price">
+									₱ 350.00
+								</p>
+							</div>
+
+							<a href="overview.html" class="card__link"></a>
+						</div>
+					</div>
+					<div class="col-3 mb-4">
+						<div class="card card--primary">
+							<div class="card__tray">
+								<button class="btn--icon" onclick="purchase_modal()">
+									<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+										<path
+											d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
+									</svg>
+								</button>
+								<button class="btn--icon">
+									<svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+										<path class="inner" fill="#fff"
+											d="M14.7 1.7l3 1.6L19 5.9l-.2 2.5-3.3 5.3-3.5 2.7-2 1.3-3.2-1.8-3.5-4-1.8-3.1L1 6.9l.3-2.2.7-1.5 2.8-1.5 2.7.4 1.1.6L10.2 4l1.4-1.4 2.6-.9z" />
+										<path
+											d="M10 18.2l-.2-.1c-.1-.1-2.3-1.3-4.6-3.3A18 18 0 0 1 2 11.1 8.4 8.4 0 0 1 .5 6.5c0-2.9 2.4-5.3 5.3-5.3 1 0 2 .4 2.9 1 .5.4 1 .9 1.3 1.4.3-.5.8-1 1.3-1.4.9-.7 2-1 2.9-1 2.9 0 5.3 2.4 5.3 5.3a9 9 0 0 1-1.5 4.7c-.8 1.2-1.8 2.5-3.2 3.7-2.3 2-4.5 3.3-4.6 3.3H10zm-4.2-16a4.3 4.3 0 0 0-4.3 4.3c0 3 2.3 5.8 4.3 7.6 1.8 1.6 3.5 2.7 4.2 3.1.6-.4 2.4-1.5 4.2-3.1 2-1.8 4.3-4.5 4.3-7.6 0-2.3-1.9-4.3-4.3-4.3a4.3 4.3 0 0 0-3.8 2.7c-.1.2-.3.3-.5.3a.8.8 0 0 1-.4-.2c.1 0 0 0 0-.1-.4-1.3-2-2.7-3.7-2.7z" />
+									</svg>
+								</button>
+							</div>
+							<div class="card--primary__main-img">
+								<img src="resources/images/sample-1.jpg" alt="">
+							</div>
+
+							<div class="card--primary__prev-img">
+								<img src="resources/images/sample-2.jpg" alt="">
+							</div>
+
+							<div class="card--primary__body">
+								<h3 class="title">Trust no selfies tees</h3>
+								<p class="price">
+									₱ 350.00
+								</p>
+							</div>
+
+							<a href="overview.html" class="card__link"></a>
+						</div>
+					</div>
+					<div class="col-3 mb-4">
+						<div class="card card--primary">
+							<div class="card__tray">
+								<button class="btn--icon" onclick="purchase_modal()">
+									<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+										<path
+											d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
+									</svg>
+								</button>
+								<button class="btn--icon">
+									<svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+										<path class="inner" fill="#fff"
+											d="M14.7 1.7l3 1.6L19 5.9l-.2 2.5-3.3 5.3-3.5 2.7-2 1.3-3.2-1.8-3.5-4-1.8-3.1L1 6.9l.3-2.2.7-1.5 2.8-1.5 2.7.4 1.1.6L10.2 4l1.4-1.4 2.6-.9z" />
+										<path
+											d="M10 18.2l-.2-.1c-.1-.1-2.3-1.3-4.6-3.3A18 18 0 0 1 2 11.1 8.4 8.4 0 0 1 .5 6.5c0-2.9 2.4-5.3 5.3-5.3 1 0 2 .4 2.9 1 .5.4 1 .9 1.3 1.4.3-.5.8-1 1.3-1.4.9-.7 2-1 2.9-1 2.9 0 5.3 2.4 5.3 5.3a9 9 0 0 1-1.5 4.7c-.8 1.2-1.8 2.5-3.2 3.7-2.3 2-4.5 3.3-4.6 3.3H10zm-4.2-16a4.3 4.3 0 0 0-4.3 4.3c0 3 2.3 5.8 4.3 7.6 1.8 1.6 3.5 2.7 4.2 3.1.6-.4 2.4-1.5 4.2-3.1 2-1.8 4.3-4.5 4.3-7.6 0-2.3-1.9-4.3-4.3-4.3a4.3 4.3 0 0 0-3.8 2.7c-.1.2-.3.3-.5.3a.8.8 0 0 1-.4-.2c.1 0 0 0 0-.1-.4-1.3-2-2.7-3.7-2.7z" />
+									</svg>
+								</button>
+							</div>
+							<div class="card--primary__main-img">
+								<img src="resources/images/sample-1.jpg" alt="">
+							</div>
+
+							<div class="card--primary__prev-img">
+								<img src="resources/images/sample-2.jpg" alt="">
+							</div>
+
+							<div class="card--primary__body">
+								<h3 class="title">Trust no selfies tees</h3>
+								<p class="price">
+									₱ 350.00
+								</p>
+							</div>
+
+							<a href="overview.html" class="card__link"></a>
+						</div>
+					</div>
+					<div class="col-3 mb-4">
+						<div class="card card--primary">
+							<div class="card__tray">
+								<button class="btn--icon" onclick="purchase_modal()">
+									<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+										<path
+											d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
+									</svg>
+								</button>
+								<button class="btn--icon">
+									<svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+										<path class="inner" fill="#fff"
+											d="M14.7 1.7l3 1.6L19 5.9l-.2 2.5-3.3 5.3-3.5 2.7-2 1.3-3.2-1.8-3.5-4-1.8-3.1L1 6.9l.3-2.2.7-1.5 2.8-1.5 2.7.4 1.1.6L10.2 4l1.4-1.4 2.6-.9z" />
+										<path
+											d="M10 18.2l-.2-.1c-.1-.1-2.3-1.3-4.6-3.3A18 18 0 0 1 2 11.1 8.4 8.4 0 0 1 .5 6.5c0-2.9 2.4-5.3 5.3-5.3 1 0 2 .4 2.9 1 .5.4 1 .9 1.3 1.4.3-.5.8-1 1.3-1.4.9-.7 2-1 2.9-1 2.9 0 5.3 2.4 5.3 5.3a9 9 0 0 1-1.5 4.7c-.8 1.2-1.8 2.5-3.2 3.7-2.3 2-4.5 3.3-4.6 3.3H10zm-4.2-16a4.3 4.3 0 0 0-4.3 4.3c0 3 2.3 5.8 4.3 7.6 1.8 1.6 3.5 2.7 4.2 3.1.6-.4 2.4-1.5 4.2-3.1 2-1.8 4.3-4.5 4.3-7.6 0-2.3-1.9-4.3-4.3-4.3a4.3 4.3 0 0 0-3.8 2.7c-.1.2-.3.3-.5.3a.8.8 0 0 1-.4-.2c.1 0 0 0 0-.1-.4-1.3-2-2.7-3.7-2.7z" />
+									</svg>
+								</button>
+							</div>
+							<div class="card--primary__main-img">
+								<img src="resources/images/sample-1.jpg" alt="">
+							</div>
+
+							<div class="card--primary__prev-img">
+								<img src="resources/images/sample-2.jpg" alt="">
+							</div>
+
+							<div class="card--primary__body">
+								<h3 class="title">Trust no selfies tees</h3>
+								<p class="price">
+									₱ 350.00
+								</p>
+							</div>
+
+							<a href="overview.html" class="card__link"></a>
+						</div>
+					</div>
+					<div class="col-3 mb-4">
+						<div class="card card--primary">
+							<div class="card__tray">
+								<button class="btn--icon" onclick="purchase_modal()">
 									<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 										<path
 											d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
@@ -614,11 +944,90 @@
 				</div>
 			</div>
 		</section>
+
 		<button class="scroll-top">
 			<svg style="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
 				<path d="M0 15l.1.4c.2.1.6.1.8 0l8.6-8.7 8.6 8.7a.5.5 0 0 0 .8-.8l-9-9a.5.5 0 0 0-.8 0l-9 9-.1.4z" />
 			</svg>
 		</button>
+
+		<div class="modal" id="over-modal">
+			<div class="modal--purchase">
+				<button class="modal__exit" id="modal-exit">
+					<span>
+						&Cross;
+					</span>
+				</button>
+				<div class="overview">
+					<div class="overview__images">
+						<ul class="overview__list" id="show-list">
+							<li class="overview__items img-active"><img src="resources/images/over-2.jpg" alt=""></li>
+							<li class="overview__items"><img src="resources/images/over-3.jpg" alt=""></li>
+							<li class="overview__items"><img src="resources/images/over-4.jpg" alt=""></li>
+							<li class="overview__items"><img src="resources/images/over-5.jpg" alt=""></li>
+							<li class="overview__items"><img src="resources/images/over-6.jpg" alt=""></li>
+						</ul>
+
+						<div class="overview__frame">
+							<img id="show-img" src="resources/images/over-2.jpg" alt="">
+						</div>
+					</div>
+
+					<div class="overview__description">
+						<h2 class="heading--title">Penshoppe X Dragon Ball Z Pullover With Print</h2>
+						<p class="overview__price mb-2">₱899.00</p>
+
+						<ul class="overview__color mb-2" id="show-db">
+							<li class="overview__color-item" title="black" style="background: #2c3e50">
+								<span data-src="resources/images/over-2.jpg" data-alt=""></span>
+								<span data-src="resources/images/over-3.jpg" data-alt=""></span>
+								<span data-src="resources/images/over-4.jpg" data-alt=""></span>
+								<span data-src="resources/images/over-5.jpg" data-alt=""></span>
+								<span data-src="resources/images/over-6.jpg" data-alt=""></span>
+							</li>
+							<li class="overview__color-item" title="red" style="background: #c0392b"></li>
+							<li class="overview__color-item" title="blue" style="background: #2980b9"></li>
+						</ul>
+
+						<div class="overview__quantity">
+							<div class="form-group">
+								<label for="">Quantity</label>
+								<div class="inp inp--count mr-1" onclick="input_number(this);">
+									<input type="number" name="" id="" min="1" max="50" value="1">
+
+									<div>
+										<button data-v="+">+</button>
+										<button data-v="-">-</button>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group" style="width: 100%">
+								<label for="">Size</label>
+								<select class="inp inp--select" name="" id="">
+									<option value="xs">Extra Small</option>
+									<option value="sm">Small</option>
+									<option value="md">Medium</option>
+									<option value="lg">Large</option>
+									<option value="xl">Extra Large</option>
+									<option value="2xl">2 Extra Lrage</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="overview__add-cart mt-2">
+							<a href="/checkout.html" class="btn btn--primary btn--primary-rev" style="width: 40%">
+								View more
+							</a>
+							<button class="btn btn--primary ml-1">
+								Add to Cart
+							</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
 	</main>
 
 
@@ -813,7 +1222,9 @@
 			</div>
 		</div>
 	</footer>
-
+	<script src="resources/js/image-viewer.js"></script>
+	<script src="resources/js/modal.js"></script>
+	<script src="resources/js/navbar.js"></script>
 	<script src="resources/js/input.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
