@@ -1,14 +1,14 @@
 :root {
 	--base-color: #fff;
-	--primary-color: #111111;
-	--primary-color-light: #424242;
+	--primary-color: rgb(17, 17, 17);
+	--primary-color-light: rgb(66, 66, 66);
 
 	--primary-color-shade: rgba(0, 0, 0, 0.5);
 	--icon-hover: rgba(0, 0, 0, 0.1);
-	--secondary-color: #fff;
-	--secondary-color-dark: #e7e7e7;
-	--secondary-color-darken: #c2c2c2;
+	--secondary-color: rgb(255, 255, 255);
+	--secondary-color-dark: rgb(231, 231, 231);
+	--secondary-color-darken: rgb(194, 194, 194);
 	--secondary-color-shade: rgba(255, 255, 255, 0.5);
 
-	--color-red: #dd3d3d;
+	--color-red: rgb(221, 61, 61);
 }

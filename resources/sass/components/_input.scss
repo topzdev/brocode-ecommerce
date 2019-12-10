@@ -1,8 +1,16 @@
 .form-group {
 	display: flex;
 	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
 	label {
-		font-size: 1.4rem;
+		font-weight: 700;
+		font-size: 16px;
+		color: var(--primary-color-lighten);
+
+		span{
+			color: var(--color-red);
+		}
 	}
 	height: 100%;
 }
@@ -13,9 +21,17 @@
 	background: none;
 
 	&--primary {
-		font-size: 1.8rem;
-		padding: 1rem;
+		font-size: 18px;
+		padding: 10px;
+		width: 100%;
 		border: 1px solid var(--primary-color);
+		border-bottom-width: 3px;
+		border-top-right-radius: 3px;
+		border-top-left-radius: 3px;
+
+		&::placeholder{
+			font-size: 14px;
+		}
 	}
 
 	&--count {

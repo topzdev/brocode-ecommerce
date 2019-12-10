@@ -65,34 +65,58 @@
             <section>
                 <div class="login">
                     <div class="login__form">
-                        <h1 class="heading--primary mb-2">Customer Register</h1>
-                        <div class="form-group mb-2">
-                            <label for="">Email</label>
-                            <input class="inp inp--primary" type="email" placeholder="">
+                        <h1 class="heading--primary mb-1">Customer Register</h1>
+                        <p>Creating an account has many benefits: check out faster, keep more than one address,track
+                            orders and more.</p>
+                        <div class="row mt-2 mb-2">
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <label for="">First Name <span>*</span></label>
+                                    <input class="inp inp--primary" type="text"
+                                        placeholder="Enter your first name ex. John">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="form-group">
+                                    <label for="">Last Name <span>*</span></label>
+                                    <input class="inp inp--primary" type="text"
+                                        placeholder="Enter your last name ex. Doe">
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group mb-2">
-                            <label for="">Password</label>
-                            <input class="inp inp--primary" type="password" placeholder="">
+                            <label for="">Email Address <span>*</span></label>
+                            <input class="inp inp--primary" type="email"
+                                placeholder="Enter your email address ex. johndoe@mail.com">
                         </div>
                         <div class="form-group mb-2">
-                            <a class="btn btn--link" href="">forgot your password?</a>
+                            <label for="">Password <span>*</span></label>
+                            <input class="inp inp--primary" type="password" placeholder="Enter your password here">
                         </div>
                         <div class="form-group mb-2">
-                            <button class="btn btn--primary">Login</button>
+                            <label for="">Re-enter password <span>*</span></label>
+                            <input class="inp inp--primary" type="password" placeholder="Enter your password here">
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-9">
+                                <div class="form-group mb-2">
+                                    <button class="btn btn--primary">Register me</button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 d-flex align-item-flex-end">
+                                <a href="">back</a>
+                            </div>
                         </div>
                     </div>
 
                     <div class="login__background">
-                        <img class="login__image" src="./resources/images/login_bg.jpg" alt="Men's Clothing Website">
+                        <img class="login__image" src="./resources/images/register_bg.jpg" alt="Men's Clothing Website">
                         <div class="login__cover">
                             <div class="login__floating">
-                                <h2>New customer?</h2>
-                                <p>Creating an account has many benefits: check out faster, keep more than one address,
-                                    track orders and more.
-                                </p>
+                                <h2>Already registered?</h2>
 
-                                <a href="/signup.html" class="btn btn--primary btn--primary--white">Create an
-                                    account</a>
+                                <button class="btn btn--primary btn--primary--white mt-1">Take me to login page</button>
                             </div>
                         </div>
                     </div>
