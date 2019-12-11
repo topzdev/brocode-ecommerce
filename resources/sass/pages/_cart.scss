@@ -1,0 +1,137 @@
+.cart {
+	font-size: 16px;
+
+	&__cart {
+	}
+
+	&__list {
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+	}
+	&__header {
+		font-weight: 500;
+		padding: 0.5rem;
+		border-bottom: 1px solid var(--primary-color-light);
+	}
+	&__item {
+		display: flex;
+		align-items: center;
+		padding: 10px;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		button {
+			font-size: 18px;
+		}
+	}
+	&__qty {
+		padding: 0.5rem !important;
+		& .inp {
+			margin-left: 0;
+			height: 40px;
+			padding: 0;
+			position: relative;
+			& div {
+				display: flex;
+				flex-direction: row;
+				padding: 0 !important;
+
+				& button {
+					// background-color: var(--secondary-color);
+					height: 100% !important;
+					border-bottom: 1px solid var(--primary-color) !important;
+
+					&:first-child {
+						top: 0;
+						left: -1px;
+						position: absolute;
+						border-left: 1px solid var(--primary-color) !important;
+						border-right: none;
+					}
+				}
+			}
+		}
+		& input {
+			height: 30px;
+			margin-left: 18px;
+			padding: 0 !important;
+			font-size: 20px !important;
+			background: none;
+		}
+	}
+
+	&__price {
+		font-weight: 400;
+	}
+
+	&__title {
+		display: flex;
+		justify-content: flex-start;
+		.img {
+			height: 55px;
+			width: 55px;
+			min-height: 55px;
+			min-width: 55px;
+			margin-right: 15px;
+			// border: 1px solid var(--primary-color);
+			overflow: hidden;
+		}
+
+		a {
+			font-weight: 500;
+			text-transform: capitalize;
+			color: var(--primary-color);
+			text-decoration: none;
+		}
+
+		p {
+			display: flex;
+			align-items: center;
+			color: var(--primary-color-light);
+
+			span {
+				display: inline-block;
+				height: 15px;
+				width: 15px;
+			}
+		}
+	}
+
+	&__summary {
+		color: var(--primary-color);
+		padding: 20px;
+		// margin-left: 10px;
+		border: 1px solid rgba(0, 0, 0, 1);
+		background-color: var(--secondary-color);
+		border-radius: 3px;
+		box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+			0 10px 10px -5px rgba(0, 0, 0, 0.04);
+		ul {
+			font-size: 14px;
+			li {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 15px;
+				color: var(--primary-color);
+				p {
+					font-weight: 400;
+					text-transform: uppercase;
+					width: 70%;
+				}
+				div {
+					letter-spacing: 1px;
+					font-weight: 600;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+
+	&__coupon {
+		width:  300px;
+	}
+}
+
+.img-fit {
+	width: 100%;
+	object-fit: cover;
+}

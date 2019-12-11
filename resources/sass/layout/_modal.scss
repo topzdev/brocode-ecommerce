@@ -25,24 +25,24 @@
   }
   &__exit {
     position: absolute;
-    font-size: 3rem;
+    font-size: 30px;
     right: 20px;
     top: 15px;
-    width: 2rem;
+    width: 20px;
   }
   &--purchase {
     position: relative;
     background: #fff;
     height: 500px;
     width: 900px;
-    padding: 2rem;
+    padding: 20px;
     opacity: 0;
-    margin-left: -5rem;
+    margin-left: -50px;
     @include transition;
 
     .overview__list {
-      width: 6rem;
-      margin-right: 2rem;
+      width: 60px;
+      margin-right: 20px;
     }
 
     .overview__frame {
@@ -60,18 +60,18 @@
     }
 
     .heading--title {
-      font-size: 2.5rem;
+      font-size: 25px;
     }
     .overview__price {
-      font-size: 2rem;
+      font-size: 20px;
     }
 
     .overview__add-cart {
-      height: 5rem;
+      height: 50px;
     }
 
     .overview__quantity {
-      height: 8rem;
+      height: 80px;
     }
   }
 }

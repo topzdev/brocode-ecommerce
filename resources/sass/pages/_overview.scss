@@ -36,23 +36,23 @@
 	&__description {
 		display: flex;
 		flex-direction: column;
-		padding: 2rem;
+		padding: 20px;
 		width: 40%;
 	}
 
 	&__price {
-		font-size: 3rem;
+		font-size: 30px;
 	}
 
 	&__color {
 		display: flex;
-		height: 4rem;
+		height: 40px;
 		list-style: none;
 	}
 
 	&__color-item {
 		height: 100%;
-		width: 4rem;
+		width: 40px;
 		border: 2px solid transparent;
 		&:hover {
 			border: 2px solid var(--primary-color);
@@ -64,7 +64,7 @@
 		display: flex;
 		justify-content: flex-start;
 		width: 100%;
-		height: 8.5rem;
+		height: 85px;
 
 		&:last-child {
 			width: 100%;
@@ -75,13 +75,13 @@
 		}
 
 		& input {
-			font-size: 2.5rem !important;
+			font-size: 25px !important;
 		}
 	}
 
 	&__add-cart {
 		display: flex;
-		height: 6.5rem;
+		height: 65px;
 		& button {
 			height: 100%;
 			width: 100%;
@@ -91,7 +91,7 @@
 
 .accordion {
 	font-weight: 400;
-	font-size: 1.4rem;
+	font-size: 14px;
 	& .card {
 		padding-bottom: 1px !important;
 	}

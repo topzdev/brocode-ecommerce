@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="resources/css/bootstrap-grid.min.css" />
@@ -12,352 +12,327 @@
     <link rel="stylesheet" href="resources/css/bootstrap.min.css" />
 
     <link rel="stylesheet" href="resources/css/main.css" />
-
-    <title>Brocode</title>
+    <title>Checkout</title>
 </head>
 
 <body>
-    <header>
-        <nav class="nav">
-            <div class="container mx-auto">
-                <div class="nav__navbar">
-                    <button class="nav__button" id="nav-btn">
-                        <span></span>
-                    </button>
-
-                    <a href="overview.html" class="nav__brand">
-                        <img src="/resources/images/brocode-logo-banner.png" alt="Brocode Market" class="logo" />
-                    </a>
-
-                    <div class="nav__option">
-                        <button class="btn--icon" id="btn-search">
-                            <svg class="icon icon--search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path
-                                    d="M18.9 19.2l-6-6.5a7.4 7.4 0 0 0-.1-10.5 7.5 7.5 0 0 0-10.6 0 7.5 7.5 0 0 0 0 10.6 7.5 7.5 0 0 0 10 .6l6 6.4a.5.5 0 0 0 .6 0c.2-.1.3-.4 0-.6zM1 7.5a6.5 6.5 0 1 1 13 0 6.5 6.5 0 0 1-13 0z" />
-                            </svg>
-                        </button>
-
-                        <button class="btn--icon" id="btn-cart">
-                            <svg class="icon icon--cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path
-                                    d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
-                            </svg>
-                        </button>
-
-                        <a href="login.html" class="btn--icon">
-                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 20 20">
-                                <path
-                                    d="M9.5 11a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0-10a4.5 4.5 0 1 0 0 9 4.5 4.5 0 0 0 0-9zM17.5 20h-16C.7 20 0 19.3 0 18.5c0 0 0-1.7 1.2-3.3.7-1 1.7-1.7 2.9-2.2 1.5-.7 3.3-1 5.4-1s4 .3 5.4 1c1.2.5 2.2 1.3 2.9 2.2a6 6 0 0 1 1.2 3.3c0 .8-.7 1.5-1.5 1.5zm-8-7c-3.5 0-6 1-7.4 2.8C1 17 1 18.5 1 18.5c0 .3.2.5.5.5h16c.3 0 .5-.2.5-.5 0 0 0-1.4-1-2.7C15.5 14 13 13 9.4 13z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
     <main>
-
-        <section>
-            <div class="container pt-5 pb-5">
-
-
-                <div class="checkout row">
-
-                    <div class="checkout__cart col-8">
-                        <h1 class="heading--primary mb-3">Shopping Cart</h1>
-                        <div class="checkout__header row">
-                            <div class="col-5">Item</div>
-                            <div class="col-2">Price</div>
-                            <div class="col-2">Qty</div>
-                            <div class="col-2">Subtotal</div>
-                            <div class="col-1"></div>
+        <div class="container py-4">
+            <div class="checkout row">
+                <div class="col-12 col-lg-6">
+                    <div class="row pb-3">
+                        <div class="col-12">
+                            <a href="overview.html" class="checkout__brand">
+                                <img src="/resources/images/brocode-logo-banner.png" alt="Brocode Market"
+                                    class="logo" />
+                            </a>
                         </div>
+                    </div>
 
-                        <div class="checkout__item row">
-                            <div class="col-5 checkout__title">
-                                <div class="img"><img class="img-fit" src="resources/images/sample-1.jpg" alt=""
-                                        class="checkout__img"></div>
-                                <div class="info">
-                                    <a href="/overview.html">Brocode Special Tee Special Edition</a>
-                                    <p><span title="Color: Pink" style="background: #fd77e7;"></span><small>&nbsp;
-                                            Small</small>
+                    <!-- Library http://www.jquery-steps.com/Examples#manipulation -->
+                    <form id="checkout-form" action="#" novalidate>
+                        <h5 class="checkout__bread">Information</h5>
+
+                        <section class="row">
+                            <div class="col-12 mb-2">
+                                <h1 class="heading--secondary">Contact Information</h1>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <div class="form-group">
+                                    <label for="email">Email Address</label>
+                                    <input type="text" name="email" id="email" class="inp inp--primary"
+                                        placeholder="Email" required aria-required="true">
+                                </div>
+                                <div class="form-group form-check custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" name="exclusive" id="exclusive"
+                                        aria-selected="false">
+                                    <label class="custom-control-label" for="exclusive"> Keep me up to date on news and
+                                        exclusive offers</label>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-2">
+                                <h1 class="heading--secondary">Shipping address</h1>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-1">
+                                <div class="form-group">
+                                    <label for="firstname" required aria-required="true">First name</label>
+                                    <input type="text" class="inp inp--primary" placeholder="First name"
+                                        name="firstname" id="firstname" required aria-required="true">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 mb-1">
+                                <div class="form-group">
+                                    <label for="lastname" required aria-required="true">Last name</label>
+                                    <input type="text" name="lastname" id="lastname" class="inp inp--primary"
+                                        placeholder="Last name">
+                                </div>
+                            </div>
+
+                            <div class="col-12 mb-1">
+                                <div class="form-group">
+                                    <label for="location">House or Unit Number / Street Name / Landmark</label>
+                                    <input type="text" class="inp inp--primary"
+                                        placeholder="House or Unit Number / Street Name / Landmark" name="location"
+                                        id="location" required aria-required="true">
+                                </div>
+                            </div>
+                            <div class="col-12 mb-1">
+                                <div class="form-group">
+                                    <label for="barangay">Barangay</label>
+                                    <input type="text" class="inp inp--primary" placeholder="Barangay" name="barangay"
+                                        id="barangay" required aria-required="true">
+                                </div>
+                            </div>
+                            <div class="col-12 mb-1">
+                                <div class="form-group">
+                                    <label for="town/city">Town or city</label>
+                                    <input type="text" class="inp inp--primary" placeholder="Town or city"
+                                        name="town/city" id="town/city" required aria-required="true">
+                                </div>
+                            </div>
+                            <div class="col-12 mb-1">
+                                <div class="form-group">
+                                    <label for="province">Province of your delivery address</label>
+                                    <input type="text" class="inp inp--primary" placeholder="" name="province"
+                                        id="province" required aria-required="true">
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-1">
+                                <div class="form-group">
+                                    <label for="country">Country or region</label>
+                                    <input type="text" class="inp inp--primary" placeholder="Country or region"
+                                        name="country" id="country" required aria-required="true">
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6 mb-1">
+                                <div class="form-group">
+                                    <label for="postal">Postal Code</label>
+                                    <input type="text" class="inp inp--primary" placeholder="Postal Code" name="postal"
+                                        id="postal" required aria-required="true">
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="form-group form-check custom-checkbox mb-2">
+                                    <input type="checkbox" class="custom-control-input" id="lbl-saveinfo"
+                                        aria-selected="false">
+                                    <label class="custom-control-label" for="lbl-saveinfo">Save this information for
+                                        next
+                                        transactions</label>
+                                </div>
+                            </div>
+                            <!-- <div class="col-12 mt-1 d-flex">
+                                <a href="/cart.html" class="btn btn--link">Return to cart</a>
+                                <button class="btn btn--primary ml-auto">
+                                    Continue to shipping
+                                </button>
+                            </div> -->
+
+                        </section>
+
+                        <h5 class="checkout__bread">Shipping</h5>
+
+                        <section class="row">
+                            <div class="col-12">
+                                <h2 class="heading--secondary mb-1">
+                                    Purchase Review
+                                </h2>
+                                <ul class="checkout__review border rounded-sm">
+                                    <li class="border-bottom row">
+                                        <div class="col-2">
+                                            <h6>Contact</h6>
+                                        </div>
+                                        <div class="col">
+                                            <p>johndoe@gmail.com</p>
+                                        </div>
+                                    </li>
+                                    <li class="border-bottom row">
+                                        <div class="col-2">
+                                            <h6>Ship to</h6>
+                                        </div>
+                                        <div class="col">
+                                            <p>1320 Divisorial Mall, Tondo Manila, Philippines</p>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-2">
+                                            <h6>LBC </h6>
+                                        </div>
+                                        <div class="col">
+                                            <p>₱190.00</p>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-12 mt-2 mb-3">
+                                <h2 class="heading--secondary mb-2">
+                                    Shipping method
+                                </h2>
+
+                                <div class="custom-control custom-radio checkout__method border rounded-sm">
+                                    <input type="radio" id="lbl-lbc" name="method" class="custom-control-input">
+                                    <label class="custom-control-label" for="lbl-lbc"></label>
+                                    <div class="content">
+                                        <p class="content__title">LBC
+                                            <span>(5-7 Working Days, Sundays and Holidays excluded)</span>
+                                        </p>
+
+                                        <p class="content__price">
+                                            ₱190.00
+                                        </p>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+
+                        <h5 class="checkout__bread">Payment</h5>
+
+                        <section class="row">
+                            <div class="col-12">
+                                <h2 class="heading--secondary mb-1">
+                                    Purchase Review
+                                </h2>
+                                <ul class="checkout__review border rounded-sm">
+                                    <li class="border-bottom row">
+                                        <div class="col-2">
+                                            <h6>Contact</h6>
+                                        </div>
+                                        <div class="col">
+                                            <p>johndoe@gmail.com</p>
+                                        </div>
+                                    </li>
+                                    <li class="border-bottom row">
+                                        <div class="col-2">
+                                            <h6>Ship to</h6>
+                                        </div>
+                                        <div class="col">
+                                            <p>1320 Divisorial Mall, Tondo Manila, Philippines</p>
+                                        </div>
+                                    </li>
+                                    <li class="row">
+                                        <div class="col-2">
+                                            <h6>Method</h6>
+                                        </div>
+                                        <div class="col">
+                                            <p><b>LBC</b> - ₱190.00</p>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="col-12 mt-2 mb-4">
+                                <h2 class="heading--secondary mb-1">
+                                    Payment method
+                                </h2>
+                                <ul class="checkout__payment border rounded-sm overflow-hidden" id="field-method">
+                                    <li>
+                                        <button type="button" class="button method-selected"
+                                            data-method="paypal-method">
+                                            <img src="./resources/images/paypal.png" alt="Paypal Payment method">
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button type="button" class="button" data-method='cc-payments'>
+                                            <img src="/resources/images/visa-and-mastercard-logo-26.png"
+                                                alt="Credit Card Payment method">
+                                            <p>Credit/Card Payments</p>
+                                        </button>
+                                    </li>
+
+                                    <li>
+                                        <button type="button" class="button" data-method="cdo">
+                                            <p>Cash on delivery (COD)</p>
+                                        </button>
+                                    </li>
+
+                                </ul>
+                                <input type="hidden" value="" id="payment-value">
+                            </div>
+                        </section>
+                    </form>
+
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="checkout__cart">
+                        <h2 class="heading--secondary mb-2">Cart Summary</h2>
+                        <div class="checkout__list mb-3">
+                            <div class="card--checkout">
+                                <div class="card--checkout__img-holder">
+                                    <div class="card--checkout__img">
+                                        <img src="./resources/images/mens-denim-shirt-500x500.jpg" alt=""
+                                            draggable="false">
+                                    </div>
+                                    <div class="card--checkout__quantity">2</div>
+                                </div>
+                                <div class="card--checkout__main">
+                                    <h3 class="card--checkout__title">
+                                        PENSHOPPE X DRAGON BALL Z PULLOVER WITH PRINT
+                                    </h3>
+                                    <p class="card--checkout__price">
+                                        <span>₱</span>899.00
                                     </p>
                                 </div>
-                            </div>
-                            <div class="col-2 checkout__price">₱386.50</div>
-                            <div class="col-2 checkout__qty">
 
-                                <div class="inp inp--count" onclick="input_number(this);">
-                                    <input type="number" name="" id="" min="1" max="50" value="1">
-
-                                    <div>
-                                        <button data-v="+">+</button>
-                                        <button data-v="-">-</button>
-                                    </div>
-                                </div>
+                                <p class="card--checkout__total">
+                                    <span>₱</span>1799.00
+                                </p>
                             </div>
-                            <div class="col-2 checkout__price">₱753.00</div>
-                            <div class="col-1"><button>&Cross;</button></div>
                         </div>
 
-                        <div class="checkout__item row">
-                            <div class="col-5 checkout__title">
-                                <div class="img"><img class="img-fit" src="resources/images/over-2.jpg" alt=""
-                                        class="checkout__img"></div>
-                                <div class="info">
-                                    <a href="/overview.html">Penshoppe X Dragon Ball Z Pull Over with Print</a>
-                                    <p><span title="Color: black" style="background: #242323;"></span><small>&nbsp;
-                                            Large</small>
+                        <div class="checkout__coupon mb-2">
+                            <div class="form-row">
+                                <div class="col">
+                                    <input type="text" class="inp inp--primary" placeholder="Promo code">
+                                </div>
+
+                                <div class="col-auto">
+                                    <button class="btn btn--primary rounded-sm">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="checkout__description border-top border-bottom pt-1">
+                            <ul>
+                                <li>
+                                    <div>Subtotal</div>
+                                    <p>
+                                        <span>₱</span>899.00
                                     </p>
-                                </div>
-                            </div>
-                            <div class="col-2 checkout__price">₱386.50</div>
-                            <div class="col-2 checkout__qty">
+                                </li>
+                                <li>
+                                    <div>Shipping</div>
+                                    <p>
+                                        <span>₱</span>190.00
+                                    </p>
+                                </li>
+                                <li class="final border-top pt-2">
+                                    <div>Total
 
-                                <div class="inp inp--count" onclick="input_number(this);">
-                                    <input type="number" name="" id="" min="1" max="50" value="1">
-
-                                    <div>
-                                        <button data-v="+">+</button>
-                                        <button data-v="-">-</button>
+                                        <span>Including ₱116.68 in taxes</span>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-2 checkout__price">₱753.00</div>
-                            <div class="col-1"><button>&Cross;</button></div>
-                        </div>
-
-                    </div>
-
-                    <div class="checkout__summary col-3 ml-auto">
-                        <h2 class="mb-3">Summary</h2>
-
-                        <ul>
-                            <li>
-                                <p>Subtotal</p>
-                                <div>₱1,279.25</div>
-                            </li>
-                            <li>
-                                <p>Estimated Delivery & Handling</p>
-                                <div>₱500.00</div>
-                            </li>
-
-                            <li class="mt-5">
-                                <p><b>Total</b></p>
-                                <div>₱1,779.25</div>
-                            </li>
-                        </ul>
-
-                        <button class="btn btn--primary w-100 mt-2">Checkout</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <button class="scroll-top">
-            <svg style="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path d="M0 15l.1.4c.2.1.6.1.8 0l8.6-8.7 8.6 8.7a.5.5 0 0 0 .8-.8l-9-9a.5.5 0 0 0-.8 0l-9 9-.1.4z" />
-            </svg>
-        </button>
-    </main>
-
-
-    <div class="cart" id="cart-modal">
-        <div class="cart__tray">
-            <h1 class="heading--primary mb-2">
-                Cart
-            </h1>
-
-            <button class="btn--icon cart__exit" id="cart-exit">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path
-                        d="M10.7 10.5l5.7-5.6a.5.5 0 0 0-.8-.8L10 9.8 4.4 4a.5.5 0 0 0-.8.8l5.7 5.6-5.7 5.6a.5.5 0 0 0 .8.8l5.6-5.7 5.6 5.7a.5.5 0 0 0 .8 0c.1-.2.1-.6 0-.8l-5.7-5.6z" />
-                </svg>
-            </button>
-
-            <div class="row">
-                <div class="col-12 mb-2">
-                    <div class="card card--cart">
-                        <div class="card--cart__thumbnails">
-                            <img src="resources/images/sample-1.jpg" alt="">
-                        </div>
-
-                        <div class="card--primary__body">
-                            <h3 class="title">Trust no selfies tees</h3>
-                            <p class="price">
-                                ₱ 350.00
-                            </p>
-                        </div>
-
-                        <div class="inp inp--count" onclick="input_number(this);">
-                            <input type="number" name="" id="" min="1" max="50" value="1" disabled>
-
-                            <div>
-                                <button data-v="+">+</button>
-                                <button data-v="-">-</button>
-                            </div>
-                        </div>
-
-
-                        <!-- <a href="overview.html" class="card__link"></a> -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="cart__bottom">
-                <h3>₱ 1,350.50</h3>
-
-                <button class="btn btn--primary w-100">
-                    Go to purchase
-                </button>
-            </div>
-        </div>
-
-
-    </div>
-
-    <div class="search" id="search-modal">
-        <button class="btn--icon cart__exit" id="search-exit">
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                <path
-                    d="M10.7 10.5l5.7-5.6a.5.5 0 0 0-.8-.8L10 9.8 4.4 4a.5.5 0 0 0-.8.8l5.7 5.6-5.7 5.6a.5.5 0 0 0 .8.8l5.6-5.7 5.6 5.7a.5.5 0 0 0 .8 0c.1-.2.1-.6 0-.8l-5.7-5.6z" />
-            </svg>
-        </button>
-        <div class="container">
-            <div class="col-12">
-                <div class="search__holder">
-                    <input type="text" name="" id="" class="inp inp--search"
-                        placeholder="Search any product here (products, category and etc.)">
-                    <button class="btn btn--primary col-2">
-                        Search
-                    </button>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-
-
-    <footer class="footer pt-5">
-        <div class="container mx-auto">
-            <div class="row">
-                <div class="col-12 col-lg-6 mb-3">
-                    <img class="footer__logo mb-3" src="resources/images/brocode-logo-banner-w.png" alt="" />
-
-                    <p class="paragraph--primary footer__discription">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Recusandae iste impedit, modi sed suscipit vitae optio, voluptatem
-                        minus minima adipisci ex obcaecati illum, quaerat doloribus iure
-                        mollitia id! Minus, maiores quibusdam. Eos adipisci qui numquam
-                        hic, natus obcaecati ipsum omnis maxime animi facilis nemo quo
-                        dolorum! Deleniti sequi maiores dolores minus? Sequi laborum
-                        laboriosam laudantium excepturi quos, eaque pariatur error.
-                    </p>
-                </div>
-                <div class="col-12 col-lg-6 mb-5">
-                    <div class="row">
-                        <div class="col-12 col-lg-6 mb-3">
-                            <h1 class="heading--secondary mb-2">Navigate</h1>
-                            <ul class="list">
-                                <li class="list__item">
-                                    <a href="overview.html" class="list__link">
-                                        Home
-                                    </a>
-                                </li>
-                                <li class="list__item">
-                                    <a href="overview.html" class="list__link">
-                                        Search
-                                    </a>
-                                </li>
-                                <li class="list__item">
-                                    <a href="overview.html" class="list__link">
-                                        About
-                                    </a>
-                                </li>
-                                <li class="list__item">
-                                    <a href="overview.html" class="list__link">
-                                        Contact us
-                                    </a>
-                                </li>
-                                <li class="list__item">
-                                    <a href="overview.html" class="list__link">
-                                        Account
-                                    </a>
+                                    <p>
+                                        <span>₱</span>1190.00
+                                    </p>
                                 </li>
                             </ul>
                         </div>
+
+
                     </div>
-                </div>
 
-                <div class="col-12 col-lg-6 mb-3">
-                    <h1 class="heading--secondary mb-2">Secured & Verified Payments</h1>
-
-                    <ul class="footer__payment">
-                        <li>
-                            <img src="/resources/images/bdo.png" title="BDO" alt="bdo" class="" />
-                        </li>
-                        <li>
-                            <img src="/resources/images/bpi.png" title="BPI" alt="bpi" class="" />
-                        </li>
-                        <li>
-                            <img src="/resources/images/mastercard.png" title="Mastercard" alt="Mastercard" class="" />
-                        </li>
-                        <li>
-                            <img src="/resources/images/paypal.png" title="Paypal" alt="Paypal" class="" />
-                        </li>
-                        <li><img src="/resources/images/visa.png" title="Visa" alt="Visa" class="" /></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-lg-6 mb-3">
-                    <h1 class="heading--secondary mb-2">Visit us on</h1>
-
-                    <div class="footer__social">
-                        <a href="overview.html" title="facebook"><svg class="icon" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 100 100">
-                                <path
-                                    d="M57.1 98.2H43.8a6 6 0 0 1-5.9-5.9V56.4h-11a6 6 0 0 1-5.9-5.9V40.2a6 6 0 0 1 5.9-5.9h10.9V25c0-13.8 9.1-23.1 22.7-23.1h10.1a6 6 0 0 1 5.9 5.9V20a6 6 0 0 1-5.9 5.9h-7.5v8.4h10c1.8 0 3.5.8 4.6 2.2a5.8 5.8 0 0 1 1.2 4.9l-2.1 10.2c-.5 2.7-3 4.7-5.8 4.7h-8v36a6 6 0 0 1-5.9 5.9zM26.9 39.8c-.2 0-.4.2-.4.4v10.4c0 .2.2.4.4.4h16.5v41.3c0 .2.2.4.4.4h13.3c.2 0 .4-.2.4-.4V50.8H71l.4-.2 2.1-10.3-.1-.4-.4-.1H57.6V26.3c0-3.6 1-5.9 6-5.9h7c.2 0 .4-.2.4-.4V7.7c0-.2-.2-.4-.4-.4H60.5c-10.4 0-17.2 6.9-17.2 17.6v14.8H26.9z" />
-                            </svg></a>
-                        <a href="overview.html" title="twitter"><svg class="icon" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 100 100">
-                                <path
-                                    d="M33.9 90c-8.3 0-20.2-1.6-30.2-9.1a4.8 4.8 0 0 1-1.5-5.8c.8-2.1 3-3.2 5.2-2.8 0 0 7.3 1.2 13.9-1.1A21.3 21.3 0 0 1 12 59c-.3-1-.3-2 0-3a22 22 0 0 1-6.4-16.4A5 5 0 0 1 7.3 36c-2-4.9-3.2-12.1 1.4-20a5.2 5.2 0 0 1 3.7-2.4c1.6-.1 3.1.5 4.1 1.7.1.1 12.4 14.3 27.7 16.4a22.4 22.4 0 0 1 36.5-16.6 16 16 0 0 0 7.3-2.8c1.4-1 3.3-1.2 4.8-.4a5 5 0 0 1 2.8 4c0 .5 0 1.5-.4 2.8l.8.5a4.8 4.8 0 0 1 1.9 5.3c-.6 2.3-3.6 5.9-8.9 10.8A54.3 54.3 0 0 1 33.9 90zM9.2 78a46.4 46.4 0 0 0 24.7 6.5c6 0 10.1-.9 10.2-.9a49 49 0 0 0 39.6-49.5v-1.2l.9-.8c3.7-3.4 5.8-5.7 6.9-7.1l-.5.1-5.6 1.9c-.9.3-1.7-.8-1.1-1.6l3.7-4.6c1-1.2 1.5-2.2 1.8-3a20.6 20.6 0 0 1-9.9 3h-1.1l-.9-.8a16.7 16.7 0 0 0-28.2 12.3l.1 2 .2 2c.1.6-.4 1.1-1 1.1l-2-.1C30 37 16.1 23 12.9 19.6a16.6 16.6 0 0 0 .9 16.8l3.3 5.5c.5.9-.4 1.9-1.3 1.4l-4.6-2.5c.2 5.4 2.3 9.6 6.3 12.6l2.4 1.9c.6.5.5 1.4-.2 1.7l-2.2.9c2.3 6.7 7.3 9.4 11.1 10.4l3.6 1c.8.2 1 1.3.3 1.8l-3 2.1c-7 4.9-15.8 5.1-20.3 4.8zm3.1-59.1zm79-2.1z" />
-                            </svg></a>
-                        <a href="overview.html" title="instagram"><svg class="icon" xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 100 100">
-                                <path
-                                    d="M50 26.9a23.1 23.1 0 0 0 0 46.2 23 23 0 0 0 0-46.2zm0 40.7a17.6 17.6 0 0 1 0-35.2c9.7 0 17.5 7.9 17.5 17.6 0 9.7-7.8 17.6-17.5 17.6zM76.9 16.3c-1.8 0-3.5.7-4.7 2a6.5 6.5 0 0 0 0 9.4 6.5 6.5 0 0 0 9.4 0c1.2-1.2 2-2.9 2-4.7v-.1c0-1.7-.8-3.4-2-4.6-1-1.4-2.9-2-4.7-2z" />
-                                <path
-                                    d="M76.1 1H23.9A23 23 0 0 0 1 23.9v52.3A23 23 0 0 0 23.9 99h52.3A23 23 0 0 0 99 76.1V23.9A23 23 0 0 0 76.1 1zm17.4 75.1c0 9.6-7.8 17.4-17.4 17.4H23.9c-9.6 0-17.4-7.8-17.4-17.4V23.9c0-9.6 7.8-17.4 17.4-17.4h52.3c9.6 0 17.4 7.8 17.4 17.4v52.2z" />
-                            </svg></a>
-                        <a href="overview.html" title="reddit">
-                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                                <circle cx="36.4" cy="55.8" r="6.2" />
-                                <circle cx="63.6" cy="55.8" r="6.2" />
-                                <path
-                                    d="M50 78c6.7 0 11.5-1.5 14.5-4.5.7-.7.7-1.8 0-2.4-.7-.7-1.8-.7-2.4 0-2.4 2.4-6.3 3.5-12.1 3.5-5.7 0-9.7-1.1-12.1-3.5-.7-.7-1.8-.7-2.4 0-.7.7-.7 1.8 0 2.4 3 3 7.8 4.5 14.5 4.5z" />
-                                <path
-                                    d="M70 84c2.9-1.1 5.7-2.5 8.2-4.1 7.8-5.1 12-11.9 12-19.2l-.2-2.9a10.2 10.2 0 1 0-12-16.4 51 51 0 0 0-25.5-7.5l5.3-16.7 14.3 3.4a8.4 8.4 0 1 0 .7-3.3L57 13.5c-.9-.2-1.8.3-2 1.2l-6.1 19.2A50.8 50.8 0 0 0 22 41.4a10.2 10.2 0 1 0-12 16.4c-.2 1-.2 1.9-.2 2.9 0 7.3 4.3 14.1 12.1 19.2 2.5 1.6 5.2 3 8.2 4.1-.1 0 21.2 8.7 39.9 0zm10.5-68.4a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5zM8.5 49a6.8 6.8 0 0 1 10.7-5.6c-4 3.1-6.7 6.8-8.2 10.8A6.4 6.4 0 0 1 8.5 49zM50 84.1c-20.3 0-36.8-10.5-36.8-23.4 0-12.9 16.5-23.4 36.8-23.4 20.3 0 36.8 10.5 36.8 23.4 0 12.9-16.5 23.4-36.8 23.4zm39.1-29.9c-1.4-4-4.2-7.6-8.2-10.8A6.8 6.8 0 0 1 91.6 49a7 7 0 0 1-2.5 5.2z" />
-                            </svg>
-                        </a>
-                        <a href="overview.html" title="pinterest">
-                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
-                                <path
-                                    d="M2 50l.1 2.2v.7l.1 1.6.1.7.2 1.8.1.4.4 2.1.1.6.3 1.5.2.7.4 1.5.2.6.7 2 .2.6.6 1.4.3.7.6 1.3.3.7.9 1.7.3.5.8 1.4.4.7.7 1.1.5.7.9 1.2.3.5 1.2 1.5.5.6.8 1 .6.6.9 1 .5.5 1.4 1.4.5.5 1 .9.6.5 1 .8.6.5 1.6 1.2.4.3 1.3.8.7.4 1.2.7.6.4 1.7.9.2.1 1.9.9.6.2.8.3c-.4-3.8-.8-9.6.2-13.8l5.6-23.9s-1.4-2.9-1.4-7.1c0-6.7 3.9-11.7 8.7-11.7 4.1 0 6.1 3.1 6.1 6.8 0 4.1-2.6 10.3-4 16-1.1 4.8 2.4 8.7 7.1 8.7 8.5 0 15.1-9 15.1-22 0-11.5-8.3-19.5-20-19.5A20.7 20.7 0 0 0 28 49.2a19 19 0 0 0 3.6 11c.4.5.4.9.3 1.4L30.6 67c-.2.9-.7 1.1-1.6.6-6-2.8-9.7-11.6-9.7-18.6 0-15.1 11-29 31.7-29 16.7 0 29.6 11.9 29.6 27.7 0 16.5-10.4 29.9-24.9 29.9-4.9 0-9.4-2.5-11-5.5l-3 11.4c-1.1 4.2-4 9.4-6 12.6l2 .6.7.2 1.4.3.7.2 1.9.3h.2l2.1.3.7.1 1.6.1h.6l2.2.1A48 48 0 0 0 67.1 5.5c-.4-.5-1.1-.7-1.7-1-1.4-.5-2.8-.9-4.3-1.2l-3.8-.8-4.8-.5H50l-4.9.2-2.4.3A48.1 48.1 0 0 0 2 50z" />
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-12 mt-5 mb-2">
-                    <p class="footer__copyright">&copy; Brocode Merch &mdash; 2019</p>
                 </div>
             </div>
         </div>
-    </footer>
+    </main>
 
-    <script src="resources/js/input.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -367,7 +342,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-</body>
+    <script src="resources/js/jquery.steps.min.js"></script>
+    <script src="resources/js/stepper.js"></script>
 
+</body>
 
 </html>

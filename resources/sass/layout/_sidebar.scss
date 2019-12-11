@@ -1,4 +1,4 @@
-.cart{
+.cart-prev{
     display: none;
     height: 100vh;
     width: 100%;
@@ -13,11 +13,11 @@
         flex-direction: column;
         position: relative;
         height: 100%;
-        width: 40rem;
+        width: 400px;
         margin-left: auto;
         background-color: var(--secondary-color);
         box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.2);
-        padding: 2rem;
+        padding: 20px;
     }
 
     &__bottom{
@@ -27,24 +27,24 @@
         position: absolute;
         bottom: 0;
         left: 0;
-        padding: 2rem;
+        padding: 20px;
         background-color: var(--secondary-color-dark);
 
         h3{
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
+            font-size: 25px;
+            margin-bottom: 10px;
         }
         
     }
 
     &__exit{
         position: absolute !important;
-        top: 3rem;
-        right: 3rem;
+        top: 30px;
+        right: 30px;
 
         svg{
-            height: 4rem;
-            width: 4rem;
+            height: 40px;
+            width: 40px;
         }
     }
 

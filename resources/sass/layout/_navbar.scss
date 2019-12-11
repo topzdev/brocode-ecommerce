@@ -4,7 +4,7 @@
   &__navbar {
     position: relative;
     display: flex;
-    height: 7rem;
+    height: 70px;
     align-items: center;
     opacity: 1;
     visibility: visible;
@@ -16,8 +16,8 @@
     align-items: center;
     justify-content: center;
     margin-right: auto;
-    width: 5rem;
-    height: 5rem;
+    width: 50px;
+    height: 50px;
     span {
       display: block;
       position: relative;
@@ -59,7 +59,7 @@
     margin-left: auto;
 
     & > *:not(:last-child) {
-      margin-right: 1rem;
+      margin-right: 10px;
     }
   }
 
@@ -70,7 +70,7 @@
     &-logo {
       height: 80%;
       opacity: 0;
-      margin-left: -5rem;
+      margin-left: -50px;
       @include transition;
       img {
         height: 100%;
@@ -86,7 +86,7 @@
       margin-left: auto;
       margin-bottom: none;
       width: auto;
-      height: 5rem !important;
+      height: 50px !important;
     }
 
     &-item {
@@ -94,7 +94,7 @@
       text-decoration: none;
 
       &:not(:last-child) {
-        margin-right: 3rem;
+        margin-right: 30px;
       }
 
       &:hover {
@@ -126,15 +126,15 @@
   &__category-link {
     display: block;
     position: relative;
-    font-size: 1.4rem;
+    font-size: 14px;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     color: var(--primary-color);
     font-weight: 500;
     height: 100%;
-    padding: 0 2rem;
-    padding-top: 1rem;
+    padding: 0 20px;
+    padding-top: 10px;
 
     &:hover {
       color: inherit;
@@ -172,7 +172,7 @@
   }
 
   .nav__category {
-    padding-top: 2rem;
+    padding-top: 20px;
   }
 
   .nav__category-logo {
