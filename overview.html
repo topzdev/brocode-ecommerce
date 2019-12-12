@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="resources/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="resources/css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="resources/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="resources/css/owl.carousel.min.css" />
-    <link rel="stylesheet" href="resources/css/owl.theme.default.min.css" />
-
+    <link rel="stylesheet" href="resources/css/slick.css">
+    <link rel="stylesheet" href="resources/css/slick-theme.css">
     <link rel="stylesheet" href="resources/css/main.css" />
 
     <title>Brocode</title>
@@ -73,9 +72,17 @@
                             <li class="overview__items"><img src="resources/images/over-6.jpg" alt=""></li>
                         </ul>
 
-                        <div class="overview__frame">
-                            <li class="overview__items"><img id="show-img" src="resources/images/over-2.jpg" alt="">
-                            </li>
+                        <div class="overview__frame" id="show-main">
+                            <li class="overview__big-img"><img src="resources/images/over-2.jpg"
+                                    data-large="resources/images/over-2.jpg" class='overview-zoom' alt=""></li>
+                            <li class="overview__big-img"><img src="resources/images/over-3.jpg"
+                                    data-large="resources/images/over-3.jpg" class='overview-zoom' alt=""></li>
+                            <li class="overview__big-img"><img src="resources/images/over-4.jpg"
+                                    data-large="resources/images/over-4.jpg" class='overview-zoom' alt=""></li>
+                            <li class="overview__big-img"><img src="resources/images/over-5.jpg"
+                                    data-large="resources/images/over-5.jpg" class='overview-zoom' alt=""></li>
+                            <li class="overview__big-img"><img src="resources/images/over-6.jpg"
+                                    data-large="resources/images/over-6.jpg" class='overview-zoom' alt=""></li>
                         </div>
                     </div>
 
@@ -126,422 +133,190 @@
                                 Add to Cart
                             </button>
                         </div>
-
-                        <div class="accordion mt-5" id="accordionExample">
-                            <div class="card">
-                                <div class="card-header" id="headingOne">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn--accordion" type="button" data-toggle="collapse"
-                                            data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            Product Description
-                                        </button>
-                                    </h2>
-                                </div>
-
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                                        you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn--accordion collapsed" type="button"
-                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
-                                            aria-controls="collapseTwo">
-                                            Shipping & Delivery
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                                        you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingThree">
-                                    <h2 class="mb-0">
-                                        <button class="btn btn--accordion collapsed" type="button"
-                                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
-                                            aria-controls="collapseThree">
-                                            Return Policy
-                                        </button>
-                                    </h2>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
-                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
-                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
-                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
-                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
-                                        you probably haven't heard of them accusamus labore sustainable VHS.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
 
-            <section class="mt-5 mb-5">
-                <h1 class="heading--primary mb-2">You may like</h1>
+            <div class="overview__tab mb-5">
+                <div class="row">
+                    <div class="col-11">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="details-tab" data-toggle="tab" href="#details" role="tab"
+                                    aria-controls="details" aria-selected="true">Details</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="more-info-tab" data-toggle="tab" href="#more-info" role="tab"
+                                    aria-controls="more-info" aria-selected="false">More informations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="reviews-tab" data-toggle="tab" href="#reviews" role="tab"
+                                    aria-controls="reviews" aria-selected="false">Reviews</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="details" role="tabpanel"
+                                aria-labelledby="details-tab">
+                                <h1 class="heading--primary mb-2">Product details</h1>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur obcaecati repellat,
+                                voluptatem odit praesentium ducimus animi a excepturi nemo, enim inventore fugiat ea
+                                reprehenderit suscipit, explicabo vero sequi commodi in dignissimos aliquam laboriosam
+                                unde!
+                                Voluptates atque unde quibusdam sapiente ipsum pariatur nam illum nesciunt voluptatem
+                                veniam
+                                mollitia voluptate maxime culpa inventore harum accusamus dignissimos, doloremque
+                                provident
+                                suscipit repellat adipisci, sed fugiat recusandae itaque? Itaque iusto aliquam ratione
+                                accusamus, odio cum ut ea error dolorem commodi aperiam aspernatur repudiandae quia
+                                suscipit
+                                eos! Repellat est fugiat exercitationem ab? Facilis officia et nisi alias, sint
+                                aspernatur
+                                sapiente similique vero illo, totam a adipisci.
+                            </div>
 
-                <div class="owl-carousel">
-                    <div class="card card--primary card__slider">
-                        <div class="card__tray">
-                            <button class="btn--icon">
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path
-                                        d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
-                                </svg>
-                            </button>
-                            <button class="btn--icon">
-                                <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path class="inner" fill="#fff"
-                                        d="M14.7 1.7l3 1.6L19 5.9l-.2 2.5-3.3 5.3-3.5 2.7-2 1.3-3.2-1.8-3.5-4-1.8-3.1L1 6.9l.3-2.2.7-1.5 2.8-1.5 2.7.4 1.1.6L10.2 4l1.4-1.4 2.6-.9z" />
-                                    <path
-                                        d="M10 18.2l-.2-.1c-.1-.1-2.3-1.3-4.6-3.3A18 18 0 0 1 2 11.1 8.4 8.4 0 0 1 .5 6.5c0-2.9 2.4-5.3 5.3-5.3 1 0 2 .4 2.9 1 .5.4 1 .9 1.3 1.4.3-.5.8-1 1.3-1.4.9-.7 2-1 2.9-1 2.9 0 5.3 2.4 5.3 5.3a9 9 0 0 1-1.5 4.7c-.8 1.2-1.8 2.5-3.2 3.7-2.3 2-4.5 3.3-4.6 3.3H10zm-4.2-16a4.3 4.3 0 0 0-4.3 4.3c0 3 2.3 5.8 4.3 7.6 1.8 1.6 3.5 2.7 4.2 3.1.6-.4 2.4-1.5 4.2-3.1 2-1.8 4.3-4.5 4.3-7.6 0-2.3-1.9-4.3-4.3-4.3a4.3 4.3 0 0 0-3.8 2.7c-.1.2-.3.3-.5.3a.8.8 0 0 1-.4-.2c.1 0 0 0 0-.1-.4-1.3-2-2.7-3.7-2.7z" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="card--primary__main-img">
-                            <img src="resources/images/sample-1.jpg" alt="">
-                        </div>
+                            <div class="tab-pane fade" id="more-info" role="tabpanel" aria-labelledby="more-info-tab">
 
-                        <div class="card--primary__prev-img">
-                            <img src="resources/images/sample-2.jpg" alt="">
-                        </div>
+                                <h1 class="heading--primary mb-2">Product informations</h1>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur obcaecati repellat,
+                                voluptatem odit praesentium ducimus animi a excepturi nemo, enim inventore fugiat ea
+                                reprehenderit suscipit, explicabo vero sequi commodi in dignissimos aliquam laboriosam
+                                unde!
+                                Voluptates atque unde quibusdam sapiente ipsum pariatur nam illum nesciunt voluptatem
+                                veniam
+                                mollitia voluptate maxime culpa inventore harum accusamus dignissimos, doloremque
+                                provident
+                                suscipit repellat adipisci, sed fugiat recusandae itaque? Itaque iusto aliquam ratione
+                                accusamus, odio cum ut ea error dolorem commodi aperiam aspernatur repudiandae quia
+                                suscipit
+                                eos! Repellat est fugiat exercitationem ab? Facilis officia et nisi alias, sint
+                                aspernatur
+                                sapiente similique vero illo, totam a adipisci.
+                            </div>
 
-                        <div class="card--primary__body">
-                            <h3 class="title">Trust no selfies tees</h3>
-                            <p class="price">
-                                ₱ 350.00
-                            </p>
-                        </div>
+                            <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="reviews-tab">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h1 class="heading--primary mb-2">Product Reviews (1)</h1>
 
-                        <a href="/" class="card__link"></a>
-                    </div>
-                    <div class="card card--primary card__slider">
-                        <div class="card__tray">
-                            <button class="btn--icon">
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path
-                                        d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
-                                </svg>
-                            </button>
-                            <button class="btn--icon">
-                                <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path class="inner" fill="#fff"
-                                        d="M14.7 1.7l3 1.6L19 5.9l-.2 2.5-3.3 5.3-3.5 2.7-2 1.3-3.2-1.8-3.5-4-1.8-3.1L1 6.9l.3-2.2.7-1.5 2.8-1.5 2.7.4 1.1.6L10.2 4l1.4-1.4 2.6-.9z" />
-                                    <path
-                                        d="M10 18.2l-.2-.1c-.1-.1-2.3-1.3-4.6-3.3A18 18 0 0 1 2 11.1 8.4 8.4 0 0 1 .5 6.5c0-2.9 2.4-5.3 5.3-5.3 1 0 2 .4 2.9 1 .5.4 1 .9 1.3 1.4.3-.5.8-1 1.3-1.4.9-.7 2-1 2.9-1 2.9 0 5.3 2.4 5.3 5.3a9 9 0 0 1-1.5 4.7c-.8 1.2-1.8 2.5-3.2 3.7-2.3 2-4.5 3.3-4.6 3.3H10zm-4.2-16a4.3 4.3 0 0 0-4.3 4.3c0 3 2.3 5.8 4.3 7.6 1.8 1.6 3.5 2.7 4.2 3.1.6-.4 2.4-1.5 4.2-3.1 2-1.8 4.3-4.5 4.3-7.6 0-2.3-1.9-4.3-4.3-4.3a4.3 4.3 0 0 0-3.8 2.7c-.1.2-.3.3-.5.3a.8.8 0 0 1-.4-.2c.1 0 0 0 0-.1-.4-1.3-2-2.7-3.7-2.7z" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="card--primary__main-img">
-                            <img src="resources/images/sample-1.jpg" alt="">
-                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="card--comment">
+                                                    <div class="card--comment__header">
+                                                        <div class="card--comment__profile">
+                                                            <div class="card--comment__image">
+                                                                <img src="./resources/images/profile-review.png"
+                                                                    alt="John Doe profile picture"
+                                                                    aria-label="Profile picture"
+                                                                    aria-roledescription="Profile picture"
+                                                                    draggable="false">
+                                                            </div>
+                                                            <p>John Doe
+                                                                <span>January 12, 2019</span>
+                                                            </p>
+                                                        </div>
+                                                        <div class="card--comment__stars d-flex align-items-center">
+                                                            <img class="star-full" src="./resources/icon/star.svg"
+                                                                alt="">
+                                                            <img class="star-full" src="./resources/icon/star.svg"
+                                                                alt="">
+                                                            <img class="star-full" src="./resources/icon/star.svg"
+                                                                alt="">
+                                                            <img class="star-full" src="./resources/icon/star.svg"
+                                                                alt="">
+                                                            <img class="star-full" src="./resources/icon/star.svg"
+                                                                alt="">
+                                                        </div>
+                                                    </div>
 
-                        <div class="card--primary__prev-img">
-                            <img src="resources/images/sample-2.jpg" alt="">
-                        </div>
+                                                    <div class="card--comment__content">
+                                                        <h5>This shirt is great, gonna buy next time again</h5>
+                                                        <p>
+                                                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Ullam,
+                                                            ab. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                                            Aspernatur, eum.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                        <div class="card--primary__body">
-                            <h3 class="title">Trust no selfies tees</h3>
-                            <p class="price">
-                                ₱ 350.00
-                            </p>
-                        </div>
+                                    <div class="col-4 mt-1">
+                                        <h2 class="heading--secondary mb-1">Assesment Reviews</h2>
 
-                        <a href="/" class="card__link"></a>
-                    </div>
-                    <div class="card card--primary card__slider">
-                        <div class="card__tray">
-                            <button class="btn--icon">
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path
-                                        d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
-                                </svg>
-                            </button>
-                            <button class="btn--icon">
-                                <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path class="inner" fill="#fff"
-                                        d="M14.7 1.7l3 1.6L19 5.9l-.2 2.5-3.3 5.3-3.5 2.7-2 1.3-3.2-1.8-3.5-4-1.8-3.1L1 6.9l.3-2.2.7-1.5 2.8-1.5 2.7.4 1.1.6L10.2 4l1.4-1.4 2.6-.9z" />
-                                    <path
-                                        d="M10 18.2l-.2-.1c-.1-.1-2.3-1.3-4.6-3.3A18 18 0 0 1 2 11.1 8.4 8.4 0 0 1 .5 6.5c0-2.9 2.4-5.3 5.3-5.3 1 0 2 .4 2.9 1 .5.4 1 .9 1.3 1.4.3-.5.8-1 1.3-1.4.9-.7 2-1 2.9-1 2.9 0 5.3 2.4 5.3 5.3a9 9 0 0 1-1.5 4.7c-.8 1.2-1.8 2.5-3.2 3.7-2.3 2-4.5 3.3-4.6 3.3H10zm-4.2-16a4.3 4.3 0 0 0-4.3 4.3c0 3 2.3 5.8 4.3 7.6 1.8 1.6 3.5 2.7 4.2 3.1.6-.4 2.4-1.5 4.2-3.1 2-1.8 4.3-4.5 4.3-7.6 0-2.3-1.9-4.3-4.3-4.3a4.3 4.3 0 0 0-3.8 2.7c-.1.2-.3.3-.5.3a.8.8 0 0 1-.4-.2c.1 0 0 0 0-.1-.4-1.3-2-2.7-3.7-2.7z" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="card--primary__main-img">
-                            <img src="resources/images/sample-1.jpg" alt="">
-                        </div>
+                                        <div class="row" style="margin-bottom: 5px;">
+                                            <div class="col d-flex align-items-center">
+                                                <img class="star-full" src="./resources/icon/star.svg" alt="">
+                                                <img class="star-full" src="./resources/icon/star.svg" alt="">
+                                                <img class="star-full" src="./resources/icon/star.svg" alt="">
+                                                <img class="star-full" src="./resources/icon/star.svg" alt="">
+                                                <img class="star-full" src="./resources/icon/star.svg" alt="">
+                                                <p class="ml-1">100%</p>
+                                            </div>
+                                            <div class="col-auto">(1)</div>
+                                        </div>
+                                        <div class="row" style="margin-bottom: 5px;">
+                                            <div class="col d-flex align-items-center">
+                                                <img class="star-full" src="./resources/icon/star.svg" alt="">
+                                                <img class="star-full" src="./resources/icon/star.svg" alt="">
+                                                <img class="star-full" src="./resources/icon/star.svg" alt="">
+                                                <img class="star-full" src="./resources/icon/star.svg" alt="">
+                                                <img class="star-empty" src="./resources/icon/star-empty.svg" alt="">
+                                                <p class="ml-1">80%</p>
+                                            </div>
+                                            <div class="col-auto">(0)</div>
+                                        </div>
 
-                        <div class="card--primary__prev-img">
-                            <img src="resources/images/sample-2.jpg" alt="">
-                        </div>
+                                        <div class="row" style="margin-bottom: 5px;">
+                                            <div class="col d-flex align-items-center">
+                                                <img class="star-full" src="./resources/icon/star.svg" alt="">
+                                                <img class="star-full" src="./resources/icon/star.svg" alt="">
+                                                <img class="star-full" src="./resources/icon/star.svg" alt="">
+                                                <img class="star-empty" src="./resources/icon/star-empty.svg" alt="">
+                                                <img class="star-empty" src="./resources/icon/star-empty.svg" alt="">
+                                                <p class="ml-1">60%</p>
 
-                        <div class="card--primary__body">
-                            <h3 class="title">Trust no selfies tees</h3>
-                            <p class="price">
-                                ₱ 350.00
-                            </p>
-                        </div>
+                                            </div>
+                                            <div class="col-auto">(0)</div>
+                                        </div>
+                                        <div class="row" style="margin-bottom: 5px;">
+                                            <div class="col d-flex align-items-center">
+                                                <img class="star-full" src="./resources/icon/star.svg" alt="">
+                                                <img class="star-full" src="./resources/icon/star.svg" alt="">
+                                                <img class="star-empty" src="./resources/icon/star-empty.svg" alt="">
+                                                <img class="star-empty" src="./resources/icon/star-empty.svg" alt="">
+                                                <img class="star-empty" src="./resources/icon/star-empty.svg" alt="">
+                                                <p class="ml-1">40%</p>
+                                            </div>
+                                            <div class="col-auto">(0)</div>
+                                        </div>
+                                        <div class="row" style="margin-bottom: 5px;">
+                                            <div class="col d-flex align-items-center">
+                                                <img class="star-full" src="./resources/icon/star.svg" alt="">
+                                                <img class="star-empty" src="./resources/icon/star-empty.svg" alt="">
+                                                <img class="star-empty" src="./resources/icon/star-empty.svg" alt="">
+                                                <img class="star-empty" src="./resources/icon/star-empty.svg" alt="">
+                                                <img class="star-empty" src="./resources/icon/star-empty.svg" alt="">
+                                                <p class="ml-1">20%</p>
+                                            </div>
+                                            <div class="col-auto">(0)</div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                        <a href="/" class="card__link"></a>
-                    </div>
-                    <div class="card card--primary card__slider">
-                        <div class="card__tray">
-                            <button class="btn--icon">
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path
-                                        d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
-                                </svg>
-                            </button>
-                            <button class="btn--icon">
-                                <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path class="inner" fill="#fff"
-                                        d="M14.7 1.7l3 1.6L19 5.9l-.2 2.5-3.3 5.3-3.5 2.7-2 1.3-3.2-1.8-3.5-4-1.8-3.1L1 6.9l.3-2.2.7-1.5 2.8-1.5 2.7.4 1.1.6L10.2 4l1.4-1.4 2.6-.9z" />
-                                    <path
-                                        d="M10 18.2l-.2-.1c-.1-.1-2.3-1.3-4.6-3.3A18 18 0 0 1 2 11.1 8.4 8.4 0 0 1 .5 6.5c0-2.9 2.4-5.3 5.3-5.3 1 0 2 .4 2.9 1 .5.4 1 .9 1.3 1.4.3-.5.8-1 1.3-1.4.9-.7 2-1 2.9-1 2.9 0 5.3 2.4 5.3 5.3a9 9 0 0 1-1.5 4.7c-.8 1.2-1.8 2.5-3.2 3.7-2.3 2-4.5 3.3-4.6 3.3H10zm-4.2-16a4.3 4.3 0 0 0-4.3 4.3c0 3 2.3 5.8 4.3 7.6 1.8 1.6 3.5 2.7 4.2 3.1.6-.4 2.4-1.5 4.2-3.1 2-1.8 4.3-4.5 4.3-7.6 0-2.3-1.9-4.3-4.3-4.3a4.3 4.3 0 0 0-3.8 2.7c-.1.2-.3.3-.5.3a.8.8 0 0 1-.4-.2c.1 0 0 0 0-.1-.4-1.3-2-2.7-3.7-2.7z" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="card--primary__main-img">
-                            <img src="resources/images/sample-1.jpg" alt="">
-                        </div>
 
-                        <div class="card--primary__prev-img">
-                            <img src="resources/images/sample-2.jpg" alt="">
-                        </div>
-
-                        <div class="card--primary__body">
-                            <h3 class="title">Trust no selfies tees</h3>
-                            <p class="price">
-                                ₱ 350.00
-                            </p>
-                        </div>
-
-                        <a href="/" class="card__link"></a>
-                    </div>
-                    <div class="card card--primary card__slider">
-                        <div class="card__tray">
-                            <button class="btn--icon">
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path
-                                        d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
-                                </svg>
-                            </button>
-                            <button class="btn--icon">
-                                <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path class="inner" fill="#fff"
-                                        d="M14.7 1.7l3 1.6L19 5.9l-.2 2.5-3.3 5.3-3.5 2.7-2 1.3-3.2-1.8-3.5-4-1.8-3.1L1 6.9l.3-2.2.7-1.5 2.8-1.5 2.7.4 1.1.6L10.2 4l1.4-1.4 2.6-.9z" />
-                                    <path
-                                        d="M10 18.2l-.2-.1c-.1-.1-2.3-1.3-4.6-3.3A18 18 0 0 1 2 11.1 8.4 8.4 0 0 1 .5 6.5c0-2.9 2.4-5.3 5.3-5.3 1 0 2 .4 2.9 1 .5.4 1 .9 1.3 1.4.3-.5.8-1 1.3-1.4.9-.7 2-1 2.9-1 2.9 0 5.3 2.4 5.3 5.3a9 9 0 0 1-1.5 4.7c-.8 1.2-1.8 2.5-3.2 3.7-2.3 2-4.5 3.3-4.6 3.3H10zm-4.2-16a4.3 4.3 0 0 0-4.3 4.3c0 3 2.3 5.8 4.3 7.6 1.8 1.6 3.5 2.7 4.2 3.1.6-.4 2.4-1.5 4.2-3.1 2-1.8 4.3-4.5 4.3-7.6 0-2.3-1.9-4.3-4.3-4.3a4.3 4.3 0 0 0-3.8 2.7c-.1.2-.3.3-.5.3a.8.8 0 0 1-.4-.2c.1 0 0 0 0-.1-.4-1.3-2-2.7-3.7-2.7z" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="card--primary__main-img">
-                            <img src="resources/images/sample-1.jpg" alt="">
-                        </div>
-
-                        <div class="card--primary__prev-img">
-                            <img src="resources/images/sample-2.jpg" alt="">
-                        </div>
-
-                        <div class="card--primary__body">
-                            <h3 class="title">Trust no selfies tees</h3>
-                            <p class="price">
-                                ₱ 350.00
-                            </p>
-                        </div>
-
-                        <a href="/" class="card__link"></a>
-                    </div>
-                    <div class="card card--primary card__slider">
-                        <div class="card__tray">
-                            <button class="btn--icon">
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path
-                                        d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
-                                </svg>
-                            </button>
-                            <button class="btn--icon">
-                                <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path class="inner" fill="#fff"
-                                        d="M14.7 1.7l3 1.6L19 5.9l-.2 2.5-3.3 5.3-3.5 2.7-2 1.3-3.2-1.8-3.5-4-1.8-3.1L1 6.9l.3-2.2.7-1.5 2.8-1.5 2.7.4 1.1.6L10.2 4l1.4-1.4 2.6-.9z" />
-                                    <path
-                                        d="M10 18.2l-.2-.1c-.1-.1-2.3-1.3-4.6-3.3A18 18 0 0 1 2 11.1 8.4 8.4 0 0 1 .5 6.5c0-2.9 2.4-5.3 5.3-5.3 1 0 2 .4 2.9 1 .5.4 1 .9 1.3 1.4.3-.5.8-1 1.3-1.4.9-.7 2-1 2.9-1 2.9 0 5.3 2.4 5.3 5.3a9 9 0 0 1-1.5 4.7c-.8 1.2-1.8 2.5-3.2 3.7-2.3 2-4.5 3.3-4.6 3.3H10zm-4.2-16a4.3 4.3 0 0 0-4.3 4.3c0 3 2.3 5.8 4.3 7.6 1.8 1.6 3.5 2.7 4.2 3.1.6-.4 2.4-1.5 4.2-3.1 2-1.8 4.3-4.5 4.3-7.6 0-2.3-1.9-4.3-4.3-4.3a4.3 4.3 0 0 0-3.8 2.7c-.1.2-.3.3-.5.3a.8.8 0 0 1-.4-.2c.1 0 0 0 0-.1-.4-1.3-2-2.7-3.7-2.7z" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="card--primary__main-img">
-                            <img src="resources/images/sample-1.jpg" alt="">
+                            </div>
                         </div>
 
-                        <div class="card--primary__prev-img">
-                            <img src="resources/images/sample-2.jpg" alt="">
-                        </div>
-
-                        <div class="card--primary__body">
-                            <h3 class="title">Trust no selfies tees</h3>
-                            <p class="price">
-                                ₱ 350.00
-                            </p>
-                        </div>
-
-                        <a href="/" class="card__link"></a>
-                    </div>
-
-                    <div class="card card--primary card__slider">
-                        <div class="card__tray">
-                            <button class="btn--icon">
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path
-                                        d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
-                                </svg>
-                            </button>
-                            <button class="btn--icon">
-                                <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path class="inner" fill="#fff"
-                                        d="M14.7 1.7l3 1.6L19 5.9l-.2 2.5-3.3 5.3-3.5 2.7-2 1.3-3.2-1.8-3.5-4-1.8-3.1L1 6.9l.3-2.2.7-1.5 2.8-1.5 2.7.4 1.1.6L10.2 4l1.4-1.4 2.6-.9z" />
-                                    <path
-                                        d="M10 18.2l-.2-.1c-.1-.1-2.3-1.3-4.6-3.3A18 18 0 0 1 2 11.1 8.4 8.4 0 0 1 .5 6.5c0-2.9 2.4-5.3 5.3-5.3 1 0 2 .4 2.9 1 .5.4 1 .9 1.3 1.4.3-.5.8-1 1.3-1.4.9-.7 2-1 2.9-1 2.9 0 5.3 2.4 5.3 5.3a9 9 0 0 1-1.5 4.7c-.8 1.2-1.8 2.5-3.2 3.7-2.3 2-4.5 3.3-4.6 3.3H10zm-4.2-16a4.3 4.3 0 0 0-4.3 4.3c0 3 2.3 5.8 4.3 7.6 1.8 1.6 3.5 2.7 4.2 3.1.6-.4 2.4-1.5 4.2-3.1 2-1.8 4.3-4.5 4.3-7.6 0-2.3-1.9-4.3-4.3-4.3a4.3 4.3 0 0 0-3.8 2.7c-.1.2-.3.3-.5.3a.8.8 0 0 1-.4-.2c.1 0 0 0 0-.1-.4-1.3-2-2.7-3.7-2.7z" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="card--primary__main-img">
-                            <img src="resources/images/sample-1.jpg" alt="">
-                        </div>
-
-                        <div class="card--primary__prev-img">
-                            <img src="resources/images/sample-2.jpg" alt="">
-                        </div>
-
-                        <div class="card--primary__body">
-                            <h3 class="title">Trust no selfies tees</h3>
-                            <p class="price">
-                                ₱ 350.00
-                            </p>
-                        </div>
-
-                        <a href="/" class="card__link"></a>
-                    </div>
-
-                    <div class="card card--primary card__slider">
-                        <div class="card__tray">
-                            <button class="btn--icon">
-                                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path
-                                        d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
-                                </svg>
-                            </button>
-                            <button class="btn--icon">
-                                <svg class="heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                    <path class="inner" fill="#fff"
-                                        d="M14.7 1.7l3 1.6L19 5.9l-.2 2.5-3.3 5.3-3.5 2.7-2 1.3-3.2-1.8-3.5-4-1.8-3.1L1 6.9l.3-2.2.7-1.5 2.8-1.5 2.7.4 1.1.6L10.2 4l1.4-1.4 2.6-.9z" />
-                                    <path
-                                        d="M10 18.2l-.2-.1c-.1-.1-2.3-1.3-4.6-3.3A18 18 0 0 1 2 11.1 8.4 8.4 0 0 1 .5 6.5c0-2.9 2.4-5.3 5.3-5.3 1 0 2 .4 2.9 1 .5.4 1 .9 1.3 1.4.3-.5.8-1 1.3-1.4.9-.7 2-1 2.9-1 2.9 0 5.3 2.4 5.3 5.3a9 9 0 0 1-1.5 4.7c-.8 1.2-1.8 2.5-3.2 3.7-2.3 2-4.5 3.3-4.6 3.3H10zm-4.2-16a4.3 4.3 0 0 0-4.3 4.3c0 3 2.3 5.8 4.3 7.6 1.8 1.6 3.5 2.7 4.2 3.1.6-.4 2.4-1.5 4.2-3.1 2-1.8 4.3-4.5 4.3-7.6 0-2.3-1.9-4.3-4.3-4.3a4.3 4.3 0 0 0-3.8 2.7c-.1.2-.3.3-.5.3a.8.8 0 0 1-.4-.2c.1 0 0 0 0-.1-.4-1.3-2-2.7-3.7-2.7z" />
-                                </svg>
-                            </button>
-                        </div>
-                        <div class="card--primary__main-img">
-                            <img src="resources/images/sample-1.jpg" alt="">
-                        </div>
-
-                        <div class="card--primary__prev-img">
-                            <img src="resources/images/sample-2.jpg" alt="">
-                        </div>
-
-                        <div class="card--primary__body">
-                            <h3 class="title">Trust no selfies tees</h3>
-                            <p class="price">
-                                ₱ 350.00
-                            </p>
-                        </div>
-
-                        <a href="/" class="card__link"></a>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
+
+
+
     </main>
-
-
-    <div class="cart" id="cart-modal">
-        <div class="cart__tray">
-            <h1 class="heading--primary mb-2">
-                Cart
-            </h1>
-
-            <button class="btn--icon cart__exit" id="cart-exit">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path
-                        d="M10.7 10.5l5.7-5.6a.5.5 0 0 0-.8-.8L10 9.8 4.4 4a.5.5 0 0 0-.8.8l5.7 5.6-5.7 5.6a.5.5 0 0 0 .8.8l5.6-5.7 5.6 5.7a.5.5 0 0 0 .8 0c.1-.2.1-.6 0-.8l-5.7-5.6z" />
-                </svg>
-            </button>
-
-            <div class="row">
-                <div class="col-12 mb-2">
-                    <div class="card card--cart">
-                        <div class="card--cart__thumbnails">
-                            <img src="resources/images/sample-1.jpg" alt="">
-                        </div>
-
-                        <div class="card--primary__body">
-                            <h3 class="title">Trust no selfies tees</h3>
-                            <p class="price">
-                                ₱ 350.00
-                            </p>
-                        </div>
-
-                        <div class="inp inp--count" onclick="input_number(this);">
-                            <input type="number" name="" id="" min="1" max="50" value="1" disabled>
-
-                            <div>
-                                <button data-v="+">+</button>
-                                <button data-v="-">-</button>
-                            </div>
-                        </div>
-
-
-                        <!-- <a href="/" class="card__link"></a> -->
-                    </div>
-                </div>
-            </div>
-
-            <div class="cart__bottom">
-                <h3>₱ 1,350.50</h3>
-
-                <button class="btn btn--primary w-100">
-                    Go to purchase
-                </button>
-            </div>
-        </div>
-
-
-    </div>
 
     <div class="search" id="search-modal">
         <button class="btn--icon cart__exit" id="search-exit">
@@ -680,41 +455,20 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6" crossorigin="anonymous">
+        </script>
     <script src="resources/js/input.js"></script>
-    <script src="resources/js/image-viewer.js"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
-                loop: true,
-                margin: 110,
-                nav: true,
-                responsive: {
-                    0: {
-                        items: 2
-                    },
-                    600: {
-                        items: 3
-                    },
-                    1000: {
-                        items: 5
-                    }
-                }
-            });
-        });
-    </script>
-    <script src="resources/js/owl.carousel.min.js"></script>
+
+    <script src="resources/js/image-viewer.js"></script>
+    <script src="resources/js/slick.min.js"></script>
+    <script src="resources/js/zoomsl.min.js"></script>
 </body>
 
 </html>

@@ -468,6 +468,66 @@
   margin-left: -5px;
 }
 
+.card--comment {
+  border: 1px solid #ebebeb;
+}
+
+.card--comment__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card--comment__profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card--comment__profile p {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card--comment__profile p span {
+  font-weight: 400;
+  font-size: 12px;
+  display: block;
+}
+
+.card--comment__image {
+  display: block;
+  height: 50px;
+  min-width: 50px;
+  margin-right: 10px;
+}
+
+.card--comment__image img {
+  height: 100%;
+}
+
+.card--comment__stars {
+  margin-left: auto;
+}
+
+.card--comment__content {
+  display: block;
+  padding: 10px 20px;
+}
+
+.card--comment__content h5 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card--comment__content p {
+  font-size: 16px;
+}
+
 .card--cart {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -885,6 +945,13 @@ section {
   display: -ms-flexbox;
   display: flex;
   height: auto;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.overview .slick-list {
+  height: 100% !important;
 }
 
 .overview__images {
@@ -894,7 +961,7 @@ section {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 60%;
+  margin-right: 30px;
   height: auto;
 }
 
@@ -912,22 +979,60 @@ section {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 12%;
+  height: 100%;
+  width: 100px !important;
+  margin-right: 20px;
+}
+
+.overview__list .slick-current {
+  border: 2px solid var(--primary-color);
+  border-bottom: 4px solid var(--primary-color);
+  outline: none;
 }
 
 .overview__items {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: block;
   height: auto;
-  width: 100%;
+  width: 70px !important;
   cursor: pointer;
+  -webkit-transition: all ease 300ms;
+  transition: all ease 300ms;
 }
 
 .overview__items img {
+  -webkit-transition: all ease 300ms;
+  transition: all ease 300ms;
   width: 100%;
 }
 
 .overview__frame {
-  width: 88%;
+  width: 400px;
+}
+
+.overview__frame .slick-list {
+  width: 100%;
+}
+
+.overview__frame .slick-track {
+  width: 100%;
+}
+
+.overview__frame .slick-arrow {
+  height: 50px;
+  min-width: 50px;
+  background: var(--primary-color);
+  z-index: 20;
+}
+
+.overview__big-img {
+  display: block;
+  width: 400px;
+}
+
+.overview__big-img img {
+  width: 100%;
 }
 
 .overview__description {
@@ -940,6 +1045,7 @@ section {
           flex-direction: column;
   padding: 20px;
   width: 40%;
+  margin-left: 20px;
 }
 
 .overview__price {
@@ -998,6 +1104,66 @@ section {
 .overview__add-cart button {
   height: 100%;
   width: 100%;
+}
+
+.overview__tab {
+  font-size: 18px;
+}
+
+.overview__tab .nav-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.overview__tab .nav-link {
+  position: relative;
+  font-weight: 700;
+  color: var(--primary-color-light);
+  border: none;
+  border-radius: 0;
+  padding: 20px 30px;
+  border-bottom: none;
+  font-weight: 400;
+  text-align: center;
+}
+
+.overview__tab .nav-link:hover::after, .overview__tab .nav-link:focus::after {
+  height: 3px;
+}
+
+.overview__tab .nav-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  -webkit-transition: all ease 300ms;
+  transition: all ease 300ms;
+  background-color: var(--primary-color);
+}
+
+.overview__tab .tab-content {
+  padding: 20px;
+}
+
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.nav-tabs .nav-item.show .nav-link::after,
+.nav-tabs .nav-link.active::after {
+  height: 3px;
+}
+
+.star-full {
+  fill: red;
 }
 
 .accordion {
