@@ -1,0 +1,14 @@
+.badge {
+	&--count {
+		position: absolute;
+		top: -5px;
+		right: -10px;
+		height: 20px;
+		min-width: 30px;
+		border-radius: 10px;
+		font-size: 13px;
+		font-weight: 400;
+		background: rgba(var(--prim-col), 1);
+		color: rgba(var(--sec-col), 1);
+	}
+}

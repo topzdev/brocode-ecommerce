@@ -11,9 +11,8 @@
 		display: flex;
 		align-items: flex-start;
 		margin-right: 30px;
-		height: auto;
+		height: 600px;
 	}
-
 
 	&__list {
 		display: flex;
@@ -25,7 +24,6 @@
 		margin-right: 20px;
 
 		& .slick-current {
-
 			border: 2px solid var(--primary-color);
 			border-bottom: 4px solid var(--primary-color);
 			outline: none;
@@ -33,9 +31,7 @@
 			img {
 				// transform: scale(1.1);
 			}
-
 		}
-
 	}
 
 	&__items {
@@ -52,7 +48,8 @@
 			width: 100%;
 		}
 
-		&:hover {}
+		&:hover {
+		}
 	}
 
 	&__frame {
@@ -75,7 +72,6 @@
 		}
 	}
 
-
 	&__big-img {
 		display: block;
 		width: 400px;
@@ -85,12 +81,11 @@
 		}
 	}
 
-
-
 	&__description {
 		display: flex;
 		flex-direction: column;
 		padding: 20px;
+		padding-top: 0;
 		width: 40%;
 		margin-left: 20px;
 	}
@@ -148,23 +143,19 @@
 	&__tab {
 		font-size: 18px;
 
-		.nav {}
+		.nav {
+		}
 
 		.nav-tabs {
 			display: flex;
 			justify-content: center;
-
-
 		}
 
 		.nav-item {
 			&:not(:last-child) {
 				// margin-right: 10px
 			}
-
 		}
-
-
 
 		.nav-link {
 			position: relative;
@@ -177,8 +168,6 @@
 			font-weight: 400;
 			text-align: center;
 
-
-
 			&:hover,
 			&:focus {
 				&::after {
@@ -189,7 +178,7 @@
 			}
 
 			&::after {
-				content: "";
+				content: '';
 				display: block;
 				position: absolute;
 				bottom: 0;
@@ -198,20 +187,15 @@
 				@include transition;
 				background-color: var(--primary-color);
 			}
-
-
 		}
 
 		// .active {
 		// 	border-bottom: 2px solid var(--primary-color-light);
 		// }
 
-
 		.tab-content {
 			padding: 20px;
 		}
-
-
 	}
 }
 
@@ -251,7 +235,8 @@
 	// & .collapse {
 	// 	border: 1px solid transparent;
 	// }
-	& .show {}
+	& .show {
+	}
 }
 
 .img-active {

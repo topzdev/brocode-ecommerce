@@ -8,11 +8,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="resources/css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" href="resources/css/bootstrap-reboot.min.css" />
+    <!-- <link rel="stylesheet" href="resources/css/bootstrap-reboot.min.css" /> -->
     <link rel="stylesheet" href="resources/css/bootstrap.min.css" />
+
     <link rel="stylesheet" href="resources/css/owl.carousel.min.css" />
     <link rel="stylesheet" href="resources/css/owl.theme.default.min.css" />
-
+    <link rel="stylesheet" href="resources/css/slick.css">
+    <link rel="stylesheet" href="resources/css/slick-theme.css">
     <link rel="stylesheet" href="resources/css/main.css" />
 
     <title>Brocode</title>
@@ -21,249 +23,315 @@
 <body>
     <header>
         <nav class="nav" id="navbar">
-            <div class="nav__others">
-                <ul class="nav__others-promo" id="promo-nav">
-                    <li><b>DISCOUNT:</b> &nbsp; Get 20% discount on every 3 item purchase this 12/12 😎</li>
-                    <li><b>PROMO:</b> &nbsp; Free delivery on 5 item purchase 🚚🤑</li>
-                    <li><b>BIG ANNOUNCEMENT:</b> &nbsp; Get chance to win Php 100,000 on purchasing item in brocode 🤙
-                    </li>
+			<div class="nav__others">
+				<ul class="nav__others-promo" id="promo-nav">
+					<li><b>DISCOUNT:</b> &nbsp; Get 20% discount on every 3 item purchase this 12/12 😎</li>
+					<li><b>PROMO:</b> &nbsp; Free delivery on 5 item purchase 🚚🤑</li>
+					<li><b>BIG ANNOUNCEMENT:</b> &nbsp; Get chance to win Php 100,000 on purchasing item in brocode 🤙
+					</li>
 
-                </ul>
-                <ul class="nav__others-link">
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="signup.html">Register</a></li>
-                    <li><a href="cart.html">Cart</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
-                </ul>
-            </div>
-            <div class="container mx-auto">
-                <div class="nav__navbar">
-                    <button class="nav__button" id="nav-btn">
-                        <span></span>
-                    </button>
+				</ul>
+				<ul class="nav__others-link">
+					<li><a href="login.html">Login</a></li>
+					<li><a href="signup.html">Register</a></li>
+					<li><a href="cart.html">Cart</a></li>
+					<li><a href="checkout.html">Checkout</a></li>
+				</ul>
+			</div>
+			<div class="container mx-auto">
+				<div class="nav__navbar">
+					<button class="nav__button" id="nav-btn">
+						<span></span>
+					</button>
 
-                    <a href="overview.html" class="nav__brand">
-                        <img src="/resources/images/brocode-logo-banner.png" alt="Brocode Market" class="logo" />
-                    </a>
+					<a href="/" class="nav__brand">
+						<img src="/resources/images/brocode-logo-banner.png" alt="Brocode Market" class="logo" />
+					</a>
 
-                    <div class="nav__option">
-                        <button class="btn--icon" id="btn-search">
-                            <svg class="icon icon--cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path
-                                    d="M18.869 19.162l-5.943-6.484A7.448 7.448 0 0015.001 7.5c0-2.003-.78-3.887-2.197-5.303S9.504 0 7.501 0 3.614.78 2.198 2.197.001 5.497.001 7.5s.78 3.887 2.197 5.303S5.498 15 7.501 15a7.441 7.441 0 004.688-1.645l5.943 6.483a.497.497 0 00.707.031.5.5 0 00.031-.706zM1 7.5C1 3.916 3.916 1 7.5 1S14 3.916 14 7.5 11.084 14 7.5 14 1 11.084 1 7.5z" />
-                            </svg>
-                        </button>
+					<div class="nav__option">
+						<button class="btn--icon" id="btn-search">
+							<svg class="icon icon--cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+								<path
+									d="M18.869 19.162l-5.943-6.484A7.448 7.448 0 0015.001 7.5c0-2.003-.78-3.887-2.197-5.303S9.504 0 7.501 0 3.614.78 2.198 2.197.001 5.497.001 7.5s.78 3.887 2.197 5.303S5.498 15 7.501 15a7.441 7.441 0 004.688-1.645l5.943 6.483a.497.497 0 00.707.031.5.5 0 00.031-.706zM1 7.5C1 3.916 3.916 1 7.5 1S14 3.916 14 7.5 11.084 14 7.5 14 1 11.084 1 7.5z" />
+							</svg>
+						</button>
 
-                        <a href="wishlist.html" class="btn--icon">
-                            <svg class="icon icon--cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path class="inner" fill="#fff"
-                                    d="M14.7 1.7l3 1.6L19 5.9l-.2 2.5-3.3 5.3-3.5 2.7-2 1.3-3.2-1.8-3.5-4-1.8-3.1L1 6.9l.3-2.2.7-1.5 2.8-1.5 2.7.4 1.1.6L10.2 4l1.4-1.4 2.6-.9z" />
-                                <path
-                                    d="M10 18.2l-.2-.1c-.1-.1-2.3-1.3-4.6-3.3A18 18 0 0 1 2 11.1 8.4 8.4 0 0 1 .5 6.5c0-2.9 2.4-5.3 5.3-5.3 1 0 2 .4 2.9 1 .5.4 1 .9 1.3 1.4.3-.5.8-1 1.3-1.4.9-.7 2-1 2.9-1 2.9 0 5.3 2.4 5.3 5.3a9 9 0 0 1-1.5 4.7c-.8 1.2-1.8 2.5-3.2 3.7-2.3 2-4.5 3.3-4.6 3.3H10zm-4.2-16a4.3 4.3 0 0 0-4.3 4.3c0 3 2.3 5.8 4.3 7.6 1.8 1.6 3.5 2.7 4.2 3.1.6-.4 2.4-1.5 4.2-3.1 2-1.8 4.3-4.5 4.3-7.6 0-2.3-1.9-4.3-4.3-4.3a4.3 4.3 0 0 0-3.8 2.7c-.1.2-.3.3-.5.3a.8.8 0 0 1-.4-.2c.1 0 0 0 0-.1-.4-1.3-2-2.7-3.7-2.7z" />
-                            </svg>
-                            <span class="badge badge--count">2</span>
-                        </a>
+						<a href="wishlist.html" class="btn--icon">
+							<svg class="icon icon--cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+								<path class="inner" fill="#fff"
+									d="M14.7 1.7l3 1.6L19 5.9l-.2 2.5-3.3 5.3-3.5 2.7-2 1.3-3.2-1.8-3.5-4-1.8-3.1L1 6.9l.3-2.2.7-1.5 2.8-1.5 2.7.4 1.1.6L10.2 4l1.4-1.4 2.6-.9z" />
+								<path
+									d="M10 18.2l-.2-.1c-.1-.1-2.3-1.3-4.6-3.3A18 18 0 0 1 2 11.1 8.4 8.4 0 0 1 .5 6.5c0-2.9 2.4-5.3 5.3-5.3 1 0 2 .4 2.9 1 .5.4 1 .9 1.3 1.4.3-.5.8-1 1.3-1.4.9-.7 2-1 2.9-1 2.9 0 5.3 2.4 5.3 5.3a9 9 0 0 1-1.5 4.7c-.8 1.2-1.8 2.5-3.2 3.7-2.3 2-4.5 3.3-4.6 3.3H10zm-4.2-16a4.3 4.3 0 0 0-4.3 4.3c0 3 2.3 5.8 4.3 7.6 1.8 1.6 3.5 2.7 4.2 3.1.6-.4 2.4-1.5 4.2-3.1 2-1.8 4.3-4.5 4.3-7.6 0-2.3-1.9-4.3-4.3-4.3a4.3 4.3 0 0 0-3.8 2.7c-.1.2-.3.3-.5.3a.8.8 0 0 1-.4-.2c.1 0 0 0 0-.1-.4-1.3-2-2.7-3.7-2.7z" />
+							</svg>
+							<span class="badge badge--count">2</span>
+						</a>
 
-                        <a href="cart.html" class="btn--icon" id="btn-cart">
-                            <svg class="icon icon--heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                                <path
-                                    d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
-                            </svg>
-                            <span class="badge badge--count">2</span>
-                        </a>
+						<a href="cart.html" class="btn--icon" id="btn-cart">
+							<svg class="icon icon--heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+								<path
+									d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
+							</svg>
+							<span class="badge badge--count">2</span>
+						</a>
 
 
-                    </div>
-                </div>
-            </div>
-            <div class="nav__category">
-                <div class="container mx-auto">
-                    <ul class="nav__category-list">
-                        <a href="" class="nav__category-logo"><img src="/resources/images/brocode-logo-fix.png"
-                                alt=""></a>
-                        <li class="nav__category-item">
-                            <a href="#" class="nav__category-link">
-                                Men
-                            </a>
-                            <div class="dropdown">
-                                <div class="dropdown__info">
-                                    <h6 class="dropdown__title">Men</h6>
-                                    <img src="./resources/images/cat-men.jpg" alt="" class="image">
-                                </div>
+					</div>
+				</div>
+			</div>
+			<div class="nav__category">
+				<div class="container mx-auto">
+					<ul class="nav__category-list">
+						<a href="" class="nav__category-logo"><img src="/resources/images/brocode-logo-fix.png"
+								alt=""></a>
+						<li class="nav__category-item">
+							<a href="#" class="nav__category-link">
+								Men
+							</a>
+							<div class="dropdown">
+								<div class="dropdown__info">
+									<h6 class="dropdown__title">Men</h6>
+									<img src="./resources/images/cat-men.jpg" alt="" class="image">
+								</div>
 
-                                <div class="dropdown__content">
-                                    <div class="dropdown__group">
-                                        <h3>Apparel</h3>
-                                        <ul>
-                                            <li><a href="">New Arrivals</a></li>
-                                            <li><a href="">T-Shirts</a></li>
-                                            <li><a href="">Shirts</a></li>
-                                            <li><a href="">Shorts</a></li>
-                                            <li><a href="">Polo</a></li>
-                                            <li><a href="">Denim</a></li>
-                                            <li><a href="">Pants</a></li>
-                                        </ul>
-                                    </div>
+								<div class="dropdown__content">
+									<div class="dropdown__group">
+										<h3>Apparel</h3>
+										<ul>
+											<li><a href="">New Arrivals</a></li>
+											<li><a href="">T-Shirts</a></li>
+											<li><a href="">Shirts</a></li>
+											<li><a href="">Shorts</a></li>
+											<li><a href="">Polo</a></li>
+											<li><a href="">Denim</a></li>
+											<li><a href="">Pants</a></li>
+										</ul>
+									</div>
 
-                                    <div class="dropdown__group">
-                                        <h3>Accessories</h3>
-                                        <ul>
-                                            <li><a href="">New Arrivals</a></li>
-                                            <li><a href="">Caps</a></li>
-                                            <li><a href="">Glasses</a></li>
-                                            <li><a href="">Bags</a></li>
-                                            <li><a href="">Belts</a></li>
-                                            <li><a href="">Small Accessories</a></li>
-                                            <li><a href="">Wallet and Cases</a></li>
-                                            <li><a href="">Handkechief</a></li>
-                                            <li><a href="">Socks</a></li>
-                                            <li><a href="">Footwear</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="nav__category-item">
-                            <a href="#" class="nav__category-link">
-                                Underwear
-                            </a>
-                            <div class="dropdown">
-                                <div class="dropdown__info">
-                                    <h6 class="dropdown__title">Underwear</h6>
-                                    <img src="./resources/images/cat-men.jpg" alt="" class="image">
-                                </div>
+									<div class="dropdown__group">
+										<h3>Accessories</h3>
+										<ul>
+											<li><a href="">New Arrivals</a></li>
+											<li><a href="">Caps</a></li>
+											<li><a href="">Glasses</a></li>
+											<li><a href="">Bags</a></li>
+											<li><a href="">Belts</a></li>
+											<li><a href="">Small Accessories</a></li>
+											<li><a href="">Wallet and Cases</a></li>
+											<li><a href="">Handkechief</a></li>
+											<li><a href="">Socks</a></li>
+											<li><a href="">Footwear</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav__category-item">
+							<a href="#" class="nav__category-link">
+								Underwear
+							</a>
+							<div class="dropdown">
+								<div class="dropdown__info">
+									<h6 class="dropdown__title">Underwear</h6>
+									<img src="./resources/images/cat-men.jpg" alt="" class="image">
+								</div>
 
-                                <div class="dropdown__content">
-                                    <div class="dropdown__group">
-                                        <h3>Apparel</h3>
-                                        <ul>
-                                            <li><a href="">New Arrivals</a></li>
-                                            <li><a href="">T-Shirts</a></li>
-                                            <li><a href="">Shirts</a></li>
-                                            <li><a href="">Shorts</a></li>
-                                            <li><a href="">Polo</a></li>
-                                            <li><a href="">Denim</a></li>
-                                            <li><a href="">Pants</a></li>
-                                        </ul>
-                                    </div>
+								<div class="dropdown__content">
+									<div class="dropdown__group">
+										<h3>Apparel</h3>
+										<ul>
+											<li><a href="">New Arrivals</a></li>
+											<li><a href="">T-Shirts</a></li>
+											<li><a href="">Shirts</a></li>
+											<li><a href="">Shorts</a></li>
+											<li><a href="">Polo</a></li>
+											<li><a href="">Denim</a></li>
+											<li><a href="">Pants</a></li>
+										</ul>
+									</div>
 
-                                    <div class="dropdown__group">
-                                        <h3>Accessories</h3>
-                                        <ul>
-                                            <li><a href="">New Arrivals</a></li>
-                                            <li><a href="">Caps</a></li>
-                                            <li><a href="">Glasses</a></li>
-                                            <li><a href="">Bags</a></li>
-                                            <li><a href="">Belts</a></li>
-                                            <li><a href="">Small Accessories</a></li>
-                                            <li><a href="">Wallet and Cases</a></li>
-                                            <li><a href="">Handkechief</a></li>
-                                            <li><a href="">Socks</a></li>
-                                            <li><a href="">Footwear</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="#" class="nav__category-link">
-                                Body & bath
-                            </a>
-                            <!-- <div class="dropdown">
+									<div class="dropdown__group">
+										<h3>Accessories</h3>
+										<ul>
+											<li><a href="">New Arrivals</a></li>
+											<li><a href="">Caps</a></li>
+											<li><a href="">Glasses</a></li>
+											<li><a href="">Bags</a></li>
+											<li><a href="">Belts</a></li>
+											<li><a href="">Small Accessories</a></li>
+											<li><a href="">Wallet and Cases</a></li>
+											<li><a href="">Handkechief</a></li>
+											<li><a href="">Socks</a></li>
+											<li><a href="">Footwear</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="nav__category-link">
+								Body & bath
+							</a>
+							<!-- <div class="dropdown">
 								Body & bath
 							</div> -->
-                        </li>
-                        <li>
-                            <a href="#" class="nav__category-link">
-                                Sale
-                            </a>
-                            <!-- <div class="dropdown">
+						</li>
+						<li>
+							<a href="#" class="nav__category-link">
+								Sale
+							</a>
+							<!-- <div class="dropdown">
 								Sale
 							</div> -->
-                        </li>
-                        <li>
-                            <a href="#" class="nav__category-link">
-                                Exclusive Offers
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="nav__category-link">
-                                Perfumes
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
+						</li>
+						<li>
+							<a href="#" class="nav__category-link">
+								Exclusive Offers
+							</a>
+						</li>
+						<li>
+							<a href="#" class="nav__category-link">
+								Perfumes
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
 
     </header>
-    <main>
-        <div class="container py-5">
-            <section>
-                <div class="login">
-                    <div class="login__form">
-                        <h1 class="heading--primary mb-1">Customer Register</h1>
-                        <p>Creating an account has many benefits: check out faster, keep more than one address,track
-                            orders and more.</p>
-                        <div class="row mt-2 mb-2">
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <label for="">First Name <span>*</span></label>
-                                    <input class="inp inp--primary" type="text"
-                                        placeholder="Enter your first name ex. John">
-                                </div>
-                            </div>
 
-                            <div class="col-12 col-lg-6">
-                                <div class="form-group">
-                                    <label for="">Last Name <span>*</span></label>
-                                    <input class="inp inp--primary" type="text"
-                                        placeholder="Enter your last name ex. Doe">
+    <main>
+        <section>
+            <div class="container py-3">
+                <div class="cart row">
+                    <div class="cart__cart col-9">
+                        <h1 class="heading--primary mb-1">Wishlist (0)</h1>
+                        <div class="cart__header row mb-2">
+                            <div class="col-auto"></div>
+                            <div class="col-7">Product</div>
+                            <div class="col-2">Price</div>
+                            <div class="col-2"></div>
+
+                        </div>
+
+                        <div class="cart__item row mb-1">
+                            <div class="col-auto"><button class="d-block">&Cross;</button></div>
+                            <div class="col-7 cart__title">
+                                <div class="img"><img class="img-fit" src="resources/images/sample-1.jpg" alt=""
+                                        class="cart__img"></div>
+                                <div class="info">
+                                    <a href="/overview.html">Brocode Special Tee Special Edition</a>
+                                    <p><span title="Color: Pink" style="background: #fd77e7;"></span><small>&nbsp;
+                                            Small</small>
+                                    </p>
                                 </div>
                             </div>
+                            <div class="col-2 cart__price">₱386.50</div>
+
+                            <div class="col cart__button"><button class="btn btn--primary">Add to Cart</button></div>
+
                         </div>
-                        <div class="form-group mb-2">
-                            <label for="">Email Address <span>*</span></label>
-                            <input class="inp inp--primary" type="email"
-                                placeholder="Enter your email address ex. johndoe@mail.com">
-                        </div>
-                        <div class="form-group mb-2">
-                            <label for="">Password <span>*</span></label>
-                            <input class="inp inp--primary" type="password" placeholder="Enter your password here">
-                        </div>
-                        <div class="form-group mb-2">
-                            <label for="">Re-enter password <span>*</span></label>
-                            <input class="inp inp--primary" type="password" placeholder="Enter your password here">
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-lg-9">
-                                <div class="form-group mb-2">
-                                    <button class="btn btn--primary">Register me</button>
+
+                        <div class="cart__item row mb-1">
+                            <div class="col-auto"><button class="d-block">&Cross;</button></div>
+                            <div class="col-7 cart__title">
+                                <div class="img"><img class="img-fit" src="resources/images/over-2.jpg" alt=""
+                                        class="cart__img"></div>
+                                <div class="info">
+                                    <a href="/overview.html">Penshoppe X Dragon Ball Z Pull Over with Print</a>
+                                    <p><span title="Color: black" style="background: #242323;"></span><small>&nbsp;
+                                            Large</small>
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-3 d-flex align-item-flex-end">
-                                <a href="">back</a>
-                            </div>
+                            <div class="col-2 cart__price">₱386.50</div>
+                            <div class="col cart__button"><button class="btn btn--primary">Add to Cart</button></div>
+
                         </div>
+
                     </div>
 
-                    <div class="login__background">
-                        <img class="login__image" src="./resources/images/register_bg.jpg" alt="Men's Clothing Website">
-                        <div class="login__cover">
-                            <div class="login__floating">
-                                <h2>Already registered?</h2>
+                    <div class="col-12 col-lg-3">
+                        <h6 class="heading--secondary mb-1">Recommended</h6>
+                        <div class="row">
+                            <div class="col-12 mb-1">
+                                <a href="/overview.html" class="card--smol">
+                                    <div class="card--smol__image">
+                                        <img src="./resources/images/over-2.jpg" alt="">
+                                    </div>
 
-                                <a href="/login.html" class="btn btn--primary btn--primary--white mt-1">Take me to login
-                                    page</a>
+                                    <div class="card--smol__title">
+                                        Penshoppe X Dragon Ball Z Pull Over with Print
+                                        <p class="card--smol__price">
+                                            <span class="old-price">Php 799.00</span>
+                                            <span class="orig-price">Php 699.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 mb-1">
+                                <a href="/overview.html" class="card--smol">
+                                    <div class="card--smol__image">
+                                        <img src="./resources/images/sample-1.jpg" alt="">
+                                    </div>
+
+                                    <div class="card--smol__title">
+                                        Brocode Special Tee Special Edition
+                                        <p class="card--smol__price">
+                                            <span class="old-price">Php 599.00</span>
+                                            <span class="orig-price">Php 389.00</span>
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 mb-1">
+                                <a href="/overview.html" class="card--smol">
+                                    <div class="card--smol__image">
+                                        <img src="./resources/images/sample-3.webp" alt="">
+                                    </div>
+
+                                    <div class="card--smol__title">
+                                        Relaxed Tee With Print
+                                        <p class="card--smol__price">
+                                            <span class="orig-price">Php 399.00</span>
+                                        </p>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </div>
+        </section>
+
+        <button class="scroll-top">
+            <svg style="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path d="M0 15l.1.4c.2.1.6.1.8 0l8.6-8.7 8.6 8.7a.5.5 0 0 0 .8-.8l-9-9a.5.5 0 0 0-.8 0l-9 9-.1.4z" />
+            </svg>
+        </button>
+
     </main>
 
+    <div class="search" id="search-modal">
+        <button class="btn--icon cart__exit" id="search-exit">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                <path
+                    d="M10.7 10.5l5.7-5.6a.5.5 0 0 0-.8-.8L10 9.8 4.4 4a.5.5 0 0 0-.8.8l5.7 5.6-5.7 5.6a.5.5 0 0 0 .8.8l5.6-5.7 5.6 5.7a.5.5 0 0 0 .8 0c.1-.2.1-.6 0-.8l-5.7-5.6z" />
+            </svg>
+        </button>
+        <div class="container">
+            <div class="col-12">
+                <div class="search__holder">
+                    <input type="text" name="" id="" class="inp inp--search"
+                        placeholder="Search any product here (products, category and etc.)">
+                    <button class="btn btn--primary col-2">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
     <footer class="footer pt-4">
         <div class="container mx-auto">
@@ -461,36 +529,37 @@
             </div>
         </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6" crossorigin="anonymous">
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="resources/js/image-viewer.js"></script>
+    <script src="resources/js/navbar.js"></script>
     <script>
-        $(document).ready(function () {
-            $('#promo-nav')
-                .slick({
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    vertical: true,
-                    arrows: false,
-                    dot: false,
-                    swipe: true,
-                    verticalSwiping: true,
-                    focusOnSelect: true,
-                    centerMode: true,
-                    speed: 1000,
-                    autoplaySpeed: 2000,
-                });
-        });
-    </script>
-    <script src="resources/js/slick.min.js"></script>
+		$(document).ready(function () {
+			$('#promo-nav')
+				.slick({
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					autoplay: true,
+					vertical: true,
+					arrows: false,
+					dot: false,
+					swipe: true,
+					verticalSwiping: true,
+					focusOnSelect: true,
+					centerMode: true,
+					speed: 1000,
+					autoplaySpeed: 2000,
+				});
+		});
+	</script>
+	<script src="resources/js/slick.min.js"></script>
 </body>
 
 </html>

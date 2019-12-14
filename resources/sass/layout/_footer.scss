@@ -10,7 +10,7 @@
 	&__discription {
 		font-size: 14px !important;
 		display: block;
-		width: 100% !important;
+		width: 90% !important;
 		color: #bbbbbb;
 	}
 
@@ -53,11 +53,10 @@
 	}
 
 	&__payment {
-
 		display: flex;
 		list-style: none;
 		flex-wrap: wrap;
-
+		width: 80%;
 		& li {
 			margin-bottom: 20px;
 
@@ -70,7 +69,6 @@
 			height: 30px;
 		}
 	}
-
 
 	&__social {
 		display: flex;

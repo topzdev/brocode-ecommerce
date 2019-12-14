@@ -1,102 +1,103 @@
 .dropdown {
-  position: absolute;
-  display: flex;
-  // margin-left: -5rem;
-  height: 400px;
-  @include transition;
-  background-color: var(--secondary-color);
-  width: 80vw;
-  // padding: 1rem;
-  font-size: 18px;
-  @include box-shadow;
+	position: absolute;
+	display: flex;
+	height: 400px;
+	z-index: 200;
+	@include transition;
+	background-color: var(--secondary-color);
+	width: 80vw;
+	// padding: 1rem;
+	font-size: 18px;
 
-  &__info {
-    height: 100%;
-    width: 150px;
-    overflow: hidden;
-    position: relative;
-    // filter: grayscale(100%);
-  }
+	@include box-shadow;
 
-  &__title {
-    position: absolute;
-    font-size: 60px;
-    color: var(--secondary-color);
-    top: 0;
-    z-index: 1;
-    text-transform: uppercase;
-    height: 100%;
-    width: 100%;
-    padding: 10px;
-    background-color: rgba($color: #000000, $alpha: 0.5);
-    writing-mode: vertical-rl;
-    // text-orientation: upright;
-  }
+	&__info {
+		height: 100%;
+		width: 150px;
+		overflow: hidden;
+		position: relative;
+		// filter: grayscale(100%);
+	}
 
-  &__content {
-    padding: 20px 30px;
-    display: flex;
-    height: 100%;
-  }
+	&__title {
+		position: absolute;
+		font-size: 60px;
+		color: var(--secondary-color);
+		top: 0;
+		z-index: 1;
+		text-transform: uppercase;
+		height: 100%;
+		width: 100%;
+		padding: 10px;
+		background-color: rgba($color: #000000, $alpha: 0.5);
+		writing-mode: vertical-rl;
+		// text-orientation: upright;
+	}
 
-  &__group {
-    position: relative;
-    opacity: 0;
-    @include transition;
-    bottom: -50px;
+	&__content {
+		padding: 20px 30px;
+		display: flex;
+		height: 100%;
+	}
 
-    h3 {
-      text-transform: uppercase;
-      font-weight: 500;
-      width: 100%;
-      margin-bottom: 10px;
-    }
-    ul {
-      display: flex;
-      flex-direction: column;
-      margin-right: 80px;
-      height: 80%;
-      flex-wrap: wrap;
-      list-style: none;
-    }
-    li:not(:last-child) {
-      margin-bottom: 8px;
-      width: 150px;
-    }
+	&__group {
+		position: relative;
+		opacity: 0;
+		@include transition;
+		bottom: -50px;
 
-    a {
-      position: relative;
-      font-size: 16px;
-      color: var(--primary-color);
+		h3 {
+			text-transform: uppercase;
+			font-weight: 500;
+			width: 100%;
+			margin-bottom: 10px;
+		}
+		ul {
+			display: flex;
+			flex-direction: column;
+			margin-right: 80px;
+			height: 80%;
+			flex-wrap: wrap;
+			list-style: none;
+		}
+		li:not(:last-child) {
+			margin-bottom: 8px;
+			width: 150px;
+		}
 
-      &:after {
-        display: block;
-        position: absolute;
-        bottom: 0;
-        content: "";
-        height: 0;
-        width: 100%;
-        background-color: var(--primary-color);
-        @include transition;
-      }
+		a {
+			position: relative;
+			font-size: 16px;
+			color: var(--primary-color);
 
-      &:hover {
-        // position: absolute;
-        @include transition;
-        text-decoration: none;
-        font-weight: 700;
-        &:after {
-          height: 4px;
-        }
-      }
-    }
-  }
+			&:after {
+				display: block;
+				position: absolute;
+				bottom: 0;
+				content: '';
+				height: 0;
+				width: 100%;
+				background-color: var(--primary-color);
+				@include transition;
+			}
+
+			&:hover {
+				// position: absolute;
+				@include transition;
+				text-decoration: none;
+				font-weight: 700;
+				&:after {
+					height: 4px;
+				}
+			}
+		}
+	}
 }
 
 .image {
-  position: absolute;
-  height: 100%;
-  width: auto;
-  left: 50%;
-  transform: translateX(-50%);
+	position: absolute;
+	height: 100%;
+	width: auto;
+	left: 50%;
+	transform: translateX(-50%);
 }

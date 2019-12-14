@@ -1,14 +1,15 @@
 .icon {
-	height: 30px;
-	width: 30px;
+	height: 25px;
+	width: 25px;
 
-	&--cart {
-		height: 35px;
-		width: 35px;
+	&--cart,
+	&--heart {
+		height: 30px;
+		width: 30px;
 	}
 
 	&--search {
-		height: 30px;
-		width: 30px;
+		height: 25px;
+		width: 25px;
 	}
 }

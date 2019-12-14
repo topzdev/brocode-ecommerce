@@ -96,6 +96,15 @@
 		}
 	}
 
+	&__button {
+		display: flex;
+		justify-content: center;
+		& .btn--primary {
+			font-size: 14px;
+			padding: 8px 10px !important;
+		}
+	}
+
 	&__summary {
 		color: var(--primary-color);
 		padding: 20px;
@@ -127,7 +136,7 @@
 	}
 
 	&__coupon {
-		width:  300px;
+		width: 300px;
 	}
 }
 
