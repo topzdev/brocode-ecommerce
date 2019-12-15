@@ -4,7 +4,7 @@ form.steps({
     headerTag: ".checkout__bread",
     bodyTag: "section",
     enableAllSteps: true,
-    startIndex: 2,
+    startIndex: 0,
     // transitionEffect: "slideLeft",
 
 

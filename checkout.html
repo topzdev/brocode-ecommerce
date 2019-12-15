@@ -10,7 +10,10 @@
     <link rel="stylesheet" href="resources/css/bootstrap-grid.min.css" />
     <link rel="stylesheet" href="resources/css/bootstrap-reboot.min.css" />
     <link rel="stylesheet" href="resources/css/bootstrap.min.css" />
-
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
     <link rel="stylesheet" href="resources/css/main.css" />
     <title>Checkout</title>
 </head>
@@ -31,17 +34,22 @@
 
                     <!-- Library http://www.jquery-steps.com/Examples#manipulation -->
                     <form id="checkout-form" action="#" novalidate>
-                        <h5 class="checkout__bread">Information</h5>
+                        <h4 class="checkout__bread">Information</h4>
 
-                        <section class="row">
+                        <section class="row checkout__tab">
                             <div class="col-12 mb-2">
-                                <h4 class="heading--primary">Contact Information</h4>
+                                <h4 class="heading--secondary">Contact Information</h4>
                             </div>
                             <div class="col-12 mb-2">
-                                <div class="form-group">
+                                <div class="form-group mb-1">
                                     <label for="email">Email Address</label>
                                     <input type="text" name="email" id="email" class="inp inp--primary"
                                         placeholder="Email" required aria-required="true">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password">Password</label>
+                                    <input type="text" name="password" id="password" class="inp inp--primary"
+                                        placeholder="Password" required aria-required="true">
                                 </div>
                                 <div class="form-group form-check custom-checkbox">
                                     <input type="checkbox" class="custom-control-input" name="exclusive" id="exclusive"
@@ -49,9 +57,17 @@
                                     <label class="custom-control-label" for="exclusive"> Keep me up to date on news and
                                         exclusive offers</label>
                                 </div>
+
+                                <div class="row mt-1">
+                                    <div class="col-12 d-flex justify-content-spacebetween align-items-center">
+                                        <button class="btn btn--primary">Login</button>
+                                        <a href="signup.html" class="btn btn--link  ml-auto">Not register
+                                            yet?</a>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-12 mb-2">
-                                <h1 class="heading--primary">Shipping address</h1>
+                                <h4 class="heading--secondary">Shipping address</h4>
                             </div>
                             <div class="col-12 col-lg-6 mb-1">
                                 <div class="form-group">
@@ -77,43 +93,168 @@
                                         id="location" required aria-required="true">
                                 </div>
                             </div>
-                            <div class="col-12 mb-1">
+                            <div class="col-12 col-lg-6 mb-1">
                                 <div class="form-group">
                                     <label for="barangay">Barangay</label>
                                     <input type="text" class="inp inp--primary" placeholder="Barangay" name="barangay"
                                         id="barangay" required aria-required="true">
                                 </div>
                             </div>
-                            <div class="col-12 mb-1">
-                                <div class="form-group">
-                                    <label for="town/city">Town or city</label>
-                                    <input type="text" class="inp inp--primary" placeholder="Town or city"
-                                        name="town/city" id="town/city" required aria-required="true">
-                                </div>
-                            </div>
-                            <div class="col-12 mb-1">
-                                <div class="form-group">
-                                    <label for="province">Province of your delivery address</label>
-                                    <input type="text" class="inp inp--primary" placeholder="" name="province"
-                                        id="province" required aria-required="true">
-                                </div>
-                            </div>
                             <div class="col-12 col-lg-6 mb-1">
                                 <div class="form-group">
-                                    <label for="country">Country or region</label>
-                                    <input type="text" class="inp inp--primary" placeholder="Country or region"
-                                        name="country" id="country" required aria-required="true">
-                                </div>
-                            </div>
-
-                            <div class="col-12 col-lg-6 mb-1">
-                                <div class="form-group">
-                                    <label for="postal">Postal Code</label>
+                                    <label for="postal">Postal Code / Zip</label>
                                     <input type="text" class="inp inp--primary" placeholder="Postal Code" name="postal"
                                         id="postal" required aria-required="true">
                                 </div>
                             </div>
+                            <div class="col-12 mb-1">
+                                <div class="form-group">
+                                    <label for="province">State or Province</label>
+                                    <select class="inp--select" id="region_id" name="region_id" title="State/Province"
+                                        class="validate-select required" aria-required="true">
 
+                                        <option value="512">Metro Manila</option>
+                                        <option value="513">Abra</option>
+                                        <option value="514">Agusan del Norte</option>
+                                        <option value="515">Agusan del Sur</option>
+                                        <option value="516">Aklan</option>
+                                        <option value="517">Albay</option>
+                                        <option value="518">Antique</option>
+                                        <option value="519">Apayao</option>
+                                        <option value="520">Aurora</option>
+                                        <option value="521">Basilan</option>
+                                        <option value="522">Bataan</option>
+                                        <option value="523">Batanes</option>
+                                        <option value="524">Batangas</option>
+                                        <option value="525">Benguet</option>
+                                        <option value="526">Biliran</option>
+                                        <option value="527">Bohol</option>
+                                        <option value="528">Bukidnon</option>
+                                        <option value="529">Bulacan</option>
+                                        <option value="530">Cagayan</option>
+                                        <option value="531">Camarines Norte</option>
+                                        <option value="532">Camarines Sur</option>
+                                        <option value="533">Camiguin</option>
+                                        <option value="534">Capiz</option>
+                                        <option value="535">Catanduanes</option>
+                                        <option value="536">Cavite</option>
+                                        <option value="537">Cebu</option>
+                                        <option value="538">Compostela Valley</option>
+                                        <option value="539">Cotabato</option>
+                                        <option value="540">Davao del Norte</option>
+                                        <option value="541">Davao del Sur</option>
+                                        <option value="542">Davao Oriental</option>
+                                        <option value="543">Dinagat Islands</option>
+                                        <option value="544">Eastern Samar</option>
+                                        <option value="545">Guimaras</option>
+                                        <option value="546">Ifugao</option>
+                                        <option value="547">Ilocos Norte</option>
+                                        <option value="548">Ilocos Sur</option>
+                                        <option value="549">Iloilo</option>
+                                        <option value="550">Isabela</option>
+                                        <option value="551">Kalinga</option>
+                                        <option value="552">La Union</option>
+                                        <option value="553">Laguna</option>
+                                        <option value="554">Lanao del Norte</option>
+                                        <option value="555">Lanao del Sur</option>
+                                        <option value="556">Leyte</option>
+                                        <option value="557">Maguindanao</option>
+                                        <option value="558">Marinduque</option>
+                                        <option value="559">Masbate</option>
+                                        <option value="560">Misamis Occidental</option>
+                                        <option value="561">Misamis Oriental</option>
+                                        <option value="562">Mountain Province</option>
+                                        <option value="563">Negros Occidental</option>
+                                        <option value="564">Negros Oriental</option>
+                                        <option value="565">Northern Samar</option>
+                                        <option value="566">Nueva Ecija</option>
+                                        <option value="567">Nueva Vizcaya</option>
+                                        <option value="568">Occidental Mindoro</option>
+                                        <option value="569">Oriental Mindoro</option>
+                                        <option value="570">Palawan</option>
+                                        <option value="571">Pampanga</option>
+                                        <option value="572">Pangasinan</option>
+                                        <option value="573">Quezon</option>
+                                        <option value="574">Quirino</option>
+                                        <option value="575">Rizal</option>
+                                        <option value="576">Romblon</option>
+                                        <option value="577">Samar</option>
+                                        <option value="578">Sarangani</option>
+                                        <option value="579">Shariff Kabunsuan</option>
+                                        <option value="580">Siquijor</option>
+                                        <option value="581">Sorsogon</option>
+                                        <option value="582">South Cotabato</option>
+                                        <option value="583">Southern Leyte</option>
+                                        <option value="584">Sultan Kudarat</option>
+                                        <option value="585">Sulu</option>
+                                        <option value="586">Surigao del Norte</option>
+                                        <option value="587">Surigao del Sur</option>
+                                        <option value="588">Tarlac</option>
+                                        <option value="589">Tawi-Tawi</option>
+                                        <option value="590">Zambales</option>
+                                        <option value="591">Zamboanga del Norte</option>
+                                        <option value="592">Zamboanga del Sur</option>
+                                        <option value="593">Zamboanga Sibugay</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-12 mb-1">
+                                <div class="form-group">
+                                    <label for="town/city">Town or city</label>
+                                    <select class="inp inp--select" title="city" defaultv="" id="city_id" name="city_id"
+                                        aria-required="true">
+
+                                        <option value="2">Las Pinas</option>
+                                        <option value="3">Makati</option>
+                                        <option value="4">Malabon</option>
+                                        <option value="5">Mandaluyong</option>
+                                        <option value="6">Marikina</option>
+                                        <option value="7">Muntinlupa</option>
+                                        <option value="8">Navotas</option>
+                                        <option value="10">Pasig</option>
+                                        <option value="11">Quezon City</option>
+                                        <option value="12">Taguig</option>
+                                        <option value="13">Valenzuela</option>
+                                        <option value="14">Pateros</option>
+                                        <option value="557">Pasay</option>
+                                        <option value="1429">Binondo</option>
+                                        <option value="1430">Caloocan City</option>
+                                        <option value="1431">Ermita</option>
+                                        <option value="1432">Intramuros</option>
+                                        <option value="1434">Makati City</option>
+                                        <option value="1435">Malabon City</option>
+                                        <option value="1436">Malate</option>
+                                        <option value="1437">Mandaluyong City</option>
+                                        <option value="1439">Muntinlupa City</option>
+                                        <option value="1440">Navotas City</option>
+                                        <option value="1441">Paco</option>
+                                        <option value="1442">Pandacan</option>
+                                        <option value="1443">Paranaque City</option>
+                                        <option value="1444">Pasay City</option>
+                                        <option value="1445">Pasig City</option>
+                                        <option value="1446">Port Area</option>
+                                        <option value="1447">Quiapo</option>
+                                        <option value="1448">San Juan City</option>
+                                        <option value="1449">Taguig City</option>
+                                        <option value="1450">Tondo</option>
+                                        <option value="1451">Valenzuela City</option>
+                                        <option value="2061">Paranaque</option>
+                                        <option value="2066">Marikina City</option>
+                                        <option value="2074">San Miguel Manila</option>
+                                        <option value="2075">San Nicolas Manila</option>
+                                        <option value="2114">Las Pinas City</option>
+                                        <option value="2162">Santa Ana Manila</option>
+                                        <option value="2167">Santa Cruz Manila</option>
+                                        <option value="2188">Sampaloc Metro Manila</option>
+                                        <option value="2194">Sampaloc</option>
+                                        <option value="2195">San Miguel</option>
+                                        <option value="2196">San Nicolas</option>
+                                        <option value="2197">Santa Ana</option>
+                                        <option value="2198">Santa Cruz</option>
+                                        <option value="2199">Tondo I / Ii</option>
+                                    </select>
+                                </div>
+                            </div>
                             <div class="col-12">
                                 <div class="form-group form-check custom-checkbox mb-2">
                                     <input type="checkbox" class="custom-control-input" id="lbl-saveinfo"
@@ -132,13 +273,13 @@
 
                         </section>
 
-                        <h5 class="checkout__bread">Shipping</h5>
+                        <h4 class="checkout__bread">Shipping</h4>
 
-                        <section class="row">
+                        <section class="row checkout__tab">
                             <div class="col-12">
-                                <h2 class="heading--primary mb-1">
+                                <h4 class="heading--secondary mb-1">
                                     Purchase Review
-                                </h2>
+                                </h4>
                                 <ul class="checkout__review border rounded-sm">
                                     <li class="border-bottom row">
                                         <div class="col-2">
@@ -169,9 +310,9 @@
                             </div>
 
                             <div class="col-12 mt-2 mb-3">
-                                <h2 class="heading--primary mb-2">
+                                <h4 class="heading--secondary mb-2">
                                     Shipping method
-                                </h2>
+                                </h4>
 
                                 <div class="custom-control custom-radio checkout__method border rounded-sm">
                                     <input type="radio" id="lbl-lbc" name="method" class="custom-control-input">
@@ -191,13 +332,13 @@
                             </div>
                         </section>
 
-                        <h5 class="checkout__bread">Payment</h5>
+                        <h4 class="checkout__bread">Payment</h4>
 
-                        <section class="row">
+                        <section class="row checkout__tab">
                             <div class="col-12">
-                                <h2 class="heading--primary mb-1">
+                                <h4 class="heading--secondary mb-1">
                                     Purchase Review
-                                </h2>
+                                </h4>
                                 <ul class="checkout__review border rounded-sm">
                                     <li class="border-bottom row">
                                         <div class="col-2">
@@ -228,9 +369,9 @@
                             </div>
 
                             <div class="col-12 mt-2 mb-4">
-                                <h2 class="heading--primary mb-1">
+                                <h4 class="heading--secondary mb-1">
                                     Payment method
-                                </h2>
+                                </h4>
                                 <ul class="checkout__payment border rounded-sm overflow-hidden" id="field-method">
                                     <li>
                                         <button type="button" class="button method-selected"
@@ -262,7 +403,7 @@
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="checkout__cart">
-                        <h2 class="heading--primary mb-2">Cart Summary</h2>
+                        <h4 class="heading--secondary mb-2">Cart Summary</h4>
                         <div class="checkout__list mb-3">
                             <div class="card--checkout">
                                 <div class="card--checkout__img-holder">

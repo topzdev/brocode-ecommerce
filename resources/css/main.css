@@ -1499,25 +1499,42 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: var(--primary-color-light);
+}
+
+.checkout .steps li {
+  position: relative;
+}
+
+.checkout .steps li:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  right: 0;
+  bottom: 5px;
+  height: 30px;
+  width: 2px;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  background: rgba(var(--prim-col), 0.4);
+  margin-right: 10px;
 }
 
 .checkout .steps a {
   display: inline-block;
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
-  color: var(--secondary-color-dark);
-  padding: 5px 20px;
+  color: rgba(var(--prim-col), 0.8);
+  font-weight: 400;
+  padding: 5px 25px 5px 8px;
 }
 
-.checkout .steps .current {
-  background: var(--primary-color);
-  font-weight: 600;
+.checkout .steps .current::after {
+  background: rgba(var(--prim-col), 1) !important;
 }
 
 .checkout .steps .current a {
-  color: var(--secondary-color);
-  font-size: 20px;
+  color: rgba(var(--prim-col), 1);
+  font-weight: 600;
 }
 
 .checkout .steps .number {
@@ -1575,6 +1592,10 @@ section {
 
 .checkout .actions .disabled {
   display: none;
+}
+
+.checkout__tab {
+  padding-top: 20px;
 }
 
 .checkout__review {
@@ -2118,6 +2139,28 @@ section {
   font-size: 16px;
 }
 
+._404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 0;
+}
+
+._404 img {
+  height: 250px;
+}
+
+._404 p {
+  font-weight: 400;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -2471,6 +2514,7 @@ input[type='number']::-webkit-outer-spin-button {
 }
 
 .btn--link {
+  font-weight: 400;
   display: inline-block;
   font-size: 16px;
   padding: 0;
@@ -2481,6 +2525,7 @@ input[type='number']::-webkit-outer-spin-button {
 
 .btn--link:hover {
   text-decoration: underline;
+  color: rgba(var(--prim-col), 1);
 }
 
 .btn--facebook {
@@ -2588,8 +2633,8 @@ input[type='number']::-webkit-outer-spin-button {
 
 .form-group label {
   font-weight: 700;
-  font-size: 16px;
-  color: var(--primary-color-lighten);
+  font-size: 14px;
+  color: rgba(var(--prim-col), 0.9);
 }
 
 .form-group label span {

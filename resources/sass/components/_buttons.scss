@@ -129,6 +129,7 @@
 	}
 
 	&--link {
+		font-weight: 400;
 		display: inline-block;
 		font-size: 16px;
 		padding: 0;
@@ -138,6 +139,7 @@
 
 		&:hover {
 			text-decoration: underline;
+			color: rgba(var(--prim-col), 1);
 		}
 	}
 

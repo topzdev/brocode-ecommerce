@@ -19,7 +19,6 @@
 	}
 
 	&__description {
-
 		ul {
 			width: 100%;
 		}
@@ -69,32 +68,45 @@
 			list-style: none;
 			justify-content: flex-start;
 			align-items: center;
-			background: var(--primary-color-light);
+			// border-bottom: 2px solid rgba(var(--prim-col), 1);
 		}
 
 		li {
+			position: relative;
 			&:not(:last-child) {
-				// margin-right: 20px;
+				&::after {
+					content: '';
+					position: absolute;
+					display: inline-block;
+					right: 0;
+					bottom: 5px;
+					height: 30px;
+					width: 2px;
+					transform: rotate(20deg);
+
+					background: rgba(var(--prim-col), 0.4);
+					margin-right: 10px;
+				}
 			}
 		}
 
 		a {
 			display: inline-block;
-			font-size: 18px;
+			font-size: 20px;
 			text-decoration: none;
-			color: var(--secondary-color-dark);
-			padding: 5px 20px;
+			color: rgba(var(--prim-col), 0.8);
+			font-weight: 400;
+			padding: 5px 25px 5px 8px;
 		}
 
 		.current {
-			background: var(--primary-color);
-
-			a {
-				color: var(--secondary-color);
-				font-size: 20px;
+			&::after {
+				background: rgba(var(--prim-col), 1) !important;
 			}
-
-			font-weight: 600;
+			a {
+				color: rgba(var(--prim-col), 1);
+				font-weight: 600;
+			}
 		}
 
 		.number {
@@ -104,16 +116,14 @@
 		.current-info {
 			display: none;
 		}
-
 	}
 
 	.actions {
-
 		ul {
 			display: flex;
 			list-style: none;
 
-			&>*:first-child {
+			& > *:first-child {
 				a {
 					display: inline-block;
 					font-size: 16px;
@@ -127,12 +137,11 @@
 				}
 			}
 
-			&>*:nth-child(2),
-			&>*:nth-child(3) {
+			& > *:nth-child(2),
+			& > *:nth-child(3) {
 				margin-left: auto;
 
 				a {
-
 					padding: 10px 40px;
 					font-size: 16px;
 					font-weight: 500;
@@ -146,7 +155,6 @@
 						font-weight: 700;
 						background-color: rgba(17, 17, 17, 0.2);
 						color: var(--primary-color);
-
 					}
 				}
 			}
@@ -155,6 +163,10 @@
 		.disabled {
 			display: none;
 		}
+	}
+
+	&__tab {
+		padding-top: 20px;
 	}
 
 	&__review {
@@ -183,7 +195,6 @@
 		position: relative;
 		display: flex;
 		@include transition;
-
 
 		& .custom-control-label {
 			position: absolute;
@@ -253,7 +264,6 @@
 
 			img {
 				width: 90%;
-
 			}
 
 			p {
@@ -265,11 +275,8 @@
 				background: var(--primary-color);
 				color: var(--secondary-color);
 			}
-
 		}
-
 	}
-
 }
 
 .method-selected {
