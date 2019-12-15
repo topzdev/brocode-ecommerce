@@ -215,30 +215,6 @@
 	fill: red;
 }
 
-.accordion {
-	font-weight: 400;
-	font-size: 14px;
-
-	& .card {
-		padding-bottom: 1px !important;
-	}
-
-	& .card-header {
-		background: none;
-		border: 1px solid var(--primary-color);
-	}
-
-	& .card-body {
-		line-height: 1.6;
-	}
-
-	// & .collapse {
-	// 	border: 1px solid transparent;
-	// }
-	& .show {
-	}
-}
-
 .img-active {
 	border: 3px solid var(--primary-color);
 }

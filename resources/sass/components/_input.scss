@@ -22,14 +22,27 @@
 	.custom-control-label {
 		font-weight: 300;
 		font-size: 14px;
+		box-shadow: none;
+		outline: none;
+		&:focus,
+		&:hover {
+			box-shadow: none;
+		}
+
+		&::before {
+			border-radius: 0;
+			border-color: rgba(var(--prim-col), 1);
+		}
 	}
 }
 
-.custom-control-input:checked~.custom-control-label::before {
+.custom-control-input:checked ~ .custom-control-label::before {
 	background: var(--primary-color) !important;
 	border-color: var(--primary-color-light) !important;
 
-
+	&:focus {
+		box-shadow: none;
+	}
 }
 
 .inp {
@@ -39,7 +52,7 @@
 
 	&--primary {
 		font-size: 16px;
-		padding: 8px 10px;
+		padding: 6px 10px;
 		width: 100%;
 		border: 1px solid var(--primary-color-light);
 		border-bottom-width: 3px;
@@ -104,9 +117,14 @@
 	}
 
 	&--select {
-		font-size: 20px;
+		font-size: 15px;
+		padding: 8px 10px;
 		border: 1px solid var(--primary-color);
+		border-top-right-radius: 3px;
+		border-top-left-radius: 3px;
+		border-bottom-width: 3px;
 		height: 100%;
+		width: 100%;
 	}
 
 	&--footer {

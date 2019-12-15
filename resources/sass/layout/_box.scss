@@ -8,9 +8,8 @@
 	width: 80vw;
 	// padding: 1rem;
 	font-size: 18px;
-
-	@include box-shadow;
-
+	box-shadow: -10px -10px 30px rgba(var(--prim-col), 0.05),
+		10px 10px 30px rgba(var(--prim-col), 0.05);
 	&__info {
 		height: 100%;
 		width: 150px;

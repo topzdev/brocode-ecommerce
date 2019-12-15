@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="resources/css/bootstrap-grid.min.css" />
+    <!-- <link rel="stylesheet" href="resources/css/bootstrap-reboot.min.css" /> -->
+    <link rel="stylesheet" href="resources/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="resources/css/main.css" />
+    <link rel="stylesheet" href="resources/css/slick.css">
+    <link rel="stylesheet" href="resources/css/slick-theme.css">
+
+
+    <title>Brocode</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav" id="navbar">
+            <div class="nav__others">
+                <ul class="nav__others-promo" id="promo-nav">
+                    <li><b>DISCOUNT:</b> &nbsp; Get 20% discount on every 3 item purchase this 12/12 😎</li>
+                    <li><b>PROMO:</b> &nbsp; Free delivery on 5 item purchase 🚚🤑</li>
+                    <li><b>BIG ANNOUNCEMENT:</b> &nbsp; Get chance to win Php 100,000 on purchasing item in brocode 🤙
+                    </li>
+
+                </ul>
+                <ul class="nav__others-link">
+                    <li>Hey&nbsp;bro!,&nbsp;Christopher</li>
+                    <li><a href="login.html">My&nbsp;Account</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="checkout.html">Checkout</a></li>
+                </ul>
+            </div>
+            <div class="container mx-auto">
+                <div class="nav__navbar">
+                    <button class="nav__button" id="nav-btn">
+                        <span></span>
+                    </button>
+
+                    <a href="/" class="nav__brand">
+                        <img src="/resources/images/brocode-logo-banner.png" alt="Brocode Market" class="logo" />
+                    </a>
+
+                    <div class="nav__option">
+                        <button class="btn--icon" id="btn-search">
+                            <svg class="icon icon--cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path
+                                    d="M18.869 19.162l-5.943-6.484A7.448 7.448 0 0015.001 7.5c0-2.003-.78-3.887-2.197-5.303S9.504 0 7.501 0 3.614.78 2.198 2.197.001 5.497.001 7.5s.78 3.887 2.197 5.303S5.498 15 7.501 15a7.441 7.441 0 004.688-1.645l5.943 6.483a.497.497 0 00.707.031.5.5 0 00.031-.706zM1 7.5C1 3.916 3.916 1 7.5 1S14 3.916 14 7.5 11.084 14 7.5 14 1 11.084 1 7.5z" />
+                            </svg>
+                        </button>
+
+                        <a href="wishlist.html" class="btn--icon">
+                            <svg class="icon icon--cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path class="inner" fill="#fff"
+                                    d="M14.7 1.7l3 1.6L19 5.9l-.2 2.5-3.3 5.3-3.5 2.7-2 1.3-3.2-1.8-3.5-4-1.8-3.1L1 6.9l.3-2.2.7-1.5 2.8-1.5 2.7.4 1.1.6L10.2 4l1.4-1.4 2.6-.9z" />
+                                <path
+                                    d="M10 18.2l-.2-.1c-.1-.1-2.3-1.3-4.6-3.3A18 18 0 0 1 2 11.1 8.4 8.4 0 0 1 .5 6.5c0-2.9 2.4-5.3 5.3-5.3 1 0 2 .4 2.9 1 .5.4 1 .9 1.3 1.4.3-.5.8-1 1.3-1.4.9-.7 2-1 2.9-1 2.9 0 5.3 2.4 5.3 5.3a9 9 0 0 1-1.5 4.7c-.8 1.2-1.8 2.5-3.2 3.7-2.3 2-4.5 3.3-4.6 3.3H10zm-4.2-16a4.3 4.3 0 0 0-4.3 4.3c0 3 2.3 5.8 4.3 7.6 1.8 1.6 3.5 2.7 4.2 3.1.6-.4 2.4-1.5 4.2-3.1 2-1.8 4.3-4.5 4.3-7.6 0-2.3-1.9-4.3-4.3-4.3a4.3 4.3 0 0 0-3.8 2.7c-.1.2-.3.3-.5.3a.8.8 0 0 1-.4-.2c.1 0 0 0 0-.1-.4-1.3-2-2.7-3.7-2.7z" />
+                            </svg>
+                            <span class="badge badge--count">2</span>
+                        </a>
+
+                        <a href="cart.html" class="btn--icon" id="btn-cart">
+                            <svg class="icon icon--heart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+                                <path
+                                    d="M8 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM15 20a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0-3a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM17.5 4.5c-.2-.3-.6-.5-1-.5H4.3l-.1-.6C4 2.6 3.3 2 2.5 2h-1a.5.5 0 0 0 0 1h1c.3 0 .6.3.7.6l1.6 10c.2.8.9 1.4 1.7 1.4h10a.5.5 0 0 0 0-1h-10a.7.7 0 0 1-.7-.6L5.6 12l10-1c.7 0 1.4-.6 1.6-1.4l.6-4c.1-.4 0-.8-.3-1.1zm-.7.9l-.6 4c0 .3-.4.7-.7.7l-10 .9-1-6h12l.3.1v.3z" />
+                            </svg>
+                            <span class="badge badge--count">2</span>
+                        </a>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="nav__category">
+                <div class="container mx-auto">
+                    <ul class="nav__category-list">
+                        <a href="collections.html" class="nav__category-logo"><img
+                                src="/resources/images/brocode-logo-fix.png" alt=""></a>
+                        <li class="nav__category-item">
+                            <a href="collections.html" class="nav__category-link">
+                                Men
+                            </a>
+                            <div class="dropdown">
+                                <div class="dropdown__info">
+                                    <h6 class="dropdown__title">Men</h6>
+                                    <img src="./resources/images/cat-men.jpg" alt="" class="image">
+                                </div>
+
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <h3>Apparel</h3>
+                                        <ul>
+                                            <li><a href="">New Arrivals</a></li>
+                                            <li><a href="">T-Shirts</a></li>
+                                            <li><a href="">Shirts</a></li>
+                                            <li><a href="">Shorts</a></li>
+                                            <li><a href="">Polo</a></li>
+                                            <li><a href="">Denim</a></li>
+                                            <li><a href="">Pants</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown__group">
+                                        <h3>Accessories</h3>
+                                        <ul>
+                                            <li><a href="">New Arrivals</a></li>
+                                            <li><a href="">Caps</a></li>
+                                            <li><a href="">Glasses</a></li>
+                                            <li><a href="">Bags</a></li>
+                                            <li><a href="">Belts</a></li>
+                                            <li><a href="">Small Accessories</a></li>
+                                            <li><a href="">Wallet and Cases</a></li>
+                                            <li><a href="">Handkechief</a></li>
+                                            <li><a href="">Socks</a></li>
+                                            <li><a href="">Footwear</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav__category-item">
+                            <a href="collections.html" class="nav__category-link">
+                                Underwear
+                            </a>
+                            <div class="dropdown">
+                                <div class="dropdown__info">
+                                    <h6 class="dropdown__title">Underwear</h6>
+                                    <img src="./resources/images/cat-men.jpg" alt="" class="image">
+                                </div>
+
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <h3>Apparel</h3>
+                                        <ul>
+                                            <li><a href="">New Arrivals</a></li>
+                                            <li><a href="">T-Shirts</a></li>
+                                            <li><a href="">Shirts</a></li>
+                                            <li><a href="">Shorts</a></li>
+                                            <li><a href="">Polo</a></li>
+                                            <li><a href="">Denim</a></li>
+                                            <li><a href="">Pants</a></li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown__group">
+                                        <h3>Accessories</h3>
+                                        <ul>
+                                            <li><a href="">New Arrivals</a></li>
+                                            <li><a href="">Caps</a></li>
+                                            <li><a href="">Glasses</a></li>
+                                            <li><a href="">Bags</a></li>
+                                            <li><a href="">Belts</a></li>
+                                            <li><a href="">Small Accessories</a></li>
+                                            <li><a href="">Wallet and Cases</a></li>
+                                            <li><a href="">Handkechief</a></li>
+                                            <li><a href="">Socks</a></li>
+                                            <li><a href="">Footwear</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="collections.html" class="nav__category-link">
+                                Body & bath
+                            </a>
+                            <!-- <div class="dropdown">
+								Body & bath
+							</div> -->
+                        </li>
+                        <li>
+                            <a href="collections.html" class="nav__category-link">
+                                Sale
+                            </a>
+                            <!-- <div class="dropdown">
+								Sale
+							</div> -->
+                        </li>
+                        <li>
+                            <a href="collections.html" class="nav__category-link">
+                                Exclusive Offers
+                            </a>
+                        </li>
+                        <li>
+                            <a href="collections.html" class="nav__category-link">
+                                Perfumes
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <section>
+            <div class="container pt-3 mb-3">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="account col-12">
+                                <h1 class="heading--primary mb-2">My Account</h1>
+                            </div>
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <div class="account__sidebar">
+                                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                        aria-orientation="vertical">
+                                        <a class="nav-link active" id="account-dashboard-tab" data-toggle="pill"
+                                            href="#account-dashboard" role="tab" aria-controls="account-dashboard"
+                                            aria-selected="true">Account Dashboard</a>
+                                        <a class="nav-link" id="acount-info-tab" data-toggle="pill" href="#acount-info"
+                                            role="tab" aria-controls="acount-info" aria-selected="false">Account
+                                            Information</a>
+                                        <a class="nav-link" id="address-information-tab" data-toggle="pill"
+                                            href="#address-information" role="tab" aria-controls="address-information"
+                                            aria-selected="false">Address & Contact</a>
+                                        <a class="nav-link" href="index.html" role="tab"
+                                            aria-selected="false">Logout</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-lg-7 ml-2">
+                                <div class="account__content">
+                                    <div class="tab-content" id="v-pills-tabContent">
+                                        <div class="tab-pane fade show active" id="account-dashboard" role="tabpanel"
+                                            aria-labelledby="account-dashboard-tab">
+
+                                            <div class="row">
+                                                <div class="col-12 border-bottom pb-1 mb-2">
+                                                    <h5 class="heading--secondary">
+                                                        Account Dashboard
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">First Name </label>
+                                                        <p class="paragraph--primary">John</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">Last Name </label>
+                                                        <p class="paragraph--primary">Doe</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">Email Address </label>
+                                                        <p class="paragraph--primary">johndoe@gmail.com</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 border-bottom pb-1 mb-2">
+                                                    <h5 class="heading--secondary">
+                                                        Contact & Address Information
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">Contact Number </label>
+                                                        <p class="paragraph--primary">095864542157</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">Company</label>
+                                                        <p class="paragraph--primary">Hustle Dev Inc.</p>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">Address </label>
+                                                        <p class="paragraph--primary">420 Moriones st Tondo,Manila</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">State/Province </label>
+                                                        <p class="paragraph--primary">
+                                                            Metro Manila
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">City </label>
+                                                        <p class="paragraph--primary">
+                                                            Manila City
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                        <div class="tab-pane fade" id="acount-info" role="tabpanel"
+                                            aria-labelledby="acount-info-tab">
+                                            <div class="row">
+                                                <div class="col-12 border-bottom pb-1 mb-2">
+                                                    <h5 class="heading--secondary">
+                                                        Account Information
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">First Name <span>*</span></label>
+                                                        <input class="inp inp--primary" type="text" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">Last Name <span>*</span></label>
+                                                        <input class="inp inp--primary" type="text" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-12 border-bottom pb-1 mb-2">
+                                                    <h5 class="heading--secondary">
+                                                        Change Email Address
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-4">
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">New Email Addrss <span>*</span></label>
+                                                        <input class="inp inp--primary" type="password" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">Password <span>*</span></label>
+                                                        <input class="inp inp--primary" type="password" placeholder="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <button class="btn btn--primary d-block ml-auto">Change Email
+                                                        Address</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-12 border-bottom pb-1 mb-2">
+                                                    <h5 class="heading--secondary">
+                                                        Change Password
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">New Password <span>*</span></label>
+                                                        <input class="inp inp--primary" type="password" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">Confirm New Password <span>*</span></label>
+                                                        <input class="inp inp--primary" type="password" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">Current Password <span>*</span></label>
+                                                        <input class="inp inp--primary" type="password" placeholder="">
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-12">
+                                                    <button class="btn btn--primary d-block ml-auto">Change
+                                                        Password</button>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+                                        <div class="tab-pane fade" id="address-information" role="tabpanel"
+                                            aria-labelledby="address-information-tab">
+                                            <div class="row">
+                                                <div class="col-12 border-bottom pb-1 mb-2">
+                                                    <h5 class="heading--secondary">
+                                                        Contact Information
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-2">
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">First Name <span>*</span></label>
+                                                        <input class="inp inp--primary" type="text" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">Last Name <span>*</span></label>
+                                                        <input class="inp inp--primary" type="text" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">Company</label>
+                                                        <input class="inp inp--primary" type="text" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">Phone Number</label>
+                                                        <input class="inp inp--primary" type="text" placeholder="">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-12 border-bottom pb-1 mb-2">
+                                                    <h5 class="heading--secondary">
+                                                        Address
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">Street Address <span>*</span></label>
+                                                        <input class="inp inp--primary" type="text" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">Barangay<span>*</span></label>
+                                                        <input class="inp inp--primary" type="text" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">Zip/Postal Code<span>*</span></label>
+                                                        <input class="inp inp--primary" type="text" placeholder="">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">City</label>
+                                                        <select class="inp inp--select" title="city" defaultv=""
+                                                            id="city_id" name="city_id" aria-required="true">
+
+                                                            <option value="2">Las Pinas</option>
+                                                            <option value="3">Makati</option>
+                                                            <option value="4">Malabon</option>
+                                                            <option value="5">Mandaluyong</option>
+                                                            <option value="6">Marikina</option>
+                                                            <option value="7">Muntinlupa</option>
+                                                            <option value="8">Navotas</option>
+                                                            <option value="10">Pasig</option>
+                                                            <option value="11">Quezon City</option>
+                                                            <option value="12">Taguig</option>
+                                                            <option value="13">Valenzuela</option>
+                                                            <option value="14">Pateros</option>
+                                                            <option value="557">Pasay</option>
+                                                            <option value="1429">Binondo</option>
+                                                            <option value="1430">Caloocan City</option>
+                                                            <option value="1431">Ermita</option>
+                                                            <option value="1432">Intramuros</option>
+                                                            <option value="1434">Makati City</option>
+                                                            <option value="1435">Malabon City</option>
+                                                            <option value="1436">Malate</option>
+                                                            <option value="1437">Mandaluyong City</option>
+                                                            <option value="1439">Muntinlupa City</option>
+                                                            <option value="1440">Navotas City</option>
+                                                            <option value="1441">Paco</option>
+                                                            <option value="1442">Pandacan</option>
+                                                            <option value="1443">Paranaque City</option>
+                                                            <option value="1444">Pasay City</option>
+                                                            <option value="1445">Pasig City</option>
+                                                            <option value="1446">Port Area</option>
+                                                            <option value="1447">Quiapo</option>
+                                                            <option value="1448">San Juan City</option>
+                                                            <option value="1449">Taguig City</option>
+                                                            <option value="1450">Tondo</option>
+                                                            <option value="1451">Valenzuela City</option>
+                                                            <option value="2061">Paranaque</option>
+                                                            <option value="2066">Marikina City</option>
+                                                            <option value="2074">San Miguel Manila</option>
+                                                            <option value="2075">San Nicolas Manila</option>
+                                                            <option value="2114">Las Pinas City</option>
+                                                            <option value="2162">Santa Ana Manila</option>
+                                                            <option value="2167">Santa Cruz Manila</option>
+                                                            <option value="2188">Sampaloc Metro Manila</option>
+                                                            <option value="2194">Sampaloc</option>
+                                                            <option value="2195">San Miguel</option>
+                                                            <option value="2196">San Nicolas</option>
+                                                            <option value="2197">Santa Ana</option>
+                                                            <option value="2198">Santa Cruz</option>
+                                                            <option value="2199">Tondo I / Ii</option>
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-6">
+                                                    <div class="form-group mb-2">
+                                                        <label for="">State/Province</label>
+                                                        <select class="inp--select" id="region_id" name="region_id"
+                                                            title="State/Province" class="validate-select required"
+                                                            aria-required="true">
+
+                                                            <option value="512">Metro Manila</option>
+                                                            <option value="513">Abra</option>
+                                                            <option value="514">Agusan del Norte</option>
+                                                            <option value="515">Agusan del Sur</option>
+                                                            <option value="516">Aklan</option>
+                                                            <option value="517">Albay</option>
+                                                            <option value="518">Antique</option>
+                                                            <option value="519">Apayao</option>
+                                                            <option value="520">Aurora</option>
+                                                            <option value="521">Basilan</option>
+                                                            <option value="522">Bataan</option>
+                                                            <option value="523">Batanes</option>
+                                                            <option value="524">Batangas</option>
+                                                            <option value="525">Benguet</option>
+                                                            <option value="526">Biliran</option>
+                                                            <option value="527">Bohol</option>
+                                                            <option value="528">Bukidnon</option>
+                                                            <option value="529">Bulacan</option>
+                                                            <option value="530">Cagayan</option>
+                                                            <option value="531">Camarines Norte</option>
+                                                            <option value="532">Camarines Sur</option>
+                                                            <option value="533">Camiguin</option>
+                                                            <option value="534">Capiz</option>
+                                                            <option value="535">Catanduanes</option>
+                                                            <option value="536">Cavite</option>
+                                                            <option value="537">Cebu</option>
+                                                            <option value="538">Compostela Valley</option>
+                                                            <option value="539">Cotabato</option>
+                                                            <option value="540">Davao del Norte</option>
+                                                            <option value="541">Davao del Sur</option>
+                                                            <option value="542">Davao Oriental</option>
+                                                            <option value="543">Dinagat Islands</option>
+                                                            <option value="544">Eastern Samar</option>
+                                                            <option value="545">Guimaras</option>
+                                                            <option value="546">Ifugao</option>
+                                                            <option value="547">Ilocos Norte</option>
+                                                            <option value="548">Ilocos Sur</option>
+                                                            <option value="549">Iloilo</option>
+                                                            <option value="550">Isabela</option>
+                                                            <option value="551">Kalinga</option>
+                                                            <option value="552">La Union</option>
+                                                            <option value="553">Laguna</option>
+                                                            <option value="554">Lanao del Norte</option>
+                                                            <option value="555">Lanao del Sur</option>
+                                                            <option value="556">Leyte</option>
+                                                            <option value="557">Maguindanao</option>
+                                                            <option value="558">Marinduque</option>
+                                                            <option value="559">Masbate</option>
+                                                            <option value="560">Misamis Occidental</option>
+                                                            <option value="561">Misamis Oriental</option>
+                                                            <option value="562">Mountain Province</option>
+                                                            <option value="563">Negros Occidental</option>
+                                                            <option value="564">Negros Oriental</option>
+                                                            <option value="565">Northern Samar</option>
+                                                            <option value="566">Nueva Ecija</option>
+                                                            <option value="567">Nueva Vizcaya</option>
+                                                            <option value="568">Occidental Mindoro</option>
+                                                            <option value="569">Oriental Mindoro</option>
+                                                            <option value="570">Palawan</option>
+                                                            <option value="571">Pampanga</option>
+                                                            <option value="572">Pangasinan</option>
+                                                            <option value="573">Quezon</option>
+                                                            <option value="574">Quirino</option>
+                                                            <option value="575">Rizal</option>
+                                                            <option value="576">Romblon</option>
+                                                            <option value="577">Samar</option>
+                                                            <option value="578">Sarangani</option>
+                                                            <option value="579">Shariff Kabunsuan</option>
+                                                            <option value="580">Siquijor</option>
+                                                            <option value="581">Sorsogon</option>
+                                                            <option value="582">South Cotabato</option>
+                                                            <option value="583">Southern Leyte</option>
+                                                            <option value="584">Sultan Kudarat</option>
+                                                            <option value="585">Sulu</option>
+                                                            <option value="586">Surigao del Norte</option>
+                                                            <option value="587">Surigao del Sur</option>
+                                                            <option value="588">Tarlac</option>
+                                                            <option value="589">Tawi-Tawi</option>
+                                                            <option value="590">Zambales</option>
+                                                            <option value="591">Zamboanga del Norte</option>
+                                                            <option value="592">Zamboanga del Sur</option>
+                                                            <option value="593">Zamboanga Sibugay</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row mb-2">
+                                                <div class="col-12"><button
+                                                        class="btn--primary d-block ml-auto">Save</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="footer pt-4">
+        <div class="container mx-auto">
+            <div class="row">
+                <div class="col-12 col-lg-4 mb-2">
+                    <img class="footer__logo mb-1" src="resources/images/brocode-logo-banner-w.png" alt="" />
+
+                    <p class="paragraph--primary footer__discription">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Recusandae iste impedit, modi sed suscipit vitae optio, voluptatem
+                        minus minima adipisci ex obcaecati illum, quaerat doloribus iure
+                        mollitia id! Minus, maiores quibusdam.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-2 mb-4">
+                    <h6 class="heading--secondary mb-1">Navigate</h6>
+                    <ul class="list">
+                        <li class="list__item">
+                            <a href="overview.html" class="list__link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="overview.html" class="list__link">
+                                Search
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="overview.html" class="list__link">
+                                About
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="overview.html" class="list__link">
+                                Contact us
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="overview.html" class="list__link">
+                                Account
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-2 mb-4">
+                    <h6 class="heading--secondary mb-1">About us</h6>
+                    <ul class="list">
+                        <li class="list__item">
+                            <a href="overview.html" class="list__link">
+                                Who we are
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="overview.html" class="list__link">
+                                Sell with us
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="overview.html" class="list__link">
+                                Careers
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="overview.html" class="list__link">
+                                Promotions
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="overview.html" class="list__link">
+                                Responsible Disclosure
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="overview.html" class="list__link">
+                                Advertise with us
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="overview.html" class="list__link">
+                                Privacy Policy
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="overview.html" class="list__link">
+                                Terms & Conditions
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <div class="col-12 col-lg-4 mb-4">
+                    <h6 class="heading--secondary mb-1">Hey bro? New to Brocode?</h6>
+                    <p class="paragraph--primary footer__discription">Get a <b
+                            style="color: rgb(241, 226, 8); font-weight: 700;">discount or
+                            cashback</b> (plus the latest
+                        fashion news and product launches) just by subscribing to
+                        our newsletter.</p>
+
+                    <div class="form-group mt-1" style="width: 100%;">
+                        <label for="">Your email address</label>
+                        <input type="text" class="inp inp--footer mb-1"
+                            placeholder="Enter your email address here to subcribe">
+                        <button class="btn btn--primary btn--primary--white ">Subcribe</button>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-lg-5 mb-2">
+                    <h6 class="heading--secondary mb-2">Secured & Verified Payments</h6>
+
+                    <ul class="footer__payment">
+                        <li>
+                            <img src="/resources/images/bdo.png" title="BDO" alt="bdo" class="" />
+                        </li>
+                        <li>
+                            <img src="/resources/images/bpi.png" title="BPI" alt="bpi" class="" />
+                        </li>
+                        <li>
+                            <img src="/resources/images/mastercard.png" title="Mastercard" alt="Mastercard" class="" />
+                        </li>
+                        <li>
+                            <img src="/resources/images/paypal.png" title="Paypal" alt="Paypal" class="" />
+                        </li>
+                        <li><img src="/resources/images/visa.png" title="Visa" alt="Visa" class="" /></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-4 mb-2">
+                    <h6 class="heading--secondary mb-2">Delivery Providers</h6>
+
+                    <ul class="footer__payment">
+                        <li>
+                            <img src="/resources/images/lbc.png" title="lbc" alt="lbc" class="" />
+                        </li>
+                        <li>
+                            <img src="/resources/images/jrs-expresss.jpg" title="jrs-expresss" alt="jrs-expresss"
+                                class="" />
+                        </li>
+                        <li>
+                            <img src="/resources/images/ninjavan.png" title="ninjavan" alt="ninjavan" class="" />
+                        </li>
+                        <li>
+                            <img src="/resources/images/2go.png" title="2GO Express" alt="2GO Express" class="" />
+                        </li>
+                        <li><img src="/resources/images/7eleven.webp" title="7-Eleven" alt="7-Eleven" class="" /></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-lg-3 mb-2">
+                    <h6 class="heading--secondary mb-2">Visit us on</h6>
+
+                    <div class="footer__social">
+                        <a href="overview.html" title="facebook"><svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 100 100">
+                                <path
+                                    d="M57.1 98.2H43.8a6 6 0 0 1-5.9-5.9V56.4h-11a6 6 0 0 1-5.9-5.9V40.2a6 6 0 0 1 5.9-5.9h10.9V25c0-13.8 9.1-23.1 22.7-23.1h10.1a6 6 0 0 1 5.9 5.9V20a6 6 0 0 1-5.9 5.9h-7.5v8.4h10c1.8 0 3.5.8 4.6 2.2a5.8 5.8 0 0 1 1.2 4.9l-2.1 10.2c-.5 2.7-3 4.7-5.8 4.7h-8v36a6 6 0 0 1-5.9 5.9zM26.9 39.8c-.2 0-.4.2-.4.4v10.4c0 .2.2.4.4.4h16.5v41.3c0 .2.2.4.4.4h13.3c.2 0 .4-.2.4-.4V50.8H71l.4-.2 2.1-10.3-.1-.4-.4-.1H57.6V26.3c0-3.6 1-5.9 6-5.9h7c.2 0 .4-.2.4-.4V7.7c0-.2-.2-.4-.4-.4H60.5c-10.4 0-17.2 6.9-17.2 17.6v14.8H26.9z" />
+                            </svg></a>
+                        <a href="overview.html" title="twitter"><svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 100 100">
+                                <path
+                                    d="M33.9 90c-8.3 0-20.2-1.6-30.2-9.1a4.8 4.8 0 0 1-1.5-5.8c.8-2.1 3-3.2 5.2-2.8 0 0 7.3 1.2 13.9-1.1A21.3 21.3 0 0 1 12 59c-.3-1-.3-2 0-3a22 22 0 0 1-6.4-16.4A5 5 0 0 1 7.3 36c-2-4.9-3.2-12.1 1.4-20a5.2 5.2 0 0 1 3.7-2.4c1.6-.1 3.1.5 4.1 1.7.1.1 12.4 14.3 27.7 16.4a22.4 22.4 0 0 1 36.5-16.6 16 16 0 0 0 7.3-2.8c1.4-1 3.3-1.2 4.8-.4a5 5 0 0 1 2.8 4c0 .5 0 1.5-.4 2.8l.8.5a4.8 4.8 0 0 1 1.9 5.3c-.6 2.3-3.6 5.9-8.9 10.8A54.3 54.3 0 0 1 33.9 90zM9.2 78a46.4 46.4 0 0 0 24.7 6.5c6 0 10.1-.9 10.2-.9a49 49 0 0 0 39.6-49.5v-1.2l.9-.8c3.7-3.4 5.8-5.7 6.9-7.1l-.5.1-5.6 1.9c-.9.3-1.7-.8-1.1-1.6l3.7-4.6c1-1.2 1.5-2.2 1.8-3a20.6 20.6 0 0 1-9.9 3h-1.1l-.9-.8a16.7 16.7 0 0 0-28.2 12.3l.1 2 .2 2c.1.6-.4 1.1-1 1.1l-2-.1C30 37 16.1 23 12.9 19.6a16.6 16.6 0 0 0 .9 16.8l3.3 5.5c.5.9-.4 1.9-1.3 1.4l-4.6-2.5c.2 5.4 2.3 9.6 6.3 12.6l2.4 1.9c.6.5.5 1.4-.2 1.7l-2.2.9c2.3 6.7 7.3 9.4 11.1 10.4l3.6 1c.8.2 1 1.3.3 1.8l-3 2.1c-7 4.9-15.8 5.1-20.3 4.8zm3.1-59.1zm79-2.1z" />
+                            </svg></a>
+                        <a href="overview.html" title="instagram"><svg class="icon" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 100 100">
+                                <path
+                                    d="M50 26.9a23.1 23.1 0 0 0 0 46.2 23 23 0 0 0 0-46.2zm0 40.7a17.6 17.6 0 0 1 0-35.2c9.7 0 17.5 7.9 17.5 17.6 0 9.7-7.8 17.6-17.5 17.6zM76.9 16.3c-1.8 0-3.5.7-4.7 2a6.5 6.5 0 0 0 0 9.4 6.5 6.5 0 0 0 9.4 0c1.2-1.2 2-2.9 2-4.7v-.1c0-1.7-.8-3.4-2-4.6-1-1.4-2.9-2-4.7-2z" />
+                                <path
+                                    d="M76.1 1H23.9A23 23 0 0 0 1 23.9v52.3A23 23 0 0 0 23.9 99h52.3A23 23 0 0 0 99 76.1V23.9A23 23 0 0 0 76.1 1zm17.4 75.1c0 9.6-7.8 17.4-17.4 17.4H23.9c-9.6 0-17.4-7.8-17.4-17.4V23.9c0-9.6 7.8-17.4 17.4-17.4h52.3c9.6 0 17.4 7.8 17.4 17.4v52.2z" />
+                            </svg></a>
+                        <a href="overview.html" title="reddit">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                <circle cx="36.4" cy="55.8" r="6.2" />
+                                <circle cx="63.6" cy="55.8" r="6.2" />
+                                <path
+                                    d="M50 78c6.7 0 11.5-1.5 14.5-4.5.7-.7.7-1.8 0-2.4-.7-.7-1.8-.7-2.4 0-2.4 2.4-6.3 3.5-12.1 3.5-5.7 0-9.7-1.1-12.1-3.5-.7-.7-1.8-.7-2.4 0-.7.7-.7 1.8 0 2.4 3 3 7.8 4.5 14.5 4.5z" />
+                                <path
+                                    d="M70 84c2.9-1.1 5.7-2.5 8.2-4.1 7.8-5.1 12-11.9 12-19.2l-.2-2.9a10.2 10.2 0 1 0-12-16.4 51 51 0 0 0-25.5-7.5l5.3-16.7 14.3 3.4a8.4 8.4 0 1 0 .7-3.3L57 13.5c-.9-.2-1.8.3-2 1.2l-6.1 19.2A50.8 50.8 0 0 0 22 41.4a10.2 10.2 0 1 0-12 16.4c-.2 1-.2 1.9-.2 2.9 0 7.3 4.3 14.1 12.1 19.2 2.5 1.6 5.2 3 8.2 4.1-.1 0 21.2 8.7 39.9 0zm10.5-68.4a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5zM8.5 49a6.8 6.8 0 0 1 10.7-5.6c-4 3.1-6.7 6.8-8.2 10.8A6.4 6.4 0 0 1 8.5 49zM50 84.1c-20.3 0-36.8-10.5-36.8-23.4 0-12.9 16.5-23.4 36.8-23.4 20.3 0 36.8 10.5 36.8 23.4 0 12.9-16.5 23.4-36.8 23.4zm39.1-29.9c-1.4-4-4.2-7.6-8.2-10.8A6.8 6.8 0 0 1 91.6 49a7 7 0 0 1-2.5 5.2z" />
+                            </svg>
+                        </a>
+                        <a href="overview.html" title="pinterest">
+                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+                                <path
+                                    d="M2 50l.1 2.2v.7l.1 1.6.1.7.2 1.8.1.4.4 2.1.1.6.3 1.5.2.7.4 1.5.2.6.7 2 .2.6.6 1.4.3.7.6 1.3.3.7.9 1.7.3.5.8 1.4.4.7.7 1.1.5.7.9 1.2.3.5 1.2 1.5.5.6.8 1 .6.6.9 1 .5.5 1.4 1.4.5.5 1 .9.6.5 1 .8.6.5 1.6 1.2.4.3 1.3.8.7.4 1.2.7.6.4 1.7.9.2.1 1.9.9.6.2.8.3c-.4-3.8-.8-9.6.2-13.8l5.6-23.9s-1.4-2.9-1.4-7.1c0-6.7 3.9-11.7 8.7-11.7 4.1 0 6.1 3.1 6.1 6.8 0 4.1-2.6 10.3-4 16-1.1 4.8 2.4 8.7 7.1 8.7 8.5 0 15.1-9 15.1-22 0-11.5-8.3-19.5-20-19.5A20.7 20.7 0 0 0 28 49.2a19 19 0 0 0 3.6 11c.4.5.4.9.3 1.4L30.6 67c-.2.9-.7 1.1-1.6.6-6-2.8-9.7-11.6-9.7-18.6 0-15.1 11-29 31.7-29 16.7 0 29.6 11.9 29.6 27.7 0 16.5-10.4 29.9-24.9 29.9-4.9 0-9.4-2.5-11-5.5l-3 11.4c-1.1 4.2-4 9.4-6 12.6l2 .6.7.2 1.4.3.7.2 1.9.3h.2l2.1.3.7.1 1.6.1h.6l2.2.1A48 48 0 0 0 67.1 5.5c-.4-.5-1.1-.7-1.7-1-1.4-.5-2.8-.9-4.3-1.2l-3.8-.8-4.8-.5H50l-4.9.2-2.4.3A48.1 48.1 0 0 0 2 50z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-12 mt-1 mb-2 border-top pt-1">
+                    <p class="footer__copyright">&copy; Brocode Merch &mdash; 2019</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#promo-nav')
+                .slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    vertical: true,
+                    arrows: false,
+                    dot: false,
+                    swipe: false,
+                    verticalSwiping: false,
+                    focusOnSelect: true,
+                    centerMode: true,
+                    speed: 1000,
+                    autoplaySpeed: 2000,
+                });
+        });
+    </script>
+    <script src="resources/js/slick.min.js"></script>
+    <script src="resources/js/image-viewer.js"></script>
+    <script src="resources/js/modal.js"></script>
+    <script src="resources/js/navbar.js"></script>
+</body>
+
+</html>

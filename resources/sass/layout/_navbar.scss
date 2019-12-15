@@ -30,12 +30,16 @@
 	&__others-link {
 		display: flex;
 		align-items: center;
+		width: auto;
 		height: 100%;
 		margin-left: auto;
 		list-style: none;
 		font-size: 12px;
 		li {
+			display: block;
+			width: auto;
 			padding-left: 10px;
+			color: rgba(var(--sec-col), 0.8);
 			&:not(:last-child) {
 				padding-right: 30px;
 				border-right: 1px solid rgba(var(--sec-col), 0.1);

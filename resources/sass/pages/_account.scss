@@ -1,0 +1,24 @@
+.account {
+	&__sidebar {
+		font-size: 16px;
+
+		& .nav-link {
+			display: block;
+			border-radius: 0;
+			color: rgba(var(--prim-col), 1);
+			padding: 10px 20px;
+			border-top: 1px solid rgba(var(--prim-col), 0.08);
+			&.active {
+				font-weight: 700;
+				background: rgba(var(--prim-col), 1) !important;
+			}
+		}
+
+		& .nav-pills {
+		}
+	}
+
+	&__content {
+		font-size: 16px;
+	}
+}

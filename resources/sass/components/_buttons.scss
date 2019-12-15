@@ -40,7 +40,7 @@
 
 	&--primary {
 		display: inline-block;
-		padding: 10px 40px;
+		padding: 8px 36px;
 		font-size: 16px;
 		font-weight: 500;
 		border: 2px solid var(--primary-color);
@@ -93,11 +93,39 @@
 	}
 
 	&--accordion {
+		position: relative;
 		display: flex;
 		width: 100%;
-		font-weight: 700;
+		font-weight: 500;
 		text-transform: uppercase;
 		font-size: 14px;
+		padding: 10px;
+		border-top: 1px solid rgba(var(--prim-col), 1);
+		margin-bottom: 10px;
+
+		span {
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			transform: translateY(-50%);
+			&::before,
+			&::after {
+				display: block;
+				content: '';
+				height: 2px;
+				width: 12px;
+				background: rgba(var(--prim-col), 1);
+				@include transition;
+			}
+			&::before {
+				background: transparent;
+				transform: rotate(90deg);
+			}
+			&::after {
+				margin-top: -2px;
+				background: rgba(var(--prim-col), 1);
+			}
+		}
 	}
 
 	&--link {
