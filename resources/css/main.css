@@ -1750,6 +1750,12 @@ section {
 }
 
 .cart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   font-size: 16px;
 }
 
@@ -2171,7 +2177,7 @@ section {
 body,
 html {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--primary-color) !important;
   background-color: var(--base-color) !important;
   -webkit-font-smoothing: antialiased;
@@ -2417,7 +2423,7 @@ input[type='number']::-webkit-outer-spin-button {
 
 .btn--primary {
   display: inline-block;
-  padding: 8px 36px;
+  padding: 6px 36px;
   font-size: 16px;
   font-weight: 500;
   border: 2px solid var(--primary-color);
@@ -2634,7 +2640,6 @@ input[type='number']::-webkit-outer-spin-button {
 .form-group label {
   font-weight: 700;
   font-size: 14px;
-  color: rgba(var(--prim-col), 0.9);
 }
 
 .form-group label span {
@@ -2685,8 +2690,6 @@ input[type='number']::-webkit-outer-spin-button {
   width: 100%;
   border: 1px solid var(--primary-color-light);
   border-bottom-width: 3px;
-  border-top-right-radius: 3px;
-  border-top-left-radius: 3px;
   -webkit-transition: all ease 300ms;
   transition: all ease 300ms;
 }
@@ -2812,7 +2815,7 @@ input[type='number']::-webkit-outer-spin-button {
 body,
 html {
   font-family: 'Roboto', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--primary-color) !important;
   background-color: var(--base-color) !important;
   -webkit-font-smoothing: antialiased;

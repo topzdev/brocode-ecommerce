@@ -8,7 +8,6 @@
 	label {
 		font-weight: 700;
 		font-size: 14px;
-		color: rgba(var(--prim-col), 0.9);
 
 		span {
 			color: var(--color-red);
@@ -56,8 +55,6 @@
 		width: 100%;
 		border: 1px solid var(--primary-color-light);
 		border-bottom-width: 3px;
-		border-top-right-radius: 3px;
-		border-top-left-radius: 3px;
 		@include transition;
 
 		&::placeholder {
